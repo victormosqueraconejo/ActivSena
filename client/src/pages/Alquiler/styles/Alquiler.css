@@ -1,0 +1,595 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	color: #2c3e50;
+	line-height: 1.6;
+	background-image: url('');
+	background-size: cover;
+	background-position: center;
+}
+
+.app-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.header h1 {
+	font-size: 3rem;
+	color: #27ae60;
+	font-weight: 700;
+	border-bottom: 4px solid #27ae60;
+	padding-bottom: 15px;
+	letter-spacing: 1px;
+}
+
+.carrusel {
+	display: flex;
+	overflow-x: auto;
+	gap: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-color: #27ae60 #ffffff; /* Verde y blanco */
+}
+
+.carrusel::-webkit-scrollbar {
+	height: 8px;
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+	background-color: #27ae60; /* Verde */
+	border-radius: 10px;
+}
+
+.carrusel::-webkit-scrollbar-track {
+	background-color: #ffffff; /* Blanco */
+}
+
+.elemento {
+	background-color: #ffffff; /* Blanco */
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	padding: 20px;
+	width: 280px;
+	text-align: center;
+	cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+	flex: 0 0 auto;
+	box-sizing: border-box;
+}
+
+.elemento:hover {
+	transform: translatey(-10px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	background-color: #ecf0f1;
+	border-color: #27ae60; /* Verde SENA */
+}
+
+.elemento h3 {
+	font-size: 1.4rem;
+	margin-bottom: 10px;
+	font-weight: 600;
+	color: #34495e;
+}
+
+.elemento p {
+	font-size: 1rem;
+	color: #7f8c8d;
+}
+
+.no-disponible {
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+	color: #721c24;
+	cursor: not-allowed;
+	opacity: 0.7;
+}
+
+.formulario-container {
+	background-color: #ffffff; /* Blanco */
+	border-radius: 15px;
+	border: 2px solid #ddd;
+	padding: 35px;
+	margin-top: 50px;
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+	max-width: 950px;
+	margin: 50px auto;
+}
+
+.formulario-contenido {
+	display: flex;
+	gap: 40px;
+	justify-content: space-between;
+}
+
+.formulario-izquierda {
+	flex: 1;
+}
+
+.formulario-derecha {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.formulario-izquierda label {
+	display: block;
+	margin-bottom: 12px;
+	font-weight: 600;
+	color: #2c3e50;
+	font-size: 1.1rem;
+}
+
+.formulario-izquierda input,
+.formulario-izquierda textarea {
+	width: 100%;
+	padding: 14px;
+	margin-top: 8px;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	font-size: 1.1rem;
+	transition: all 0.3s ease;
+}
+
+.formulario-izquierda input:focus,
+.formulario-izquierda textarea:focus {
+	border-color: #27ae60; /* Verde SENA */
+	box-shadow: 0 0 10px rgba(39, 174, 96, 0.3);
+	outline: none;
+}
+
+.formulario-izquierda button {
+	background-color: #27ae60; /* Verde SENA */
+	color: #fff;
+	padding: 14px 30px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 1.1rem;
+	margin-top: 20px;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.formulario-izquierda button:hover {
+	background-color: #2ecc71; /* Verde más claro */
+	transform: translatey(-2px);
+}
+
+.imgformulario {
+	max-width: 100%;
+	border-radius: 12px;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+	border: 3px solid #ddd;
+}
+
+@media (max-width: 768px) {
+	.carrusel {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.formulario-contenido {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.formulario-izquierda,
+	.formulario-derecha {
+		width: 100%;
+	}
+}
+
+.carrusel {
+	display: flex;
+	gap: 5px;
+	overflow-x: scroll;
+	width: 1000px;
+	scroll-snap-type: x mandatory;
+}
+
+.carrusel > div {
+	scroll-snap-align: center;
+	min-width: 300px;
+	margin: 10px;
+	background-color: aliceblue;
+}
+
+/* Ajuste para el botón */
+.buttonalquiler {
+	background-color: #2ecc71;
+	padding: 14px 30px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 1.1rem;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+	margin: 20px auto;
+	display: block; /* Hace que se centre */
+	text-align: center;
+}
+
+.buttonalquiler:hover {
+	background-color: #27ae60; /* Cambiar a verde más oscuro */
+	transform: translatey(-2px);
+}
+
+/* Ajuste específico para el formulario y la imagen (lado izquierdo - formulario, lado derecho - imagen) */
+.formulario-contenido {
+	display: flex;
+	flex-direction: row; /* Asegura que el formulario y la imagen estén uno al lado del otro */
+	align-items: center;
+	justify-content: space-between;
+}
+
+.formulario-izquierda {
+	flex: 1;
+}
+
+.formulario-derecha {
+	flex: 1;
+	text-align: center;
+}
+
+.formulario-derecha img {
+	max-width: 100%;
+	border-radius: 12px;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilo de la sección */
+section {
+	display: flex;
+	flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+	gap: 20px;
+	justify-content: space-between;
+	width: 100%; /* Utiliza todo el ancho disponible */
+	padding: 10px;
+  }
+  
+  /* Estilo para las imágenes dentro de la sección */
+  section img {
+	width: 100%; /* Esto asegura que las imágenes ocupen todo el espacio del contenedor */
+	height: 100%; /* Esto hace que la imagen ocupe la altura del contenedor */
+	object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+	opacity: 0.8;
+	transition: 0.5s ease;
+	border-radius: 8px; /* Redondear bordes (opcional) */
+  }
+  
+  /* Efecto al pasar el mouse sobre la imagen */
+  section img:hover {
+	cursor: crosshair;
+	opacity: 1;
+	filter: contrast(120%);
+	transform: scale(1.05); /* Hace que la imagen se agrande un poco cuando se pasa el mouse */
+  }
+  
+
+  /* Estilo para la sección de elementos */
+section {
+	display: flex;
+	flex-wrap: wrap; /* Permite que las imágenes se ajusten bien en varias filas si es necesario */
+	gap: 20px;
+	justify-content: space-between;
+	padding: 20px;
+  }
+  
+  /* Estilo para cada imagen dentro de la sección */
+  section img {
+	width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
+	height: 150px; /* Ajusta la altura según lo necesites */
+	object-fit: cover; /* Hace que las imágenes se ajusten sin deformarse */
+	opacity: 0.8;
+	transition: 0.5s ease;
+	border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  /* Efecto al pasar el mouse sobre la imagen */
+  section img:hover {
+	cursor: pointer;
+	opacity: 1;
+	filter: contrast(120%);
+	transform: scale(1.05); /* Agranda un poco la imagen */
+  }
+  
+  /* Estilo de cada elemento */
+  .elemento {
+	width: 200px; /* Ajusta el tamaño de cada elemento */
+	padding: 10px;
+	background-color: #f4f4f4;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	cursor: pointer;
+	transition: transform 0.3s;
+  }
+  
+  .elemento:hover {
+	transform: scale(1.05);
+  }
+  
+  .no-disponible {
+	opacity: 0.5; /* Si el elemento no está disponible, se vuelve translúcido */
+	cursor: not-allowed; /* No permite hacer clic en los elementos no disponibles */
+  }
+  
+
+  /* Contenedor principal */
+.app-container {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+  }
+  
+  /* Estilos del header */
+  .header {
+	text-align: center;
+	margin-bottom: 40px;
+  }
+  
+  h1 {
+	font-size: 2rem;
+	color: #333;
+  }
+  
+  /* Estilo de la sección de elementos */
+  .elementos-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+  }
+  
+  /* Cada elemento de la lista */
+  .elemento {
+	background: #f4f4f4;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	width: 250px;
+	padding: 10px;
+	cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	text-align: center;
+	box-sizing: border-box;
+  }
+  
+  .elemento:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .elemento img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 8px;
+  }
+  
+  .elemento h3 {
+	font-size: 1.1rem;
+	color: #333;
+	margin: 10px 0;
+  }
+  
+  .elemento p {
+	font-size: 0.9rem;
+	color: #666;
+  }
+  
+  /* Estilo para la sección del formulario */
+  .formulario-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+  }
+  
+  /* Contenedor del formulario y la imagen */
+  .formulario-content {
+	display: flex;
+	align-items: flex-start;
+	gap: 30px;
+  }
+  
+  /* Estilo del formulario */
+  .formulario-izquierda {
+	flex: 1;
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 400px;
+  }
+  
+  /* Inputs del formulario */
+  .formulario-izquierda label {
+	display: block;
+	margin-bottom: 10px;
+  }
+  
+  .formulario-izquierda input,
+  .formulario-izquierda textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+  }
+  
+  .formulario-izquierda button {
+	padding: 10px 20px;
+	background-color: #007BFF;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+	width: 100%;
+  }
+  
+  .formulario-izquierda button:hover {
+	background-color: #0056b3;
+  }
+  
+  /* Imagen del formulario */
+  .formulario-derecha {
+	flex: 1;
+	max-width: 400px;
+  }
+  
+  .imagen-elemento-formulario {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .bienestar{
+	width: 430px;
+	height: 130px;
+	margin-left: 500px;
+	
+  }
+
+  .detalles{
+	border-radius: 30px;
+	background-color: #0056b3;
+	margin-left: 490px;
+	width: 200px;
+	height: 100px;
+  }
+
+  /* Estilos generales */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f4f4f9;
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* Contenedor principal */
+  .detalles-alquiler-container {
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título */
+  .titulo {
+	text-align: center;
+	color: #333;
+	font-size: 30px;
+	margin-bottom: 30px;
+  }
+  
+  /* Barra de búsqueda */
+  .search-bar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffffff;
+	padding: 20px 40px;
+	border-radius: 8px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+  }
+  
+  .search-fields {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+	margin-bottom: 20px;
+  }
+  
+  .search-input {
+	padding: 12px 16px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	width: 220px;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-input:focus {
+	border-color: #5e9ecf;
+	outline: none;
+	box-shadow: 0 0 5px rgba(94, 158, 207, 0.6);
+  }
+  
+  .search-button {
+	padding: 12px 30px;
+	background-color: #5e9ecf;
+	color: white;
+	font-size: 16px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+	background-color: #4a8fb1;
+  }
+  
+  /* Estilos para la tabla */
+  .tabla-alquiler {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 30px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabla-alquiler th,
+  .tabla-alquiler td {
+	padding: 14px;
+	text-align: left;
+	border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .tabla-alquiler th {
+	background-color: #5e9ecf;
+	color: #fff;
+	font-size: 16px;
+  }
+  
+  .tabla-alquiler td {
+	color: #333;
+	font-size: 14px;
+  }
+  
+  .cumplio-con-entrega.true {
+	color: #28a745;
+	font-weight: bold;
+  }
+  
+  .cumplio-con-entrega.false {
+	color: #dc3545;
+	font-weight: bold;
+  }
+  
+  /* Mensaje sin registros */
+  .no-registros {
+	text-align: center;
+	color: #999;
+	font-size: 16px;
+	margin-top: 30px;
+	font-style: italic;
+  }
+  
