@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 
 
 
-import RutasComponents from './components/RutasComponents.jsx'
+import RutasComponents from './RutasComponents.jsx'
 
 
 createRoot(document.getElementById('root')).render(
