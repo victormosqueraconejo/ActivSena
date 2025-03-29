@@ -13,7 +13,6 @@ export default function HeaderHome () {
     
     return (
         <header className="site-header">
-            <h1>asdasd</h1>
             <div className="container">
                 <div className="header-wrapper">
                     <div className="logo">
