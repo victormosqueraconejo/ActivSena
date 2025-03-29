@@ -1,5 +1,4 @@
 import React from 'react'
-import "../src/index.css"
 import "./styles/AboutComponent.css"
 
 export default function AboutComponent() {
