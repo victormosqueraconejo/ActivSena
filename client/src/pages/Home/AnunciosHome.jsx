@@ -1,7 +1,6 @@
 import React from 'react'
-import "../src/index.css"
 import "./styles/AnunciosHome.css"
-import AnuncioCardComponent from '../components/AnuncioCardComponent.jsx'
+import AnuncioCardComponent from './HomeComponents/AnuncioCardComponent.jsx'
 
 let services = [{
   title: "Apoyo de Sostenimento",

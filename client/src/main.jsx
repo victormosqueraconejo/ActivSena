@@ -2,16 +2,15 @@ import React, {StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 
-import HeaderHome from "./pages/Home/HeaderHome"
 
-import "../src/pages/Home/styles/indexHome.css"
-import "../src/pages/Home/styles/HeaderHome.css"
 import Combinar from './pages/CombinarFA/Combinar'
+import RutasComponents from './RutasComponents.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HeaderHome />
     <Combinar />
+    
+      <RutasComponents ></RutasComponents>
   </StrictMode>,
 )
