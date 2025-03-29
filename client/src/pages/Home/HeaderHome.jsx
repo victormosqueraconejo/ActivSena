@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import "../src/index.css"
-import "./styles/HeaderHome.css"
+//import "../src/index.css"
+//import "./styles/HeaderHome.css"
 
 export default function HeaderHome () {
 
@@ -13,6 +13,7 @@ export default function HeaderHome () {
     
     return (
         <header className="site-header">
+            <h1>asdasd</h1>
             <div className="container">
                 <div className="header-wrapper">
                     <div className="logo">
