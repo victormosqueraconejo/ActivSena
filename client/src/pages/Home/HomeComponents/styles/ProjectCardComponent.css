@@ -1,0 +1,144 @@
+.project-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+  }
+  
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    opacity: 0;
+    transition: var(--transition);
+  }
+  
+  .project-card:hover .project-overlay {
+    opacity: 1;
+  }
+  
+.project-card:hover .project-image {
+    transform: scale(1.1);
+  }
+  
+  .project-category {
+    color: var(--primary-color);
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .project-title {
+    color: var(--white);
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .project-link {
+    color: var(--white);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
+  
+  .project-link i {
+    margin-left: 5px;
+    transition: var(--transition);
+  }
+  
+  .project-link:hover {
+    color: var(--primary-color);
+  }
+  
+  .project-link:hover i {
+    transform: translateX(5px);
+  }
+  
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 48px;
+  }
+  
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .experience-box {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 100%;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    z-index: 999;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-menu li {
+    margin: 15px 0;
+  }
+  
+  .nav-menu li a {
+    justify-content: center;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-controls {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+  }
+  
+  .section-title,
+  .section-header h2 {
+    font-size: 28px;
+  }
+}

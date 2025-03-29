@@ -1,0 +1,38 @@
+.chat-container {
+    position: relative;
+}
+
+.chat-btn { 
+    bottom: 125px;
+    right: 50px;
+    position: fixed;
+    z-index: 2;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--white);
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;    
+    filter: drop-shadow(5px 5px 10px #000);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.chat-btn .h5 {
+    color: var(--secondary-color);
+}
+
+.chat-icon {
+    width: 45px;
+    height: 45px;
+    color: var(--secondary-color);
+    filter: invert(58%) sepia(69%) saturate(3949%) hue-rotate(72deg) brightness(96%) contrast(99%);
+}
+
+@media (max-width : 576px) {
+    .chat-btn {
+    bottom: 50px;
+    right: 10px;
+    }
+}
