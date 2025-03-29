@@ -1,7 +1,6 @@
 import React from 'react'
-import "../src/index.css"
 import "./styles/ProjectsHome.css"
-import ProjectCardComponent from '../components/ProjectCardComponent'
+import ProjectCardComponent from './HomeComponents/ProjectCardComponent'
 
 let projects = [
     {   title: "Gestion Eficiente",
