@@ -1,3 +1,5 @@
+import React from "react";
+
 import { Routes, Route } from "react-router-dom";
 import MenuLateral from "./pages/DashBoard/DashBoardComponents/MenuLateral";
 import Navbar from "./pages/DashBoard/DashBoardComponents/Navbar";

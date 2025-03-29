@@ -1,14 +1,12 @@
-import React, {StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+export default App;
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
 
 
-import HeaderHome from "./pages/Home/HeaderHome"
-
-import "../src/pages/Home/styles/indexHome.css"
-import "../src/pages/Home/styles/HeaderHome.css"
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <HeaderHome />
-  </StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
