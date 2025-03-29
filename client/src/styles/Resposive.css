@@ -1,0 +1,139 @@
+@import "./global.css";
+  
+  
+  /* 💻 Pantallas estándar (1366px - 1920px) */
+  @media screen and (max-width: 1920px) {
+    .barra {
+      width: 240px;
+    }
+  
+    .contenido {
+      padding: 20px;
+    }
+  
+    .busqueda {
+      width: 280px;
+    }
+  
+    .activbot {
+      font-size: 26px;
+      padding: 18px;
+    }
+  }
+  
+  /* 📺 Laptops pequeñas (1024px - 1366px) */
+  @media screen and (max-width: 1366px) {
+    .barra {
+      width: 200px;
+    }
+  
+    .titulo {
+      font-size: 20px;
+    }
+  
+    .contenido {
+      padding: 15px;
+    }
+  
+    .busqueda {
+      width: 60%;
+    }
+  
+    .activbot {
+      font-size: 24px;
+      padding: 16px;
+    }
+  }
+  
+  /* 📱 Tablets horizontales (768px - 1024px) */
+  @media screen and (max-width: 1024px) {
+    .contenedor {
+      flex-direction: row;
+    }
+  
+    .barra {
+      width: 180px;
+    }
+  
+    .contenido {
+      padding: 15px;
+    }
+  
+    .busqueda {
+      width: 50%;
+    }
+  
+    .activbot {
+      font-size: 22px;
+      padding: 14px;
+    }
+  }
+  
+  /* 📱 Tablets verticales y móviles (hasta 768px) */
+  @media screen and (max-width: 768px) {
+    .contenedor {
+      flex-direction: column;
+    }
+  
+    .barra {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+  
+    .menu {
+      flex-direction: row;
+      gap: 8px;
+    }
+  
+    .contenido {
+      padding: 10px;
+      margin-bottom: 60px;
+    }
+  
+    .encabezado {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .busqueda {
+      width: 100%;
+    }
+  
+    .activbot {
+      bottom: 15px;
+      font-size: 20px;
+      padding: 12px;
+    }
+  }
+  
+  /* 📱 Teléfonos compactos (hasta 480px) */
+  @media screen and (max-width: 480px) {
+    .barra {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .menu {
+      flex-direction: column;
+    }
+  
+    .busqueda {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .activbot {
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+  
