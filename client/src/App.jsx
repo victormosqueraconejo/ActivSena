@@ -10,7 +10,6 @@ import "./styles/global.css";
 import "./styles/ColaViento.css";
 import "./styles/BotHp.css";
 import "./styles/Resposive.css";
-import "./styles/Secciones.css";
 
 function App() {
   return (

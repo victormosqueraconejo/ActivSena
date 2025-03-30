@@ -1,29 +1,41 @@
 .contenedor1 {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
   gap: 20px;
   padding: 20px;
+  max-width: 800px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  grid-template-areas:
+    "bienvenida informacion"
+    "tarjeta1 tarjeta2";
+  margin: auto;
+  position: absolute;
+  top: 58%;
+  left: 55%;
+  transform: translate(-50%, -50%);
 }
 
 .bienvenida {
-  grid-column: 1 / 2;
+  grid-area: bienvenida;
   text-align: center;
-  background-color: #e8e9e8;
+  background-color: #ebebeb;
   padding: 20px;
   border-radius: 10px;
 }
 
 .foto {
-  width: 88px;
+  width: 80px;
   height: 80px;
   border-radius: 50%;
   margin-top: 10px;
 }
 
 .informacion {
-  background-color: #e8e9e8;
+  grid-area: informacion;
+  background-color: #ebebeb;
   padding: 20px;
   border-radius: 10px;
 }
@@ -37,10 +49,18 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.tarjeta:nth-child(3) {
+  grid-area: tarjeta1;
+}
+
+.tarjeta:nth-child(4) {
+  grid-area: tarjeta2;
+}
+
 .imagen {
-  width: 300px;
-  height: 250px;
-  object-fit: fill;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -58,66 +78,81 @@
   background-color: #096dd9;
 }
 
-.tarjeta p {
-    word-wrap: break-word; /* Rompe las palabras largas */
-    overflow-wrap: break-word; /* Soporte extra para navegadores */
+/* ✅ Pantallas grandes (Full HD y 4K) */
+@media (min-width: 1440px) {
+  .contenedor1 {
+    max-width: 1000px;
+    gap: 30px;
   }
-  
 
-@media (min-width: 1024px) {
-    .contenedor1 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto auto;
-      gap: 20px;
-    }
-  
-    .bienvenida, .informacion {
-      grid-column: 1 / 2;
-    }
-  
-    .tarjeta {
-      grid-column: 2 / 3;
-    }
+  .imagen {
+    height: 200px;
   }
-  
-  @media (max-width: 1023px) {
-    .contenedor1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .tarjeta {
-      width: 90%;
-      max-width: 400px;
-    }
-  
-    .imagen {
-      width: 100%;
-      height: auto;
-    }
+
+  .boton {
+    font-size: 16px;
+    padding: 10px 20px;
   }
-  
-  @media (max-width: 768px) {
-    .contenedor1 {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .bienvenida, .informacion {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .tarjeta {
-      width: 100%;
-    }
-  
-    .imagen {
-      width: 100%;
-      height: auto;
-    }
+}
+
+@media (min-width: 1920px) {
+  .contenedor1 {
+    max-width: 1200px;
+    gap: 40px;
   }
-  
+
+  .imagen {
+    height: 200px;
+  }
+
+  .boton {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+
+/* ✅ Pantallas medianas (Tablets y laptops pequeñas) */
+@media (max-width: 1024px) {
+  .contenedor1 {
+    max-width: 90%;
+  }
+
+  .imagen {
+    height: 200px;
+  }
+}
+
+/* ✅ Tablets (768px o menos) */
+@media (max-width: 768px) {
+  .contenedor1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "bienvenida"
+      "informacion"
+      "tarjeta1"
+      "tarjeta2";
+    width: 90%;
+  }
+
+  .imagen {
+    height: 200px;
+  }
+}
+
+/* ✅ Móviles (480px o menos) */
+@media (max-width: 480px) {
+  .contenedor1 {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .imagen {
+    height: 180px;
+  }
+
+  .boton {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
