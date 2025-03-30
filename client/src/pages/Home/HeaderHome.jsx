@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "../../../public/styles-publics/indexHome.css"
 import "./styles/HeaderHome.css"
 
 export default function HeaderHome () {

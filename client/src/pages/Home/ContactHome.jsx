@@ -1,5 +1,6 @@
 import React from 'react'
 import "./styles/ContactHome.css"
+import "../../../public/styles-publics/indexHome.css"
 import FormComponent from "./HomeComponents/FormComponent"
 
 export default function ContactHome() {

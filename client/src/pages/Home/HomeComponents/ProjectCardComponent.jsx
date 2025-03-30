@@ -1,5 +1,5 @@
 import React from 'react' 
-//import "../styles/indexHome.css"
+import "../../../../public/styles-publics/indexHome.css"
 import "./styles/ProjectCardComponent.css"
 
 export default function ProjectCardComponent({title, description}) {

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "../../../public/styles-publics/indexHome.css"
 import "./styles/HeroHomeSection.css";
 
 export default function HeroHomeSection() {
