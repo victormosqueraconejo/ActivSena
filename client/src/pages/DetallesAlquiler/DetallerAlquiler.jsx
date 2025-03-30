@@ -7,8 +7,6 @@ import juegosMesaImg from './img/juegos_mesa.jpg';
 import voleibolImg from './img/voleibol.webp';
 import culturaImg from './img/cultura.jpg';
 
-
-
 const DetallesAlquiler = () => {
   const [registrosAlquiler, setRegistrosAlquiler] = useState([
     {
@@ -74,104 +72,96 @@ const DetallesAlquiler = () => {
 
   return (
     <>
-    
-   
-    <div className="detalles-alquiler-container">
- 
-     
-
-      
-   
-    <section className="imagenes-estilo">
-    <img src={futbolImg} alt="Imagen 1" className="imagen-representativa" />
-    <img src={danzaImg} alt="Imagen 2" className="imagen-representativa" />
-  <img src={juegosMesaImg} alt="Imagen 3" className="imagen-representativa" />
-  <img src={voleibolImg} alt="Imagen 4" className="imagen-representativa" />
-  <img src={culturaImg} alt="Imagen 5" className="imagen-representativa" />
-  <br />
-      </section>
-      <br />
-      <br />
-      <h2 className="titulo">Registros de Alquiler</h2>
-      
-
-
-      {/* Barra de búsqueda estilizada */}
-      <div className="search-bar">
+      <div className="contenedor-alquiler">
+        <section className="seccion-imagen">
+          <img src={futbolImg} alt="Imagen 1" className="imagen-representativa" />
+          <img src={danzaImg} alt="Imagen 2" className="imagen-representativa" />
+          <img src={juegosMesaImg} alt="Imagen 3" className="imagen-representativa" />
+          <img src={voleibolImg} alt="Imagen 4" className="imagen-representativa" />
+          <img src={culturaImg} alt="Imagen 5" className="imagen-representativa" />
+        </section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         
-        <div className="search-fields">
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Buscar por Nombre del Elemento"
-            value={searchNombre}
-            onChange={(e) => setSearchNombre(e.target.value)}
-          />
-          
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Buscar por Código de Alquiler"
-            value={searchId}
-            onChange={(e) => setSearchId(e.target.value)}
-          />
-          
-          <input
-            type="date"
-            className="search-input"
-            value={searchFechaEntrega}
-            onChange={(e) => setSearchFechaEntrega(e.target.value)}
-          />
-          <input
-            type="date"
-            className="search-input"
-            value={searchFechaDevolucion}
-            onChange={(e) => setSearchFechaDevolucion(e.target.value)}
-          />
+        <h2 className="titulo-alquiler">Registros de Alquiler</h2>
+
+        {/* Barra de búsqueda estilizada */}
+        <div className="barra-busqueda">
+          <div className="campos-busqueda">
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Buscar por Nombre del Elemento"
+              value={searchNombre}
+              onChange={(e) => setSearchNombre(e.target.value)}
+            />
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Buscar por Código de Alquiler"
+              value={searchId}
+              onChange={(e) => setSearchId(e.target.value)}
+            />
+            <input
+              type="date"
+              className="search-input"
+              value={searchFechaEntrega}
+              onChange={(e) => setSearchFechaEntrega(e.target.value)}
+            />
+            <input
+              type="date"
+              className="search-input"
+              value={searchFechaDevolucion}
+              onChange={(e) => setSearchFechaDevolucion(e.target.value)}
+            />
+          </div>
+          <button className="search-button">Buscar</button>
         </div>
-        
-        <button className="search-button">Buscar</button>
-      </div>
 
-      {/* Tabla estilizada */}
-      <table className="tabla-alquiler">
-        <thead>
-          <tr>
-            <th>Elemento</th>
-            <th>Aprendiz</th>
-            <th>Código de Alquiler</th>
-            <th>Estado</th>
-            <th>Fecha de Entrega</th>
-            <th>Fecha de Devolución</th>
-            <th>Observaciones</th>
-            <th>¿Cumplió con la entrega?</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredRegistros.length > 0 ? (
-            filteredRegistros.map((registro) => (
-              <tr key={registro.id}>
-                <td>{registro.nombre}</td>
-                <td>{registro.nombreAprendiz}</td>
-                <td>{registro.codigo}</td>
-                <td>{registro.estado}</td>
-                <td>{registro.fechaEntrega}</td>
-                <td>{registro.fechaDevolucion}</td>
-                <td>{registro.observaciones}</td>
-                <td className={`cumplio-con-entrega ${registro.cumplioConEntrega ? 'true' : 'false'}`}>
-                  {registro.cumplioConEntrega ? 'Sí' : 'No'}
-                </td>
-              </tr>
-            ))
-          ) : (
+        {/* Tabla estilizada */}
+        <table className="tabla-alquiler">
+          <thead>
             <tr>
-              <td colSpan="8" className="no-registros">No se encontraron registros que coincidan con la búsqueda.</td>
+              <th>Elemento</th>
+              <th>Aprendiz</th>
+              <th>Código de Alquiler</th>
+              <th>Estado</th>
+              <th>Fecha de Entrega</th>
+              <th>Fecha de Devolución</th>
+              <th>Observaciones</th>
+              <th>¿Cumplió con la entrega?</th>
             </tr>
-          )}
-        </tbody>
-      </table>
-   
-    </div>
+          </thead>
+          <tbody>
+            {filteredRegistros.length > 0 ? (
+              filteredRegistros.map((registro) => (
+                <tr key={registro.id}>
+                  <td>{registro.nombre}</td>
+                  <td>{registro.nombreAprendiz}</td>
+                  <td>{registro.codigo}</td>
+                  <td>{registro.estado}</td>
+                  <td>{registro.fechaEntrega}</td>
+                  <td>{registro.fechaDevolucion}</td>
+                  <td>{registro.observaciones}</td>
+                  <td className={`estado-cumplimiento ${registro.cumplioConEntrega ? 'true' : 'false'}`}>
+                    {registro.cumplioConEntrega ? 'Sí' : 'No'}
+                  </td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="8" className="mensaje-sin-registros">No se encontraron registros que coincidan con la búsqueda.</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
     </>
   );
 };

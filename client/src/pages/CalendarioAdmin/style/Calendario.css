@@ -1,0 +1,573 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --success-color: #2ecc71;
+    --warning-color: #f39c12;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: var(--dark-color);
+  }
+  
+  .admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .app-title {
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin: 0;
+  }
+  
+  .sena-text {
+    color: var(--secondary-color);
+  }
+  
+  /* Botón de notificaciones */
+  .notifications-btn {
+    position: relative;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+  }
+  
+  .notifications-btn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .notifications-btn.active {
+    background: var(--accent-color);
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  /* Panel de notificaciones */
+  .notifications-panel {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    width: 350px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    overflow: hidden;
+    transform-origin: top right;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .notifications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--primary-color);
+    color: white;
+  }
+  
+  .notifications-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .close-notifications {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .notifications-list {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .notification-item {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .notification-item:hover {
+    background: #f8f9fa;
+  }
+  
+  .notification-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+  }
+  
+  .notification-content {
+    flex: 1;
+  }
+  
+  .notification-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+  }
+  
+  .notification-content p {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  /* Sección de solicitudes */
+  .requests-section {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  .request-card {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  
+  .request-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .event-image-container {
+    position: relative;
+    width: 40%;
+    min-height: 300px;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  }
+  
+  .request-details {
+    width: 60%;
+    padding: 20px;
+  }
+  
+  .event-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .detail-item strong {
+    margin-right: 5px;
+    color: var(--primary-color);
+  }
+  
+  .description-item {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+  }
+  
+  /* Sección de calendario */
+  .calendar-section {
+    margin-bottom: 40px;
+  }
+  
+  .calendar-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+  }
+  
+  .calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .current-month {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+  }
+  
+  .month-btn {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .month-btn:hover {
+    background: #2980b9;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .week-day {
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary-color);
+    padding: 10px 0;
+  }
+  
+  .dia {
+    position: relative;
+    height: 80px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    transition: var(--transition);
+  }
+  
+  .dia:hover {
+    background: #e8f4fc;
+  }
+  
+  .dia-numero {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .dia.evento {
+    background: #e8f4fc;
+    border-left: 3px solid var(--secondary-color);
+  }
+  
+  .nombre-evento {
+    font-size: 0.7rem;
+    color: var(--secondary-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .dia-vacio {
+    background: transparent;
+  }
+  
+  .publish-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: var(--success-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .publish-btn:hover {
+    background: #27ae60;
+  }
+  
+  /* Modales */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .modal-container {
+    background: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    padding: 25px;
+    position: relative;
+  }
+  
+  .event-modal-container {
+    background: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 700px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #7f8c8d;
+    transition: var(--transition);
+  }
+  
+  .modal-close:hover {
+    color: var(--accent-color);
+  }
+  
+  .modal-title {
+    margin-top: 0;
+    color: var(--primary-color);
+  }
+  
+  .modal-message {
+    margin-bottom: 20px;
+  }
+  
+  .rejection-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 20px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .modal-confirm-btn {
+    padding: 10px 20px;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .modal-confirm-btn:hover {
+    background: #2980b9;
+  }
+  
+  /* Modal de evento */
+  .event-modal-header {
+    padding: 20px;
+    background: var(--primary-color);
+    color: white;
+  }
+  
+  .event-modal-title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .event-modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .event-modal-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .event-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .event-detail {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .detail-value {
+    color: #333;
+  }
+  
+  .event-description {
+    grid-column: 1 / -1;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+  }
+  
+  .event-modal-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+  }
+  
+  .approve-btn, .reject-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+  }
+  
+  .approve-btn {
+    background: var(--success-color);
+    color: white;
+  }
+  
+  .approve-btn:hover {
+    background: #27ae60;
+  }
+  
+  .reject-btn {
+    background: var(--accent-color);
+    color: white;
+  }
+  
+  .reject-btn:hover {
+    background: #c0392b;
+  }
+  
+  .approve-icon, .reject-icon {
+    margin-right: 8px;
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .request-card {
+      flex-direction: column;
+    }
+    
+    .event-image-container, .request-details {
+      width: 100%;
+    }
+    
+    .event-image-container {
+      min-height: 200px;
+    }
+    
+    .event-details {
+      grid-template-columns: 1fr;
+    }
+    
+    .notifications-panel {
+      width: 90%;
+      right: 5%;
+    }
+  }

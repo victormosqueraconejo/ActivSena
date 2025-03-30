@@ -10,16 +10,19 @@ import DetallesAlquiler from './pages/DetallesAlquiler/DetallerAlquiler.jsx'
 import Actividades from './pages/Actividades/Actividades.jsx'
 import HorasLudicas from './pages/HorasLudicas/HorasLudicas.jsx'
 import Ludicas from './pages/Ludicas/Ludicas.jsx'
+
+import Calendario from './pages/CalendarioAdmin/Calendario.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-<<<<<<< HEAD
-<Ludicas / >
+
+
+ 
+   <Calendario />
   
-=======
-    <RutasComponents />
     
   {/* <Combinar />
-   Importar App*/}
->>>>>>> f0a71d9f6ab5faf9088ccb549d41bcb70173cf8d
+   Importar 
+   <Ludicas / >App*/}
+
   </StrictMode>,
 )
