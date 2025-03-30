@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/indexHome.css"
+//import "../styles/indexHome.css"
 import "./styles/AnuncioCardComponent.css"
 
 export default function AnuncioCardComponent({title, description}) {

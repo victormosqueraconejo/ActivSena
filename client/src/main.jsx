@@ -10,8 +10,8 @@ import RutasComponents from './RutasComponents.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RutasComponents />
-    <Combinar />
-  // Importar App
-    <RutasComponents ></RutasComponents>
+    
+  {/* <Combinar />
+   Importar App*/}
   </StrictMode>,
 )

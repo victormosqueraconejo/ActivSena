@@ -3,7 +3,7 @@ import avatar from "./img/avtar.png";
 import caminata from "./img/caminata.jpg";
 import fulbol from "./img/fulbol.webp";
 
-export default function UserDashboard() {
+export default function HomeDash() {
   return (
     <main className="contenedor1">
       <header className="bienvenida">
