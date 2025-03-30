@@ -60,7 +60,7 @@ export default function ComentarFeedback() {
         <input 
           type="text" 
           placeholder="Escribe tu Comentario..." 
-          className="inpot-texto"
+          className="input-text"
           value={nuevoComentario}
           onChange={(e) => setNuevoComentario(e.target.value)}
         />
