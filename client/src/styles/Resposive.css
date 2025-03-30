@@ -28,10 +28,10 @@
 
 /* 📺 Laptops pequeñas (1024px - 1366px) */
 @media screen and (max-width: 1366px) {
+
   .encabezado {
     background-color: red ;
   }
-
   .barra {
     width: 200px;
   }
@@ -75,7 +75,7 @@
     font-size: 18px;
     padding: 10px;
   }
-
+  
   .encabezado {
     background-color: black ;
     width: 300%;
@@ -123,7 +123,6 @@
   }
 }
 
-/* 📱 Ajustes adicionales para móviles */
 @media (max-width: 768px) {
   .barra {
     width: 200px;

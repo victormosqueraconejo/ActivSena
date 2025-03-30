@@ -13,7 +13,6 @@ import { Activa } from "../code/Activa";
 import React from "react";
 import logo from "../img/logo.png";
 
-
 export default function MenuLateral({ menuAbierto, toggleMenu }) {
   return (
     <aside className={`barra ${menuAbierto ? "mostrar" : "ocultar"}`}>
