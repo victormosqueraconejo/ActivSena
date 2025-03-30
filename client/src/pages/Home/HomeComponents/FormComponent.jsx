@@ -1,5 +1,5 @@
 import React from 'react'
-import "../src/index.css"
+import "../styles/indexHome.css"
 import "./styles/FormComponent.css"
 
 

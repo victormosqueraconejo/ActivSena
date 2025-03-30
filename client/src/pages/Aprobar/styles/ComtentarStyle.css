@@ -1,0 +1,98 @@
+.table, .table-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .border {
+    border:1px solid black;
+    background-color: #ccc;
+    padding: 10px;
+    
+  }
+  
+  
+  thead {
+    background-color: #33a2ff;
+    color: white;
+  }
+  
+  .user-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px; 
+  }
+  
+  .profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 15px;
+  }
+  
+  .input-text {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 35%;
+    font-size: 1rem;
+    margin-bottom: 11px;
+  }
+  
+  .button-submit {
+    background-color: #33a2ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 11px;
+    transition: background-color 0.3s;
+  }
+  
+  .button-submit:hover {
+    background-color: rgb(32, 110, 32);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .table, .container-table {
+      max-width: 90%;
+    }
+    .profile-img {
+      width: 40px;
+      height: 40px;
+    }
+    .input-text {
+      width: 50%;
+    }
+    .border {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .table, .container-table {
+      max-width: 95%;
+    }
+    .profile-img {
+      width: 30px;
+      height: 30px;
+    }
+    .input-text {
+      width: 70%;
+    }
+    .border {
+      font-size: 12px;
+    }
+  }
+  

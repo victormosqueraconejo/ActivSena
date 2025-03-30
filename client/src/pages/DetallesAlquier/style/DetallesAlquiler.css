@@ -1,0 +1,203 @@
+/* Estilo General */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.detalles-alquiler-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+  text-align: center;
+  color: #333;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Barra de Búsqueda */
+.barra-busqueda {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.campos-busqueda {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.campos-busqueda input {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 220px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.campos-busqueda input:focus {
+  border-color: #1E90FF;
+  outline: none;
+}
+
+.boton-buscar {
+  padding: 12px 30px;
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boton-buscar:hover {
+  background-color: #4682B4;
+}
+
+/* Tabla */
+.tabla-alquiler {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-alquiler th,
+.tabla-alquiler td {
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+
+.tabla-alquiler th {
+  background-color: #1E90FF;
+  color: white;
+  font-weight: 600;
+}
+
+.tabla-alquiler tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tabla-alquiler tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.tabla-alquiler td {
+  text-align: center;
+}
+
+/* Estado de Cumplimiento */
+.cumplio-con-entrega.true {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.cumplio-con-entrega.false {
+  color: #f44336;
+  font-weight: 600;
+}
+
+/* Mensaje cuando no hay registros */
+.no-registros {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Botón de acción */
+.boton-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.boton-alquiler {
+  padding: 12px 30px;
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boton-alquiler:hover {
+  background-color: #4682B4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .campos-busqueda {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .campos-busqueda input {
+      width: 100%;
+  }
+
+  .boton-buscar {
+      width: 100%;
+  }
+
+  .tabla-alquiler th,
+  .tabla-alquiler td {
+      font-size: 14px;
+      padding: 12px;
+  }
+}
+
+.imagen-representativa {
+  width: 500px;
+  height: 300px;
+}
+
+.imagenes-representativas {
+  display: flex;
+  width: 1000px;
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.imagenes-representativas img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+.imagenes-representativas img:hover {
+  cursor: crosshair;
+  width: 200px;
+  opacity: 1;
+  filter: contrast(120%);
+}

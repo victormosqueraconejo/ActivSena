@@ -1,12 +1,17 @@
-export default App;
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+
+import React, {StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-);
+
+import Combinar from './pages/CombinarFA/Combinar'
+import RutasComponents from './RutasComponents.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <RutasComponents />
+    <Combinar />
+  // Importar App
+    <RutasComponents ></RutasComponents>
+  </StrictMode>,
+)
