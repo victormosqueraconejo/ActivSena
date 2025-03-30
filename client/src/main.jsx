@@ -8,10 +8,10 @@ import Combinar from './pages/CombinarFA/Combinar'
 import RutasComponents from './RutasComponents.jsx'
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RutasComponents />
-    
     
   {/* <Combinar />
    Importar App*/}
