@@ -13,7 +13,7 @@
     "tarjeta1 tarjeta2";
   margin: auto;
   position: absolute;
-  top: 58%;
+  top: 56%;
   left: 55%;
   transform: translate(-50%, -50%);
 }
@@ -78,7 +78,6 @@
   background-color: #096dd9;
 }
 
-/* ✅ Pantallas grandes (Full HD y 4K) */
 @media (min-width: 1440px) {
   .contenedor1 {
     max-width: 1000px;
@@ -95,10 +94,13 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1025px) {
   .contenedor1 {
-    max-width: 1200px;
-    gap: 40px;
+    max-width: 800px;
+    gap: 30px;
+    margin: 20px auto;
+    top: 59%;
+    left: 55%;
   }
 
   .imagen {
@@ -106,23 +108,40 @@
   }
 
   .boton {
-    font-size: 18px;
-    padding: 12px 24px;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .tarjeta {
+    width: 100%;
+    max-width: 300px;
   }
 }
 
-/* ✅ Pantallas medianas (Tablets y laptops pequeñas) */
 @media (max-width: 1024px) {
   .contenedor1 {
-    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    position: static;
+    transform: none;
+    margin: 20px auto;
+  }
+
+  .tarjeta {
+    width: 100%;
+    max-width: 400px;
   }
 
   .imagen {
-    height: 200px;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
   }
 }
 
-/* ✅ Tablets (768px o menos) */
 @media (max-width: 768px) {
   .contenedor1 {
     grid-template-columns: 1fr;
@@ -140,7 +159,6 @@
   }
 }
 
-/* ✅ Móviles (480px o menos) */
 @media (max-width: 480px) {
   .contenedor1 {
     padding: 15px;

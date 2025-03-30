@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import MenuLateral from "./pages/DashBoard/DashBoardComponents/MenuLateral";
 import Navbar from "./pages/DashBoard/DashBoardComponents/Navbar";
@@ -12,13 +11,19 @@ import "./styles/BotHp.css";
 import "./styles/Resposive.css";
 
 function App() {
+  const [menuAbierto, setMenuAbierto] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuAbierto(!menuAbierto);
+  };
+
   return (
     <section className="contenedor">
-      <MenuLateral />
+      <MenuLateral menuAbierto={menuAbierto} toggleMenu={toggleMenu} />
       <main className="contenido">
-        <Navbar />
+        <Navbar toggleMenu={toggleMenu} />
         <Routes>
-          <Route path="/" element={<HomeDash />}></Route>
+          <Route path="/" element={<HomeDash />} />
         </Routes>
       </main>
       <ActivBot />
