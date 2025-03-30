@@ -19,7 +19,7 @@ export default function ComentarFeedback() {
     if (nuevoComentario.trim() !== "") {
       setUsuarios(prevUsuarios => [
         ...prevUsuarios,
-        { name: "Name user", dbz2,  comentarios: nuevoComentario }
+        { name: "Name user", dbz2,  comentarios: nuevoComentario, reseñas:"☆☆☆☆☆" }
       ]);
       setNuevoComentario("");
     }
@@ -60,7 +60,7 @@ export default function ComentarFeedback() {
         <input 
           type="text" 
           placeholder="Escribe tu Comentario..." 
-          className="input-text"
+          className="inpot-texto"
           value={nuevoComentario}
           onChange={(e) => setNuevoComentario(e.target.value)}
         />
