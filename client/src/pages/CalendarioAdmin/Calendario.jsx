@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './style/calendario.css';
+import './style/Calendario.css';
 import fondo3 from './img/fondo3.jpg';
 import fondo4 from './img/fondo4.jpg';
 import perfil from './img/perfil.png';

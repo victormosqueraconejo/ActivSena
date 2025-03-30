@@ -12,12 +12,13 @@ import HorasLudicas from './pages/HorasLudicas/HorasLudicas.jsx'
 import Ludicas from './pages/Ludicas/Ludicas.jsx'
 
 import Calendario from './pages/CalendarioAdmin/Calendario.jsx'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
 
  
-   <Calendario />
+  <RutasComponents ></RutasComponents>
   
     
   {/* <Combinar />
