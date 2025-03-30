@@ -18,13 +18,20 @@
     font-size: 26px;
     padding: 18px;
   }
-  .encabezado{
-    width: 80vw;
+
+  .encabezado {
+    width: 100%;
+    height: 60px;
+    background-color: rebeccapurple ;
   }
 }
 
 /* 📺 Laptops pequeñas (1024px - 1366px) */
 @media screen and (max-width: 1366px) {
+
+  .encabezado {
+    background-color: red ;
+  }
   .barra {
     width: 200px;
   }
@@ -68,9 +75,13 @@
     font-size: 18px;
     padding: 10px;
   }
+  
+  .encabezado {
+    background-color: black ;
+    width: 300%;
+  }
 }
 
-/* 📍 Menú lateral */
 .barra {
   width: 250px;
   background: #dbdada;
@@ -78,10 +89,13 @@
   transition: transform 0.3s ease-in-out;
 }
 
+/* 📏 Ajustes para tablets y pantallas medianas */
 @media (max-width: 1024px) {
   .encabezado {
-    width: 100vw;
+    background-color: black;
+    width: 93vw !important; 
   }
+
   .barra {
     position: fixed;
     left: -250px;
