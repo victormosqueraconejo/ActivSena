@@ -6,19 +6,26 @@ import {
   FaUserLock,
   FaQrcode,
   FaHome,
+  FaTimes,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { Activa } from "../code/Activa";
 import React from "react";
 import logo from "../img/logo.png";
 
-export default function MenuLateral() {
+
+export default function MenuLateral({ menuAbierto, toggleMenu }) {
   return (
-    <aside className="barra">
+    <aside className={`barra ${menuAbierto ? "mostrar" : "ocultar"}`}>
       <section className="Clogo">
         <img src={logo} alt="Logo" className="logo" />
         <h2 className="titulo">Dashboard</h2>
+
+        <button className="icono subir" onClick={toggleMenu}>
+          <FaTimes />
+        </button>
       </section>
+
       <nav className="menu">
         <NavLink to="/" className={({ isActive }) => Activa(isActive)}>
           <FaHome className="icono" />
@@ -51,13 +58,13 @@ export default function MenuLateral() {
           className={({ isActive }) => Activa(isActive)}
         >
           <FaBookOpen className="icono" />
-          Planificacion
+          Planificación
         </NavLink>
         <NavLink to="/Gestion" className={({ isActive }) => Activa(isActive)}>
           <FaUserLock className="icono" />
-          Gestion Permisos
+          Gestión Permisos
         </NavLink>
-        <img src= {logo} alt="" />
+        <img src={logo} alt="" />
       </nav>
     </aside>
   );

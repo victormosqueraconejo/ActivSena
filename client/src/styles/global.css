@@ -48,6 +48,7 @@ body {
   color: black;
   border-radius: 5px;
   transition: background 0.3s, color 0.3s;
+  border: none;
 }
 
 .opcion:hover,
@@ -67,7 +68,7 @@ body {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  width: 81vw;
+  width: 80vw;
   padding: 10px 20px;
   background-color: #dbdada;
   position: relative;
@@ -212,4 +213,9 @@ body {
 .img1 {
   width: 500px;
   height: 500px;
+}
+
+.subir{
+  position: relative;
+  top: -3mm;
 }
