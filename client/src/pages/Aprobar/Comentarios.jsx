@@ -42,9 +42,9 @@ export default function ComentarFeedback() {
                 <tr key={index}>
                   <td className='border user-cell'>
                   {usuario.imagen ? (
-                      <img src={usuario.imagen} alt={usuario.name} className="profile-img" />
+                      <img src={usuario.imagen} alt={usuario.name} className="perfil-img" />
                     ) : (
-                      <img src="default-image.jpg" alt="perfil" className="profile-img" />
+                      <img src="default-image.jpg" alt="perfil de imagen" className="perfil-img" />
                     )}
                   <span>{usuario.name}</span>
                   </td>
@@ -60,7 +60,7 @@ export default function ComentarFeedback() {
         <input 
           type="text" 
           placeholder="Escribe tu Comentario..." 
-          className="input-text"
+          className="input-texto"
           value={nuevoComentario}
           onChange={(e) => setNuevoComentario(e.target.value)}
         />
