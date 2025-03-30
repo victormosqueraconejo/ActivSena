@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./styles/Alquiler.css";
-
 // Importa las imágenes necesarias
 import voleibolImg from './img/voleibol.webp';
 import juegosMesaImg from './img/juegos_mesa.jpg';
