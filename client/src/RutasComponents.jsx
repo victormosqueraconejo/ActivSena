@@ -9,6 +9,7 @@ import RegistroLudicas from './pages/RegistroLudicas/Registroludicas'
 import Constancia from './pages/ConstanciaCertificado/Constancia'
 import InicioSesion from '../public/InicioSesion'
 import Registro from "../public/Registro"
+import Combinar from './pages/CombinarFA/Combinar'
 
 export default function RutasComponents() {
   return (
@@ -23,6 +24,7 @@ export default function RutasComponents() {
             <Route path='/constanciaCertificado' element={<Constancia/>}/>
             <Route path='/iniciosesion' element={<InicioSesion />} />
             <Route path="/registro" element={<Registro />} />
+            <Route path='/combinar' element={<Combinar />}></Route>
         </Routes>
     </BrowserRouter>
     </>
