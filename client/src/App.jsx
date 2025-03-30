@@ -1,3 +1,5 @@
+import React from "react";
+
 import { Routes, Route } from "react-router-dom";
 import MenuLateral from "./pages/DashBoard/DashBoardComponents/MenuLateral";
 import Navbar from "./pages/DashBoard/DashBoardComponents/Navbar";
@@ -8,7 +10,6 @@ import "./styles/global.css";
 import "./styles/ColaViento.css";
 import "./styles/BotHp.css";
 import "./styles/Resposive.css";
-import "./styles/Secciones.css";
 
 function App() {
   return (
