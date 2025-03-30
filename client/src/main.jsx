@@ -1,3 +1,4 @@
+
 import React, {StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
@@ -10,6 +11,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RutasComponents />
     <Combinar />
+  // Importar App
     <RutasComponents ></RutasComponents>
   </StrictMode>,
 )

@@ -1,10 +1,12 @@
 import { FaBell, FaBars  } from "react-icons/fa";
+import React from "react";
+
 import avatar from "../img/avtar.png";
 
 export default function Navbar() {
   return (
     <header className="encabezado">
-      <h1 className="titulo">Panel de Control</h1>
+      <h1 className="titulo"></h1>
 
       <nav className="acciones">
         <button className="icono">

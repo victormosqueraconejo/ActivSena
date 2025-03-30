@@ -1,81 +1,52 @@
+import React from "react";
 import avatar from "./img/avtar.png";
 import caminata from "./img/caminata.jpg";
 import fulbol from "./img/fulbol.webp";
 
-const UserDashboard = () => {
+export default function UserDashboard() {
   return (
-    <div className=" mover flex items-start justify-center min-h-screen bg-gray-100 pt-10">
-      <div className="grid grid-cols-2 gap-6 p-8 bg-white shadow-xl rounded-lg max-w-4xl w-full">
-        <div className="border p-6 rounded-lg shadow-md bg-blue-50">
-          <h2 className="font-bold text-xl text-gray-800">Bienvenido, John</h2>
-          <div className="mt-4 flex justify-center">
-            <div className="border border-gray-400 w-24 h-24 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 text-sm font-semibold">
-              <img src={avatar} alt="" className="avatar2" />
-            </div>
-          </div>
-        </div>
+    <main className="contenedor1">
+      <header className="bienvenida">
+        <h1>Bienvenido, Jhon Pecados</h1>
+        <br />
+        <img src={avatar} alt="Foto de usuario" className="foto" />
+      </header>
 
-        <div className=" border p-6 rounded-lg shadow-md bg-blue-50">
-          <h2 className="font-bold text-xl text-gray-800 center">
-            Información del Usuario
-          </h2>
-          <p className="mt-3">
-            <strong className="text-gray-700 padd">Nombre:</strong> John Pecados
-          </p>
-          <p>
-            <strong className="text-gray-700 padd">ID:</strong> 6969
-          </p>
-          <p>
-            <strong className="text-gray-700 padd">Rol:</strong> Administrador
-          </p>
-        </div>
+      <section className="informacion">
+        <h2>Información del Usuario</h2>
+        <br />
+        <p>
+          <strong>Nombre:</strong> Juan Pérez
+        </p>
+        <br />
+        <p>
+          <strong>ID:</strong> 12345
+        </p>
+        <br />
+        <p>
+          <strong>Rol:</strong> Administrador
+        </p>
+      </section>
 
-        <div className="rounded-lg overflow-hidden shadow-lg border bg-white">
-          <img
-            className="w-full h-40 object-cover img1"
-            src={caminata}
-            alt="Imagen"
-          />
-          <div className="px-6 py-4">
-            <h3 className="font-bold text-xl mb-2 text-gray-800 padd">
-              Caminata Al Cerro De Las Tres Cruces
-            </h3>
-            <p className="text-gray-700 padd">
-              Te invitamos a la caminata al cerro de las tres cruces <br />
-              Donde podras disfrutar de la naturaleza y la tranquilidad
-            </p>
-          </div>
-          <div className="px-6 pt-4 pb-2 padd">
-            <span className="tag">#Naturaleza</span>
-            <span className="tag">#Atletismo</span>
-            <span className="tag">#Marihuaneros</span>
-          </div>
-        </div>
+      <article className="tarjeta">
+        <img src={caminata} alt="Imagen actividad 1" className="imagen" />
+        <br />
+        <h3>Caminata al Cerro</h3>
+        <br />
+        <p>Únete a la caminata y disfruta de la naturaleza.</p>
+        <br />
+        <button className="boton">Participar</button>
+      </article>
 
-        <div className="rounded-lg overflow-hidden shadow-lg border bg-white">
-          <img
-            className="w-full h-40 object-cover img1"
-            src={fulbol}
-            alt="Imagen"
-          />
-          <div className="px-6 py-4 ">
-            <h3 className="font-bold text-xl mb-2 text-gray-800 padd">
-              Gran Torneo InterFichas
-            </h3>
-            <p className="text-gray-700 padd">
-              Te invitamos al gran torneo de futbol Interfichas <br /> Solo
-              tienes que reclutar a los mejores Jugadores ¡Suerte!
-            </p>
-          </div>
-          <div className="px-6 pt-4 pb-2 padd">
-            <span className="tag">#Futbol</span>
-            <span className="tag">#Deporte</span>
-            <span className="tag">#Ludicas</span>
-          </div>
-        </div>
-      </div>
-    </div>
+      <article className="tarjeta">
+        <img src={fulbol} alt="Imagen actividad 2" className="imagen" />
+        <br />
+        <h3>Torneo de Fútbol</h3>
+        <br />
+        <p>Forma tu equipo y compite en el gran torneo.</p>
+        <br />
+        <button className="boton">Inscribirse</button>
+      </article>
+    </main>
   );
-};
-
-export default UserDashboard;
+}

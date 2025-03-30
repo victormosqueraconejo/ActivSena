@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    // "dev": "vite --port 3000",
-    "dev": "vite --port 4000",
+    "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -14,6 +13,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "tailwindcss": "^4.0.15",
     "vite": "^6.2.3"
   },
   "dependencies": {

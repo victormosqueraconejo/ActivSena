@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { Activa } from "../code/Activa";
-//importar imagenes
+import React from "react";
 import logo from "../img/logo.png";
 
 export default function MenuLateral() {
@@ -57,6 +57,7 @@ export default function MenuLateral() {
           <FaUserLock className="icono" />
           Gestion Permisos
         </NavLink>
+        <img src= {logo} alt="" />
       </nav>
     </aside>
   );
