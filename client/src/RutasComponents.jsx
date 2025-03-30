@@ -19,6 +19,9 @@ export default function RutasComponents() {
             <Route path='/detalleralquiler' element={<DetallerAlquiler/>}/>
             <Route path='/registroludicas' element={<RegistroLudicas/>}/>
             <Route path='/constanciaCertificado' element={<Constancia/>}/>
+            <Route path='/iniciosesion' element={<InicioSesion />} />
+            <Route path="/registro" element={<Registro />} />
+            <Route path='/dash' element={<DashBoard/>} />
         </Routes>
     </BrowserRouter>
     </>

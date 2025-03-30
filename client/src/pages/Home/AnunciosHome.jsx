@@ -1,5 +1,6 @@
 import React from 'react'
 import "./styles/AnunciosHome.css"
+import "../../../public/styles-publics/indexHome.css"
 import AnuncioCardComponent from './HomeComponents/AnuncioCardComponent.jsx'
 
 let services = [{

@@ -1,4 +1,5 @@
 import React from 'react'
+import "../../../public/styles-publics/indexHome.css"
 import "./styles/ChatComponent.css"
 
 
