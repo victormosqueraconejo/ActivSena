@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import "../../../public/styles-publics/indexHome.css"
 import "./styles/HeroHomeSection.css";
+
+import img from "./img/img.jpg"
+import img2 from "./img/img2.jpg"
+import img3 from "./img/img3.jpg"
 
 export default function HeroHomeSection() {
   const images = [
-    "url(../../assets/img.jpg)",
-    "url(../../assets/img2.jpg)",
-    "url(../../assets/img3.jpg)"
+    img, 
+    img2,
+    img3
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,42 +37,42 @@ export default function HeroHomeSection() {
   return (
     <section 
       id="home" 
-      className="hero-section" 
+      className="hero-section-home" 
       style={{
         backgroundImage: images[currentIndex],
       }}
     >
-      <div className="container">
-        <div className="hero-content">
-          <div className="hero-subtitle">
+      <div className="container-home">
+        <div className="hero-content-home">
+          <div className="hero-subtitle-home">
             PRESENTANDO ACTIV SENA <span>03/03</span>
           </div>
-          <h1 className="hero-title">
-            Gestiona <span className="highlight">Registra</span> en la plataforma mas innovadora
+          <h1 className="hero-title-home h1-home">
+            Gestiona <span className="highlight-home">Registra</span> en la plataforma mas innovadora
           </h1>
-          <div className="hero-actions">
-            <a href="#" className="btn btn-primary">Registrarse</a>
-            <a href="#" className="btn btn-primary">Iniciar Sesión</a>
-            <a href="#" className="play-btn">
-              <i className="icon-play"></i>
+          <div className="hero-actions-home">
+            <a href="#" className="btn-home btn-primary-home a-home">Registrarse</a>
+            <a href="#" className="btn-home btn-primary-home a-home">Iniciar Sesión</a>
+            <a href="#" className="play-btn-home a-home">
+              <i className="icon-play-home"></i>
             </a>
           </div>
         </div>
       </div>
-      <div className="hero-controls">
+      <div className="hero-controls-home">
         <button 
-          className="hero-control prev" 
-          id="btn-prev"
+          className="hero-control-home prev-home" 
+          id="btn-prev-home"
           onClick={() => moveSlide(-1)}
         >
-          <i className="icon-arrow-left"></i>
+          <i className="icon-arrow-left-home"></i>
         </button>
         <button 
-          className="hero-control next" 
-          id="btn-next"
+          className="hero-control-home next-home" 
+          id="btn-next-home"
           onClick={() => moveSlide(1)}
         >
-          <i className="icon-arrow-right"></i>
+          <i className="icon-arrow-right-home i-home"></i>
         </button>
       </div>
     </section>

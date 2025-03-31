@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import "../../../public/styles-publics/indexHome.css"
 import "./styles/HeaderHome.css"
 
 export default function HeaderHome () {
@@ -10,30 +9,29 @@ export default function HeaderHome () {
         setMenuDesplegado(!menuDesplegado)
     }
 
-    
     return (
-        <header className="site-header">
-            <div className="container">
-                <div className="header-wrapper">
-                    <div className="logo">
-                        <a href="index.html">
-                            <span className="logo-waso">Activ</span>
-                            <span className="logo-strategy">Sena</span>
+        <header className="site-header-home">
+            <div className="container-home">
+                <div className="header-wrapper-home">
+                    <div className="logo-home">
+                        <a href="index.html" className="a-home">
+                            <span className="logo-waso-home">Activ</span>
+                            <span className="logo-strategy-home">Sena</span>
                         </a>
                     </div>
                     
-                    <nav className="main-nav">
-                        <button className={`menu-toggle ${menuDesplegado ? "active": ""} ` } id="menuToggle" onClick={cambiarEstadoMenu} aria-expanded={!menuDesplegado ? "true" : "false"}>
-                            <span className="bar"></span>
-                            <span className="bar"></span>
-                            <span className="bar"></span>
+                    <nav className="main-nav-home">
+                        <button className={`menu-toggle-home ${menuDesplegado ? "active": ""} ` } id="menuToggle" onClick={cambiarEstadoMenu} aria-expanded={!menuDesplegado ? "true" : "false"}>
+                            <span className="bar-home"></span>
+                            <span className="bar-home"></span>
+                            <span className="bar-home"></span>
                         </button>
-                        <ul className={`nav-menu ${menuDesplegado ? "active": ""} ` } id="navMenu">
-                            <li><a href="#home" onClick={cambiarEstadoMenu} className="active">INICIO</a></li>
-                            <li><a href="#about" onClick={cambiarEstadoMenu} >NOSOTROS</a></li>
-                            <li><a href="#anuncios" onClick={cambiarEstadoMenu}>ANUNCIOS</a></li>
-                            <li><a href="#projects" onClick={cambiarEstadoMenu}>PROYECTOS</a></li>
-                            <li><a href="#contact" onClick={cambiarEstadoMenu}>CONTACTO</a></li>
+                        <ul className={`ul-home nav-menu-home ${menuDesplegado ? "active": ""} ` } id="navMenu">
+                            <li className="li-home"><a href="#home" onClick={cambiarEstadoMenu} className="active a-home">INICIO</a></li>
+                            <li className="li-home"><a href="#about" onClick={cambiarEstadoMenu} className="a-home">NOSOTROS</a></li>
+                            <li className="li-home"><a href="#anuncios" onClick={cambiarEstadoMenu} className="a-home">ANUNCIOS</a></li>
+                            <li className="li-home"><a href="#projects" onClick={cambiarEstadoMenu} className="a-home">PROYECTOS</a></li>
+                            <li className="li-home"><a href="#contact" onClick={cambiarEstadoMenu} className="a-home">CONTACTO</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -41,5 +39,3 @@ export default function HeaderHome () {
         </header>
     )
 }
-
-

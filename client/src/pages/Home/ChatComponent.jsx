@@ -1,19 +1,16 @@
 import React from 'react'
-import "../../../public/styles-publics/indexHome.css"
 import "./styles/ChatComponent.css"
-
+import ChatImg from "./img/chat-icon.svg"
 
 export default function ChatComponent() {
-
   return (
-    <section className='chat-container'>
-    <a href="#anuncios">
-        <section className='chat-btn' >
-            <img className='chat-icon' src="/chat-icon.svg" alt="Chat IA ActivBot" />
-            <h5>ActivBot</h5>
+    <section className='chat-container-home'>
+      <a href="#anuncios" className='a-home'>
+        <section className='chat-btn-home'>
+          <img className='chat-icon-home img-home' src={ChatImg} alt="Chat IA ActivBot" />
+          <h5 className='chat-title-home h5-home'>ActivBot</h5>
         </section>
-    </a>
-
+      </a>
     </section>
   )
 }

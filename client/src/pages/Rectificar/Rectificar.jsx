@@ -13,7 +13,7 @@ export default function Rectificar() {
   return (
     <>
     <div className='body scren'>
-      <section className='section'>
+      <section className='section-rectificar'>
         <h2 className='h2'>EVENTOS APROBADOS</h2>
         <div className='card-container'>
           <div className='card-dark card text'>
@@ -47,7 +47,7 @@ export default function Rectificar() {
         </div>
       </section>
 
-      <section className='section'>
+      <section className='section-rectificar'>
         <h2 className='h2'>EVENTOS PENDIENTES</h2>
         <div className='card-container'>
           <div className='card-dark card text'>
@@ -80,7 +80,7 @@ export default function Rectificar() {
         </div>
       </section>
 
-      <section className='section'>
+      <section className='section-rectificar'>
         <h2 className='h2'>EVENTOS RECHAZADOS</h2>
         <div className='card-container'>
           <div className='card-dark card text'>

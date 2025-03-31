@@ -1,4 +1,4 @@
-.contenedor1 {
+.contenedor1dash {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto;
@@ -18,7 +18,7 @@
   transform: translate(-50%, -50%);
 }
 
-.bienvenida {
+.bienvenidadash {
   grid-area: bienvenida;
   text-align: center;
   background-color: #ebebeb;
@@ -26,21 +26,21 @@
   border-radius: 10px;
 }
 
-.foto {
+.fotodash {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   margin-top: 10px;
 }
 
-.informacion {
+.informaciondash {
   grid-area: informacion;
   background-color: #ebebeb;
   padding: 20px;
   border-radius: 10px;
 }
 
-.tarjeta {
+.tarjetadash {
   background-color: white;
   padding: 20px;
   text-align: center;
@@ -49,22 +49,22 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.tarjeta:nth-child(3) {
+.tarjetadash:nth-child(3) {
   grid-area: tarjeta1;
 }
 
-.tarjeta:nth-child(4) {
+.tarjetadash:nth-child(4) {
   grid-area: tarjeta2;
 }
 
-.imagen {
+.imagendash {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.boton {
+.botondash {
   margin-top: 10px;
   padding: 8px 16px;
   background-color: #1890ff;
@@ -74,28 +74,28 @@
   cursor: pointer;
 }
 
-.boton:hover {
+.botondash:hover {
   background-color: #096dd9;
 }
 
 @media (min-width: 1440px) {
-  .contenedor1 {
+  .contenedor1dash {
     max-width: 1000px;
     gap: 30px;
   }
 
-  .imagen {
+  .imagendash {
     height: 200px;
   }
 
-  .boton {
+  .botondash {
     font-size: 16px;
     padding: 10px 20px;
   }
 }
 
 @media (min-width: 1025px) {
-  .contenedor1 {
+  .contenedor1dash {
     max-width: 800px;
     gap: 30px;
     margin: 20px auto;
@@ -103,23 +103,23 @@
     left: 55%;
   }
 
-  .imagen {
+  .imagendash {
     height: 200px;
   }
 
-  .boton {
+  .botondash {
     font-size: 16px;
     padding: 10px 20px;
   }
 
-  .tarjeta {
+  .tarjetadash {
     width: 100%;
     max-width: 300px;
   }
 }
 
 @media (max-width: 1024px) {
-  .contenedor1 {
+  .contenedor1dash {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,12 +130,12 @@
     margin: 20px auto;
   }
 
-  .tarjeta {
+  .tarjetadash {
     width: 100%;
     max-width: 400px;
   }
 
-  .imagen {
+  .imagendash {
     width: 100%;
     height: auto;
     max-height: 200px;
@@ -143,7 +143,7 @@
 }
 
 @media (max-width: 768px) {
-  .contenedor1 {
+  .contenedor1dash {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
@@ -154,22 +154,22 @@
     width: 90%;
   }
 
-  .imagen {
+  .imagendash {
     height: 200px;
   }
 }
 
 @media (max-width: 480px) {
-  .contenedor1 {
+  .contenedor1dash {
     padding: 15px;
     width: 95%;
   }
 
-  .imagen {
+  .imagendash {
     height: 180px;
   }
 
-  .boton {
+  .botondash {
     padding: 6px 12px;
     font-size: 14px;
   }

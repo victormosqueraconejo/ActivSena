@@ -5,18 +5,14 @@
   font-family: Arial, sans-serif;
 }
 
-body {
-  display: flex;
-  background: #f5f7fa;
-  color: #333;
-}
 
-.contenedor {
+
+.contenedordash {
   /*App*/
   display: flex;
 }
 
-.barra {
+.barradash {
   /*SideBar*/
   width: 250px;
   background: #dbdada;
@@ -25,19 +21,19 @@ body {
   height: 100vh;
 }
 
-.titulo {
+.titulodash {
   /*Navbar*/ /*SideBar*/
   margin-bottom: 20px;
   font-size: 22px;
 }
 
-.menu {
+.menudash {
   /*SideBar*/
   display: flex;
   flex-direction: column;
 }
 
-.opcion {
+.opciondash {
   /*SideBar*/
   padding: 10px;
   margin: 10px 0;
@@ -51,18 +47,18 @@ body {
   border: none;
 }
 
-.opcion:hover,
+.opciondash:hover,
 .activa {
   background: #0aee0a;
 }
 
-.contenido {
+.contenidodash {
   /*App*/
   flex: 1;
   padding: 20px;
 }
 
-.encabezado {
+.encabezadodash {
   /*Navbar*/
   align-items: center;
   margin-bottom: 20px;
@@ -75,7 +71,7 @@ body {
   top: -3mm;
 }
 
-.busqueda {
+.busquedadash {
   /*Navbar*/
   padding: 8px;
   width: 290px;
@@ -87,14 +83,14 @@ body {
   transform: translateX(-50%);
 }
 
-.acciones {
+.accionesdash {
   /*Navbar*/
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.icono {
+.iconodash {
   font-size: 20px;
   border: none;
   cursor: pointer;
@@ -106,13 +102,13 @@ body {
   color: rgb(87, 86, 86);
 }
 
-.acciones {
+.accionesdash {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.opcion:hover {
+.opciondash:hover {
   background: #b7c1cf;
 }
 
@@ -121,37 +117,37 @@ body {
   color: white;
 }
 
-.icono {
+.iconodash {
   font-size: 20px;
   transition: color 0.3s;
 }
 
-.activa .icono {
+.activa .iconodash {
   color: white;
 }
 
-.usuario {
+.usuariodash {
   /*Navbar*/
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.avatar {
+.avatardash {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.nombre {
+.nombredash {
   /*Navbar*/
   font-size: 14px;
   font-weight: bold;
   color: #333;
 }
 
-.Clogo {
+.Clogodash {
   /*Navbar*/
   display: flex;
   align-items: center;
@@ -159,7 +155,7 @@ body {
   gap: 4px;
 }
 
-.logo {
+.logodash {
   /*Navbar*/
   width: 50px;
   height: auto;
@@ -167,15 +163,15 @@ body {
   top: -16px;
 }
 
-.flex {
+.flexdash {
   display: flex;
 }
 
-.menu-lateral.oculto {
+.menudash-lateral.oculto {
   display: none;
 }
 
-.tag {
+.tagdash {
   display: inline-block;
   background-color: #e2e8f0;
   color: #4a5568;
@@ -187,35 +183,35 @@ body {
   margin-bottom: 5px;
 }
 
-.mover {
+.moverdash {
   margin-top: 10px;
   width: 82vw;
 }
 
-.avatar2 {
+.avatardash2 {
   width: 92px;
   height: 92px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.center {
+.centerdash {
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 10px;
 }
 
-.padd {
+.padddash {
   padding: 10px;
 }
 
-.img1 {
+.img1dash {
   width: 500px;
   height: 500px;
 }
 
-.subir{
+.subirdash {
   position: relative;
   top: -3mm;
 }
