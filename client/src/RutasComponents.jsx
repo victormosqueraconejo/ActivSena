@@ -7,10 +7,9 @@ import Alquiler from './pages/Alquiler/Alquiler'
 import DetallerAlquiler from './pages/DetallesAlquiler/DetallerAlquiler'
 import RegistroLudicas from './pages/RegistroLudicas/Registroludicas'
 import Constancia from './pages/ConstanciaCertificado/Constancia'
-import InicioSesion from '../public/InicioSesion'
-import Registro from "../public/Registro"
-import Combinar from './pages/CombinarFA/Combinar'
-import Rectificar from './pages/Rectificar/Rectificar'
+import Combinar from "./pages/CombinarFA/Combinar"
+import Rectificar from "./pages/Rectificar/Rectificar"
+
 
 
 export default function RutasComponents() {
@@ -20,14 +19,13 @@ export default function RutasComponents() {
         <Routes>
             <Route path='/' element={<HomePage></HomePage>} />
             <Route path='/dash' element={<DashBoard/>}/>
-            <Route path='/alquiler' element={<Alquiler/>}/>
-            <Route path='/detalleralquiler' element={<DetallerAlquiler/>}/>
-            <Route path='/registroludicas' element={<RegistroLudicas/>}/>
-            <Route path='/constanciaCertificado' element={<Constancia/>}/>
-            <Route path='/iniciosesion' element={<InicioSesion />} />
-            <Route path="/registro" element={<Registro />} />
-            <Route path='/combinar' element={<Combinar />}></Route>
-            <Route path='/rectificar' element={<Rectificar />}></Route>
+            <Route path='/ludicas' element={<Ludicas />} />
+            <Route path='/alquiler' element={<Alquiler />} />
+            <Route path='/detalle' element={<DetallerAlquiler />} />
+            <Route path='/registro' element={<RegistroLudicas />} />
+            <Route path='/constancia' element={<Constancia />} />
+            <Route path='/combinar' element={<Combinar />} />
+            <Route path='/rectificar' element={<Rectificar />} />
         </Routes>
     </BrowserRouter>
     </>

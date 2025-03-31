@@ -1,9 +1,9 @@
-body {
+.body-resctificar {
     display: grid;
     align-items: center;
   }
   
-  section {
+  .section-rectificar {
     max-width: 60rem; 
     margin: 0 auto;
     padding: 20px; 
