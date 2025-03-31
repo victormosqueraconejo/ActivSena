@@ -7,7 +7,7 @@ import AnunciosHome from "../src/pages/Home/AnunciosHome"
 import ProjectsHome from "../src/pages/Home/ProjectsHome"
 import ContactHome from "../src/pages/Home/ContactHome"
 import FooterHome from "../src/pages/Home/FooterHome"
-import "../src/pages/Home/styles/indexHome.css"
+import "../src/pages/Home/styles/HomeEstilosPrincipales.css"
 
 
 
