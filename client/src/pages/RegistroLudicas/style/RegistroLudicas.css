@@ -1,5 +1,5 @@
 /* Fondo con gradiente elegante */
-body {
+.body-registro {
     background: linear-gradient(135deg, #ffffff, #fdf5f3);
     font-family: 'Poppins', sans-serif;
     margin: 0;
