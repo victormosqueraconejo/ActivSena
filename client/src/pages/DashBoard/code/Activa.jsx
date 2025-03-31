@@ -1,4 +1,4 @@
 export function Activa(isActive) {
-    return `opcion ${isActive ? "activa" : ""}`;
+    return `opciondash ${isActive ? "activa" : ""}`;
   }
   

@@ -248,7 +248,7 @@
 
 
 /* Estilo de la sección */
-section {
+.section-alquiler {
 	display: flex;
 	flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
 	gap: 20px;
@@ -258,7 +258,7 @@ section {
   }
   
   /* Estilo para las imágenes dentro de la sección */
-  section img {
+  .section-alquiler img {
 	width: 100%; /* Esto asegura que las imágenes ocupen todo el espacio del contenedor */
 	height: 100%; /* Esto hace que la imagen ocupe la altura del contenedor */
 	object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
@@ -268,7 +268,7 @@ section {
   }
   
   /* Efecto al pasar el mouse sobre la imagen */
-  section img:hover {
+  .section-alquiler img:hover {
 	cursor: crosshair;
 	opacity: 1;
 	filter: contrast(120%);
@@ -277,7 +277,7 @@ section {
   
 
   /* Estilo para la sección de elementos */
-section {
+.section-alquiler {
 	display: flex;
 	flex-wrap: wrap; /* Permite que las imágenes se ajusten bien en varias filas si es necesario */
 	gap: 20px;
@@ -286,7 +286,7 @@ section {
   }
   
   /* Estilo para cada imagen dentro de la sección */
-  section img {
+  .section-alquiler img {
 	width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
 	height: 150px; /* Ajusta la altura según lo necesites */
 	object-fit: cover; /* Hace que las imágenes se ajusten sin deformarse */
@@ -296,7 +296,7 @@ section {
   }
   
   /* Efecto al pasar el mouse sobre la imagen */
-  section img:hover {
+  .section-alquiler img:hover {
 	cursor: pointer;
 	opacity: 1;
 	filter: contrast(120%);
@@ -473,7 +473,7 @@ section {
   }
 
   /* Estilos generales */
-body {
+.body-alquiler {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	background-color: #f4f4f9;
 	margin: 0;

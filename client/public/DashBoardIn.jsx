@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import MenuLateral from "../src/pages/DashBoard/DashBoardComponents/DashA/MenuLateral";
+import MenuLateralIn from "../src/pages/DashBoard/DashBoardComponents/DashIn/MenuLateralIn";
 import HomeDash from "../src/pages/DashBoard/HomeDash";
 import ActivBot from "../src/pages/DashBoard/DashBoardComponents/DashA/ActivBot";
-import Navbar from "../src/pages/DashBoard/DashBoardComponents/DashA/Navbar";
-import Alquiler from "../src/pages/Alquiler/Alquiler";
+import NavbarIn from "../src/pages/DashBoard/DashBoardComponents/DashIn/NavbarIn";
 import CalendarioAdmin from "../src/pages/CalendarioAdmin/Calendario";
-import DetallesAlquiler from "../src/pages/DetallesAlquiler/DetallerAlquiler";
 import Feedbacks from "../src/pages/Feedback/Feedbacks";
-import ConstanciaCertificado from "../src/pages/ConstanciaCertificado/Constancia";
+import Planificar from "../src/pages/Planificar/Planificar";
+import Registroludicas from "../src/pages/RegistroLudicas/Registroludicas";
+import Combinar from "../src/pages/CombinarFA/Combinar";
 
 
 import "../src/styles/BotHp.css";
@@ -24,16 +24,17 @@ export default function DashBoard() {
 
   return (
     <section className="contenedordash">
-      <MenuLateral menuAbierto={menuAbierto} toggleMenu={toggleMenu} setContenidoActual={setContenidoActual} />
+      <MenuLateralIn menuAbierto={menuAbierto} toggleMenu={toggleMenu} setContenidoActual={setContenidoActual} />
       <main className="contenidodash">
-        <Navbar toggleMenu={toggleMenu} />
+        <NavbarIn toggleMenu={toggleMenu} />
 
         {contenidoActual === "home" && <HomeDash />}
-        {contenidoActual === "calendario" && <CalendarioAdmin />}
-        {contenidoActual === "registroa" && <Alquiler />}
-        {contenidoActual === "detallea" && <DetallesAlquiler />}
+        {contenidoActual === "plan" && <Planificar />}
+        {contenidoActual === "registrarl" && <Registroludicas />}
         {contenidoActual === "feedback" && <Feedbacks />}
-        {contenidoActual === "constancia" && <ConstanciaCertificado />}
+        {contenidoActual === "comprobar" && < Combinar />}
+        {contenidoActual === "calendario" && <CalendarioAdmin />}
+
 
 
 
