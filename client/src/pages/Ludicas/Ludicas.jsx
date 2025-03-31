@@ -52,7 +52,7 @@ const App = () => {
       <header className="ludicas-header">
         <h1 className="ludicas-title">Lúdicas Disponibles</h1>
         <p className="ludicas-subtitle">¡Encuentra tu actividad favorita y únete a la diversión!</p>
-        <div className="search-bar">
+        <div className="search-barr">
           <input type="text" placeholder="Buscar actividad..." />
           <button className="search-btn">
             <i className="fas fa-search"></i>

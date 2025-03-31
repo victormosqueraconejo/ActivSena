@@ -15,7 +15,7 @@ const HorasLudicas = () => {
   return (
     <div className="container">
       <div className="content">
-        <h2 className="title">Horas Lúdicas Realizadas</h2>
+        <h2 className="titulo">Horas Lúdicas Realizadas</h2>
         <div className="activity-list">
           {actividades.map((act, index) => (
             <div key={index} className="activity-item">

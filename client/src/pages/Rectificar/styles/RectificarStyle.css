@@ -73,6 +73,7 @@
     font-size: 1rem;
     display: block;
     margin: 1rem auto;
+    transition: 3s;
   }
   
   button:hover {

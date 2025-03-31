@@ -19,7 +19,7 @@ export default function ComentarFeedback() {
     if (nuevoComentario.trim() !== "") {
       setUsuarios(prevUsuarios => [
         ...prevUsuarios,
-        { name: "Name user", dbz2,  comentarios: nuevoComentario }
+        { name: "Name user", dbz2,  comentarios: nuevoComentario, reseñas:"☆☆☆☆☆" }
       ]);
       setNuevoComentario("");
     }
@@ -42,9 +42,9 @@ export default function ComentarFeedback() {
                 <tr key={index}>
                   <td className='border user-cell'>
                   {usuario.imagen ? (
-                      <img src={usuario.imagen} alt={usuario.name} className="profile-img" />
+                      <img src={usuario.imagen} alt={usuario.name} className="perfil-img" />
                     ) : (
-                      <img src="default-image.jpg" alt="perfil" className="profile-img" />
+                      <img src="default-image.jpg" alt="perfil de imagen" className="perfil-img" />
                     )}
                   <span>{usuario.name}</span>
                   </td>

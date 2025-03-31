@@ -35,13 +35,13 @@
     margin-bottom: 2rem;
   }
   
-  .search-bar {
+  .search-barr {
     display: flex;
     max-width: 500px;
     margin: 0 auto;
   }
   
-  .search-bar input {
+  .search-barr input {
     flex: 1;
     padding: 0.8rem 1.2rem;
     border: 2px solid #e0e0e0;
@@ -51,7 +51,7 @@
     transition: var(--transition);
   }
   
-  .search-bar input:focus {
+  .search-barr input:focus {
     border-color: var(--primary-color);
   }
   
