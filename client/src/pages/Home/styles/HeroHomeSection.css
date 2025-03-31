@@ -5,6 +5,7 @@
   min-height: 600px;
   background-size: cover;
   background-position: center;
+  /*background-image: var(--img-home);*/
   color: var(--white-home);
   display: flex;
   align-items: center;

@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import "./styles/HeroHomeSection.css";
 
-import img from "./img/img.jpg"
-import img2 from "./img/img2.jpg"
-import img3 from "./img/img3.jpg"
-
 export default function HeroHomeSection() {
-  const images = [
-    img, 
-    img2,
-    img3
+  let images = [
+      "url(../../../../public/img/img.jpg)",
+      "url(../../../../public/img/img2.jpg)",
+      "url(../../../../public/img/img3.jpg)",
   ];
+  
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
