@@ -61,7 +61,7 @@ body {
     border-radius: 0.375rem; 
   }
   
-  button {
+  .botonar {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     background-color: white;
@@ -76,7 +76,7 @@ body {
     transition: 3s;
   }
   
-  button:hover {
+  .botonar:hover {
     background-color: rgb(17, 176, 224);
   }
   
