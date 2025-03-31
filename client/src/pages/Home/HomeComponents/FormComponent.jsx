@@ -1,4 +1,5 @@
 import React from 'react'
+import "../styles/HomeEstilosPrincipales.css"
 import "./styles/FormComponent.css"
 
 export default function FormComponent() {

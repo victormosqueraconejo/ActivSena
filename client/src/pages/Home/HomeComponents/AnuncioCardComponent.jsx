@@ -1,4 +1,5 @@
 import React from 'react'
+import "../styles/HomeEstilosPrincipales.css"
 import "./styles/AnuncioCardComponent.css"
 
 export default function AnuncioCardComponent({title, description}) {
