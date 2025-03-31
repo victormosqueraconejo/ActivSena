@@ -1,182 +1,150 @@
-.site-footer {
-    background-color: var(--dark-bg);
-    color: var(--white);
-    padding: 70px 0 20px;
-  }
-  
-  .footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-bottom: 50px;
-  }
-  
-  .footer-logo {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
-  .footer-logo-waso {
-    color: var(--primary-color);
-  }
-  
-  .footer-logo-strategy {
-    color: var(--secondary-color);
-  }
-  
-  .footer-about p {
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 20px;
-  }
-  
-  .footer-social {
-    display: flex;
-  }
-  
-  .footer-social-icon {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    color: var(--white);
-    transition: var(--transition);
-  }
-  
-  .footer-social-icon:hover {
-    background-color: var(--primary-color);
-  }
-  
-  .footer-title {
-    font-size: 20px;
-    margin-bottom: 20px;
-    position: relative;
-    padding-bottom: 10px;
-  }
-  
-  .footer-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background-color: var(--primary-color);
-  }
-  
-  .footer-links li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-links a {
-    color: rgba(255, 255, 255, 0.7);
-    transition: var(--transition);
-  }
-  
-  .footer-links a:hover {
-    color: var(--primary-color);
-    padding-left: 5px;
-  }
-  
-  .footer-contact-item {
-    display: flex;
-    margin-bottom: 15px;
-  }
-  
-  .footer-contact-icon {
-    color: var(--primary-color);
-    margin-right: 10px;
-  }
-  
-  .footer-contact-text {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  .footer-bottom p {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  
-/* Responsive Styles */
-@media (max-width: 991px) {
-  .hero-title {
-    font-size: 48px;
-  }
-  
-  .about-content,
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .experience-box {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    margin-top: 20px;
-  }
+/* Footer Styles */
+.site-footer-home {
+  background-color: var(--dark-bg-home);
+  color: var(--white-home);
+  padding: 70px 0 20px;
 }
 
+.footer-content-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.footer-logo-home {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-logo-waso-home {
+  color: var(--primary-color-home);
+}
+
+.footer-logo-strategy-home {
+  color: var(--secondary-color-home);
+}
+
+.footer-about-home p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.footer-social-home {
+  display: flex;
+}
+
+.footer-social-icon-home {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: var(--white-home);
+  transition: var(--transition-home);
+}
+
+.footer-social-icon-home:hover {
+  background-color: var(--primary-color-home);
+}
+
+.footer-title-home {
+  font-size: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-title-home::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--primary-color-home);
+}
+
+.footer-links-home li {
+  margin-bottom: 10px;
+}
+
+.footer-links-home a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: var(--transition-home);
+}
+
+.footer-links-home a:hover {
+  color: var(--primary-color-home);
+  padding-left: 5px;
+}
+
+.footer-contact-item-home {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.footer-contact-icon-home {
+  color: var(--primary-color-home);
+  margin-right: 10px;
+}
+
+.footer-contact-text-home {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-bottom-home {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom-home p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
+  .footer-content-home {
+      grid-template-columns: 1fr;
+      gap: 40px;
   }
   
-  .nav-menu {
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    flex-direction: column;
-    background-color: var(--white);
-    width: 100%;
-    text-align: center;
-    transition: var(--transition);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
-    z-index: 999;
-  }
-  
-  .nav-menu.active {
-    left: 0;
-  }
-  
-  .nav-menu li {
-    margin: 15px 0;
-  }
-  
-  .nav-menu li a {
-    justify-content: center;
-  }
-  
-  .hero-title {
-    font-size: 36px;
-  }
-  
-  .hero-controls {
-    bottom: 20px;
-    right: 20px;
+  .footer-about-home {
+      margin-bottom: 30px;
   }
 }
 
 @media (max-width: 576px) {
-  .hero-title {
-    font-size: 28px;
+  .site-footer-home {
+      padding: 50px 0 20px;
   }
   
-  .btn {
-    padding: 12px 20px;
+  .footer-social-home {
+      justify-content: center;
   }
   
-  .section-title,
-  .section-header h2 {
-    font-size: 28px;
+  .footer-links-home,
+  .footer-contact-home {
+      text-align: center;
+  }
+  
+  .footer-title-home::after {
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  
+  .footer-contact-item-home {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .footer-contact-icon-home {
+      margin-right: 0;
+      margin-bottom: 10px;
   }
 }

@@ -1,67 +1,66 @@
 import React from 'react'
-import "../../../public/styles-publics/indexHome.css"
 import "./styles/FooterHome.css"
 
 export default function FooterHome() {
   return (
-    <footer className="site-footer">
-    <div className="container">
-        <div className="footer-content">
-            <div className="footer-about">
-                <div className="footer-logo">
-                    <span className="footer-logo-waso">Activ</span>
-                    <span className="footer-logo-strategy">Sena</span>
-                </div>
-                <p>Somos una firma de consultoría de negocios profesional dedicada a ayudar a las empresas a crecer y tener éxito en el mercado competitivo actual.</p>
-                <div className="footer-social">
-                    <a href="#" className="footer-social-icon"><i className="icon-facebook"></i></a>
-                    <a href="#" className="footer-social-icon"><i className="icon-pinterest"></i></a>
-                    <a href="#" className="footer-social-icon"><i className="icon-twitter"></i></a>
-                    <a href="#" className="footer-social-icon"><i className="icon-youtube"></i></a>
-                </div>
+    <footer className="site-footer-home" >
+      <div className="container-home">
+        <div className="footer-content-home">
+          <div className="footer-about-home">
+            <div className="footer-logo-home">
+              <span className="footer-logo-waso-home">Activ</span>
+              <span className="footer-logo-strategy-home">Sena</span>
             </div>
-            <div className="footer-links">
-                <h3 className="footer-title">Enlaces Rápidos</h3>
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Nosotros</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
+            <p>Somos una firma de consultoría de negocios profesional dedicada a ayudar a las empresas a crecer y tener éxito en el mercado competitivo actual.</p>
+            <div className="footer-social-home">
+              <a href="#" className="footer-social-icon-home"><i className="icon-facebook-home"></i></a>
+              <a href="#" className="footer-social-icon-home"><i className="icon-pinterest-home"></i></a>
+              <a href="#" className="footer-social-icon-home"><i className="icon-twitter-home"></i></a>
+              <a href="#" className="footer-social-icon-home"><i className="icon-youtube-home"></i></a>
             </div>
-            <div className="footer-contact">
-                <h3 className="footer-title">Información de Contacto</h3>
-                <div className="footer-contact-item">
-                    <div className="footer-contact-icon">
-                        <i className="icon-location"></i>
-                    </div>
-                    <div className="footer-contact-text">
-                        123 Calle Negocios, Suite 100, Popayan, Colombia 28001
-                    </div>
-                </div>
-                <div className="footer-contact-item">
-                    <div className="footer-contact-icon">
-                        <i className="icon-phone"></i>
-                    </div>
-                    <div className="footer-contact-text">
-                        +57 1234567890
-                    </div>
-                </div>
-                <div className="footer-contact-item">
-                    <div className="footer-contact-icon">
-                        <i className="icon-email"></i>
-                    </div>
-                    <div className="footer-contact-text">
-                        activsena@contacto.com
-                    </div>
-                </div>
+          </div>
+          <div className="footer-links-home">
+            <h3 className="footer-title-home h3-home">Enlaces Rápidos</h3>
+            <ul className='ul-home'>
+              <li className='li-home'><a href="#home" className='a-home'>Inicio</a></li>
+              <li className='li-home'><a href="#about" className='a-home'>Nosotros</a></li>
+              <li className='li-home'><a href="#services" className='a-home'>Servicios</a></li>
+              <li className='li-home'><a href="#projects" className='a-home'>Proyectos</a></li>
+              <li className='li-home'><a href="#contact" className='a-home'>Contacto</a></li>
+            </ul>
+          </div>
+          <div className="footer-contact-home">
+            <h3 className="footer-title-home h3-home">Información de Contacto</h3>
+            <div className="footer-contact-item-home">
+              <div className="footer-contact-icon-home">
+                <i className="icon-location-home i-home"></i>
+              </div>
+              <div className="footer-contact-text-home">
+                123 Calle Negocios, Suite 100, Popayan, Colombia 28001
+              </div>
             </div>
+            <div className="footer-contact-item-home">
+              <div className="footer-contact-icon-home">
+                <i className="icon-phone-home i-home" ></i>
+              </div>
+              <div className="footer-contact-text-home">
+                +57 1234567890
+              </div>
+            </div>
+            <div className="footer-contact-item-home">
+              <div className="footer-contact-icon-home">
+                <i className="icon-email-home i-home"></i>
+              </div>
+              <div className="footer-contact-text-home">
+                activsena@contacto.com
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="footer-bottom">
-            <p>&copy; 2023 ActivSena. Todos los Derechos Reservados.</p>
+        <div className="footer-bottom-home">
+          <p className='p-home'>&copy; 2023 ActivSena. Todos los Derechos Reservados.</p>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
   )
 }

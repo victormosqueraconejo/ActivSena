@@ -1,14 +1,15 @@
-.chat-container {
+/* Chat Component Styles */
+.chat-container-home {
     position: relative;
 }
 
-.chat-btn { 
+.chat-btn-home {
     bottom: 125px;
     right: 50px;
     position: fixed;
     z-index: 2;
-    border: 1px solid var(--secondary-color);
-    background-color: var(--white);
+    border: 1px solid var(--secondary-color-home);
+    background-color: var(--white-home);
     width: 85px;
     height: 85px;
     border-radius: 50%;    
@@ -18,21 +19,41 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.chat-btn .h5 {
-    color: var(--secondary-color);
+    transition: var(--transition-home);
 }
 
-.chat-icon {
+.chat-btn-home:hover {
+    transform: scale(1.05);
+}
+
+.chat-title-home {
+    color: var(--secondary-color-home);
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.chat-icon-home {
     width: 45px;
     height: 45px;
-    color: var(--secondary-color);
+    color: var(--secondary-color-home);
     filter: invert(58%) sepia(69%) saturate(3949%) hue-rotate(72deg) brightness(96%) contrast(99%);
 }
 
-@media (max-width : 576px) {
-    .chat-btn {
-    bottom: 50px;
-    right: 10px;
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .chat-btn-home {
+        bottom: 50px;
+        right: 10px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .chat-icon-home {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .chat-title-home {
+        font-size: 0.7rem;
     }
 }
