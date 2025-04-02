@@ -1,84 +1,195 @@
-import React from 'react'
-import "./styles-publics/registro.css"
+import React, { useState } from 'react';
+import './styles/registro.css';  // Asegúrate de que el CSS esté en esta ruta
 
-export default function Registro() {
+const Registro = () => {
+  const [formData, setFormData] = useState({
+    nombre: '',
+    edad: '',
+    genero: '',
+    documento: '',
+    programa: '',
+    ficha: '',
+    jornada: '',
+    centro: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+  });
+
+  const manejarCambio = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const manejarEnvio = (e) => {
+    e.preventDefault();
+    // Aquí puedes agregar la lógica para enviar los datos al backend
+    console.log(formData);
+  };
+
   return (
-    <>
-    <div className="container">
-        <img src="img brazil.jpg" alt="Logo" />
-        <div className="form-container">
-            <h1>Crear Cuenta</h1>
-            <div className="form-row">
-                <div className="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required />
-                </div>
-                <div className="form-group">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" required />
-                </div>
-            </div>
-            <div className="form-row">
-                <div className="form-group">
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" required />
-                </div>
-                <div className="form-group">
-                    <label for="fecha-nacimiento">Fecha de Nacimiento</label>
-                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required />
-                </div>
-            </div>
-            <div className="form-row">
-                <div className="form-group">
-                    <label for="contraseña">Contraseña</label>
-                    <input type="password" id="contraseña" name="contraseña" required />
-                </div>
-                <div className="form-group">
-                    <label for="sexo">Sexo</label>
-                    <select id="sexo" name="sexo" required>
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
-            </div>
-            <div className="cc-ti">
-                <div className="cc-ti">
-                    <label for="cedula o tarjeta identidad">Cedula o Tarjeta Identidad</label>
-                    <select name="cedula o tarjeta identidad" id="cedula o tarjeta identidad">
-                        <option value="cedula">Cedula</option>
-                        <option value="tarjeta identidad">Tarjeta Identidad</option>
-                        <label for="cedula o tarjeta identidad">cc-ti</label>
-                    </select>
-                </div>
-            </div>
-            <div className="Numero">
-                <div className="Numero">
-                    <label for="Numero">Número</label>
-                    <input type="Numero" id="Numero" name="Numero" required />
-                </div>
-                                                 
-            </div>
-            <div className="NumeroFicha">
-                <div className="NumeroFicha">
-                    <label for="NumeroFicha">Número de Ficha</label>
-                    <input type="NumeroFicha" id="NumeroFicha" name="NumeroFicha" required />
-                </div>
-            </div>
-            <div className="program-name">
-                <div className="program-name">
-                    <label for="program-name">Nombre del Programa</label>
-                    <input type="program-name" id="program-name" name="program-name" required />
-                </div>
-            </div>
-            <div className="button-group">
-                <a href="#">
-                <button className="back">Atrás</button>
-            </a>
-                <button className="continue">Continuar</button>
-            </div>
+    <div className="contenedor-horizontalUnico" id='body-registro'>
+      <div className="columna-formularioUnico">
+        <h2>Datos Personales</h2>
+        
+        <div className="grupo-campoUnico">
+          <input
+            type="text"
+            id="nombreUnico"
+            name="nombre"
+            value={formData.nombre}
+            onChange={manejarCambio}
+            required
+          />
+          <label htmlFor="nombreUnico">Nombre completo</label>
         </div>
+        
+        <div className="grupo-campoUnico">
+          <input
+            type="number"
+            id="edadUnico"
+            name="edad"
+            value={formData.edad}
+            onChange={manejarCambio}
+            required
+            min="14"
+            max="60"
+          />
+          <label htmlFor="edadUnico">Edad</label>
+        </div>
+        
+        <div className="grupo-campoUnico">
+          <select
+            id="generoUnico"
+            name="genero"
+            value={formData.genero}
+            onChange={manejarCambio}
+            required
+          >
+            <option value="" selected disabled></option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+          <label htmlFor="generoUnico">Género</label>
+        </div>
+        
+        <div className="grupo-campoUnico">
+          <input
+            type="number"
+            id="documentoUnico"
+            name="documento"
+            value={formData.documento}
+            onChange={manejarCambio}
+            required
+          />
+          <label htmlFor="documentoUnico">Documento</label>
+        </div>
+      </div>
+      
+      <div className="columna-formularioUnico">
+        <h2>Programa de Formación</h2>
+        
+        <div className="grupo-campoUnico">
+          <select
+            id="programaUnico"
+            name="programa"
+            value={formData.programa}
+            onChange={manejarCambio}
+            required
+          >
+            <option value="" selected disabled></option>
+            <option value="software">Desarrollo de Software</option>
+            <option value="adsi">ADSI</option>
+            <option value="multimedia">Multimedia</option>
+          </select>
+          <label htmlFor="programaUnico">Programa</label>
+        </div>
+        
+        <div className="grupo-campoUnico">
+          <input
+            type="number"
+            id="fichaUnico"
+            name="ficha"
+            value={formData.ficha}
+            onChange={manejarCambio}
+            required
+          />
+          <label htmlFor="fichaUnico">Número de ficha</label>
+        </div>
+        
+        <div className="grupo-campoUnico">
+          <input
+            type="text"
+            id="jornadaUnico"
+            name="jornada"
+            value={formData.jornada}
+            onChange={manejarCambio}
+            required
+          />
+          <label htmlFor="jornadaUnico">Jornada (mañana/tarde/noche)</label>
+        </div>
+        
+        <div className="grupo-campoUnico">
+          <input
+            type="text"
+            id="centroUnico"
+            name="centro"
+            value={formData.centro}
+            onChange={manejarCambio}
+            required
+          />
+          <label htmlFor="centroUnico">Centro de formación</label>
+        </div>
+      </div>
+      
+      <div className="columna-formularioUnico">
+        <h2>Credenciales</h2>
+        
+        <div className="grupo-campoUnico">
+          <input
+            type="email"
+            id="emailUnico"
+            name="email"
+            value={formData.email}
+            onChange={manejarCambio}
+            required
+          />
+          <label htmlFor="emailUnico">Correo electrónico</label>
+        </div>
+        
+        <div className="grupo-campoUnico">
+          <input
+            type="password"
+            id="passwordUnico"
+            name="password"
+            value={formData.password}
+            onChange={manejarCambio}
+            required
+          />
+          <label htmlFor="passwordUnico">Contraseña</label>
+        </div>
+        
+        <div className="grupo-campoUnico">
+          <input
+            type="password"
+            id="confirm_passwordUnico"
+            name="confirmPassword"
+            value={formData.confirmPassword}
+            onChange={manejarCambio}
+            required
+          />
+          <label htmlFor="confirm_passwordUnico">Confirmar contraseña</label>
+        </div>
+        
+        <button type="submit" className="boton-registroUnico" onClick={manejarEnvio}>
+          Completar Registro
+        </button>
+        
+        <p className="enlace-loginUnico">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+      </div>
     </div>
-    </>
-  )
-}
+  );
+};
+
+export default Registro;
