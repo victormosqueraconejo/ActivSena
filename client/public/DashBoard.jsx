@@ -8,12 +8,14 @@ import CalendarioAdmin from "../src/pages/CalendarioAdmin/Calendario";
 import DetallesAlquiler from "../src/pages/DetallesAlquiler/DetallerAlquiler";
 import Feedbacks from "../src/pages/Feedback/Feedbacks";
 import ConstanciaCertificado from "../src/pages/ConstanciaCertificado/Constancia";
-
+import Actividades from "../src/pages/Actividades/Actividades";
 
 import "../src/styles/BotHp.css";
 import "../src/styles/ColaViento.css";
 import "../src/styles/Resposive.css";
 import "../src/styles/global.css";
+import "../src/styles/Fondo.css";
+import Aplicacion from "../src/pages/Aplicacion/Aplicacion";
 
 export default function DashBoard() {
   const [menuAbierto, setMenuAbierto] = useState(true);
@@ -24,11 +26,13 @@ export default function DashBoard() {
 
   return (
     <section className="contenedordash">
-      <MenuLateral menuAbierto={menuAbierto} toggleMenu={toggleMenu} setContenidoActual={setContenidoActual} />
+            <MenuLateral menuAbierto={menuAbierto} toggleMenu={toggleMenu} setContenidoActual={setContenidoActual} />
       <main className="contenidodash">
         <Navbar toggleMenu={toggleMenu} />
 
         {contenidoActual === "home" && <HomeDash />}
+        {contenidoActual === "actividad" && <Actividades />}
+        {contenidoActual === "aplicacion" && <Aplicacion />}
         {contenidoActual === "calendario" && <CalendarioAdmin />}
         {contenidoActual === "registroa" && <Alquiler />}
         {contenidoActual === "detallea" && <DetallesAlquiler />}

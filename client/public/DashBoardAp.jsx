@@ -15,6 +15,8 @@ import "../src/styles/BotHp.css";
 import "../src/styles/ColaViento.css";
 import "../src/styles/Resposive.css";
 import "../src/styles/global.css";
+import Actividades from "../src/pages/Actividades/Actividades";
+import Aplicacion from "../src/pages/Aplicacion/Aplicacion";
 
 export default function DashBoard() {
   const [menuAbierto, setMenuAbierto] = useState(true);
@@ -30,6 +32,8 @@ export default function DashBoard() {
         <NavbarAp toggleMenu={toggleMenu} />
 
         {contenidoActual === "home" && <HomeDash />}
+        {contenidoActual === "actividades" && <Actividades />}
+        {contenidoActual === "aplicacion" && <Aplicacion />}
         {contenidoActual === "ludicas" && <Ludicas />}
         {contenidoActual === "horasl" && <HorasLudicas />}
         {contenidoActual === "feedback" && <Feedbacks />}

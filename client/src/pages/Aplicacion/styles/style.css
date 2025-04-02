@@ -1,0 +1,243 @@
+/* Estilos generales */
+body.evento-app-body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.evento-app-contenedor-principal {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Barra lateral (eliminada) */
+
+/* Contenido principal */
+.evento-app-contenido-principal {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.evento-app-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.evento-app-titulo-principal {
+    color: white;
+    width: 700px;
+    background-color: rgb(18, 223, 45);
+    border-radius: 40px;
+    margin: 0;
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.evento-app-boton-notificaciones {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.evento-app-boton-notificaciones:hover {
+    background-color: #2980b9;
+}
+
+/* Carrusel de historias */
+.evento-app-seccion-historias {
+    margin-bottom: 30px;
+}
+
+.evento-app-titulo-seccion {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.evento-app-carrusel-historias {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.evento-app-historia {
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.evento-app-historia img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #3498db;
+    padding: 3px;
+}
+
+.evento-app-historia p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Botones de acción */
+.evento-app-seccion-botones-accion {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.evento-app-boton-accion {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #27ae60;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.evento-app-boton-accion:hover {
+    background-color: #219653;
+}
+
+/* Feed de eventos */
+.evento-app-seccion-feed {
+    margin-bottom: 30px;
+}
+
+.evento-app-lista-eventos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.evento-app-tarjeta-evento {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.evento-app-cabecera-evento {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.evento-app-foto-usuario {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.evento-app-info-usuario {
+    flex: 1;
+}
+
+.evento-app-nombre-usuario {
+    margin: 0;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.evento-app-fecha-evento {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.evento-app-contenido-evento img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.evento-app-descripcion-evento {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.evento-app-acciones-evento {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.evento-app-boton-me-gusta, .evento-app-boton-comentar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.evento-app-boton-me-gusta {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.evento-app-boton-comentar {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.evento-app-boton-me-gusta:hover {
+    background-color: #2980b9;
+}
+
+.evento-app-boton-comentar:hover {
+    background-color: #219653;
+}
+
+.evento-app-feedback-evento {
+    margin-top: 15px;
+}
+
+.evento-app-feedback-evento h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.evento-app-feedback-evento textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    resize: none;
+}
+
+.evento-app-boton-enviar-feedback {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.evento-app-boton-enviar-feedback:hover {
+    background-color: #c0392b;
+}
