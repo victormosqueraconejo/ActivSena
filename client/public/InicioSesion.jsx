@@ -1,24 +1,78 @@
-import React from 'react'
-import "./styles-publics/inicio.css"
+import React, { useState } from 'react';
+import './styles/inicio.css'; 
 
-export default function InicioSesion() {
+import perfilImg  from './img/img.jpg' // Imagen de prueba
+
+const InicioSesion = () => {
+  const [esOlvidoContraseña, setEsOlvidoContraseña] = useState(false);
+
+  const manejarClickOlvidoContraseña = () => {
+    setEsOlvidoContraseña(!esOlvidoContraseña);
+  };
+
   return (
-    <div class="container">
-        <img src="img brazil.jpg" alt="Logo" class="logo" />
-        <form class="login-form" id="loginForm">
-            <h2>Iniciar Sesión</h2>
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required />
+    <div className="contenedorUnico" id="body-inicio-sesion">
+      <div className="logoUnico">
+        <br />
+        <img src={perfilImg} alt="Logo" />
+      </div>
+      <br />
+      <br />
+      <h2 className="tituloUnico  ">Bienvenido a ActivSena</h2>
+      
+      <form className="formularioUnico">
+        <div className="usuarioUnico">
+          <input
+            type="text"
+            id="usuarioUnico"
+            className="campoInputUnico"
+            required
+          />
+          <label htmlFor="usuarioUnico" className="labelInputUnico">
+            Usuario
+          </label>
+        </div>
+        <div className="usuarioUnico">
+          <input
+            type="password"
+            id="passwordUnico"
+            className="campoInputUnico"
+            required
+          />
+          <label htmlFor="passwordUnico" className="labelInputUnico">
+            Contraseña
+          </label>
+        </div>
+
+        <div className="olvidoContrasenaUnico">
+          <button 
+          
+            type="button" 
+            className="btnLoginUnico" 
+            onClick={manejarClickOlvidoContraseña}
             
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required />
-            
-            <button type="button" onclick="handleLogin()">Iniciar Sesión</button>
-            
-            <a href="#" class="forgot-password">¿Olvidaste la contraseña?</a>
-            <a href="#" class="password-forgot">¿Recuperar contraseña?</a>
-            
-        </form>
+          >
+               <span></span><span></span><span></span><span></span>
+           
+            {esOlvidoContraseña ? 'Regresar al inicio de sesión' : 'Olvidé mi contraseña'}
+          </button>
+        </div>
+
+        <button className="btnLoginUnicor">
+          <span></span><span></span><span></span><span></span>
+          Iniciar sesión
+        </button>
+      </form>
+      <br />
+
+      <div className="registroUnico">
+        <p className="textoRegistroUnico">
+          ¿No tienes cuenta? 
+          <a href="#registro" className="enlaceRegistroUnico">Regístrate aquí</a>
+        </p>
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default InicioSesion;

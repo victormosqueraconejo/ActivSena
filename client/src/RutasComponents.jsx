@@ -4,6 +4,8 @@ import HomePage from "../public/HomePage"
 import DashBoard from '../public/DashBoard'
 import DashBoardAp from '../public/DashBoardAp'
 import DashBoardIn from '../public/DashBoardIn'
+import InicioSesion from '../public/InicioSesion'
+import Registro from '../public/Registro'
 
 
 export default function RutasComponents() {
@@ -12,6 +14,8 @@ export default function RutasComponents() {
     <BrowserRouter>
         <Routes>
             <Route path='/' element={<HomePage></HomePage>} />
+            <Route path='/iniciosesion' element={<InicioSesion />} />
+            <Route path='/registro' element={<Registro />} />
             <Route path='/dash' element={<DashBoard/>}/>
             <Route path='/dashap' element={<DashBoardAp/>}/>
             <Route path='/dashin' element={<DashBoardIn/>}/>
