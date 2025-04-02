@@ -4,9 +4,9 @@ import {
   FaHome,
   FaTimes,
   FaRegCheckCircle,
-  FaRunning ,
+  FaRunning,
   FaUserGraduate,
-  FaStopwatch  
+  FaStopwatch,
 } from "react-icons/fa";
 import React from "react";
 import logo from "../img/logo.png";
@@ -28,31 +28,66 @@ export default function MenuLateral({
       </section>
 
       <nav className="menudash">
-        <button onClick={() => setContenidoActual("home")} className="opciondash">
+        <button
+          onClick={() => setContenidoActual("home")}
+          className="opciondash"
+        >
           <FaHome className="iconodash" />
           Inicio
         </button>
-        <button onClick={() => setContenidoActual("ludicas")} className="opciondash">
-          <FaRunning  className="iconodash" />
+        <button
+          onClick={() => setContenidoActual("actividades")}
+          className="opciondash"
+        >
+          <FaHome className="iconodash" />
+          Actividades
+        </button>
+        <button
+          onClick={() => setContenidoActual("aplicacion")}
+          className="opciondash"
+        >
+          <FaHome className="iconodash" />
+          Aplicacion
+        </button>
+        <button
+          onClick={() => setContenidoActual("ludicas")}
+          className="opciondash"
+        >
+          <FaRunning className="iconodash" />
           Ludicas
         </button>
-        <button onClick={() => setContenidoActual("horasl")} className="opciondash">
-          <FaStopwatch  className="iconodash" />
+        <button
+          onClick={() => setContenidoActual("horasl")}
+          className="opciondash"
+        >
+          <FaStopwatch className="iconodash" />
           Horas Ludicas
         </button>
-        <button onClick={() => setContenidoActual("feedback")} className="opciondash">
+        <button
+          onClick={() => setContenidoActual("feedback")}
+          className="opciondash"
+        >
           <FaDiscourse className="iconodash" />
           FeedBack
         </button>
-        <button onClick={() => setContenidoActual("constancia")} className="opciondash">
+        <button
+          onClick={() => setContenidoActual("constancia")}
+          className="opciondash"
+        >
           <FaUserGraduate className="iconodash" />
           Constancia
         </button>
-        <button onClick={() => setContenidoActual("alquiler")} className="opciondash">
+        <button
+          onClick={() => setContenidoActual("alquiler")}
+          className="opciondash"
+        >
           <FaRegCheckCircle className="iconodash" />
           Alquiler
         </button>
-        <button onClick={() => setContenidoActual("calendario")} className="opciondash">
+        <button
+          onClick={() => setContenidoActual("calendario")}
+          className="opciondash"
+        >
           <FaCalendarAlt className="iconodash" />
           Calendario
         </button>

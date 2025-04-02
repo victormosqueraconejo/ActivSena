@@ -4,9 +4,6 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
-
-
 .contenedordash {
   /*App*/
   display: flex;
@@ -26,7 +23,6 @@
   margin-bottom: 20px;
   font-size: 22px;
 }
-
 .menudash {
   /*SideBar*/
   display: flex;
@@ -64,11 +60,12 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  width: 80vw;
+  width: 84vw;
   padding: 10px 20px;
   background-color: #dbdada;
   position: relative;
-  top: -3mm;
+  top: -6mm;
+  right: 20px;
 }
 
 .busquedadash {
@@ -214,4 +211,32 @@
 .subirdash {
   position: relative;
   top: -3mm;
+}
+
+
+
+/* Fijar el menú lateral (borrar si causa conflictos en el resposive)  */ 
+.barradash {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  height: 100vh; 
+  width: 250px; 
+  background-color: #dbdada;
+  color: white;
+  overflow-y: auto; 
+}
+
+.contenedordash {
+  display: flex;
+  height: 100vh; 
+}
+
+.contenidodash {
+  margin-left: 250px; 
+  flex-grow: 1;
+  overflow-y: auto; 
+  height: 100vh;
+  padding: 20px;
+  background-color: #f4f4f4;
 }
