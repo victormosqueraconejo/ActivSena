@@ -2,7 +2,6 @@
   "name": "client",
   "version": "1.0.0",
   "description": "",
-  
   "main": "index.js",
   "scripts": {
     "dev": "vite --port 3000",
@@ -15,6 +14,7 @@
   "type": "commonjs",
   "devDependencies": {
     "tailwindcss": "^4.0.15",
+    "typescript": "^5.8.3",
     "vite": "^6.2.3"
   },
   "dependencies": {
