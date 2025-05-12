@@ -9,13 +9,14 @@ import DetallesAlquiler from "../src/pages/DetallesAlquiler/DetallerAlquiler";
 import Feedbacks from "../src/pages/Feedback/Feedbacks";
 import ConstanciaCertificado from "../src/pages/ConstanciaCertificado/Constancia";
 import Actividades from "../src/pages/Actividades/Actividades";
+import Aplicacion from "../src/pages/Aplicacion/Aplicacion";
+import ConstanciasList from "../src/pages/Constancia/components/ConstanciasList";
 
 import "../src/styles/BotHp.css";
 import "../src/styles/ColaViento.css";
 import "../src/styles/Resposive.css";
 import "../src/styles/global.css";
 import "../src/styles/Fondo.css";
-import Aplicacion from "../src/pages/Aplicacion/Aplicacion";
 
 export default function DashBoard() {
   const [menuAbierto, setMenuAbierto] = useState(true);
@@ -38,6 +39,9 @@ export default function DashBoard() {
         {contenidoActual === "detallea" && <DetallesAlquiler />}
         {contenidoActual === "feedback" && <Feedbacks />}
         {contenidoActual === "constancia" && <ConstanciaCertificado />}
+        {contenidoActual === "constancia2" && <ConstanciasList />}
+
+
 
 
 

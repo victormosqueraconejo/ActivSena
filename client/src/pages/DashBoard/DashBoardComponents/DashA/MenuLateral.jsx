@@ -84,6 +84,14 @@ export default function MenuLateral({
           Constancia
         </button>
 
+        <button
+          onClick={() => setContenidoActual("constancia2")}
+          className="opciondash"
+        >
+          <FaUserGraduate className="iconodash" />
+          ConstanciaAD
+        </button>
+
         <img src={logo} alt="" />
       </nav>
     </aside>
