@@ -1,0 +1,184 @@
+/* General body styling */
+.GHbody {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main container */
+.GHcontainer {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header */
+.GHh1 {
+  font-size: 28px;
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: slideIn 1s ease-out;
+}
+
+/* List styles */
+.GHul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.GHli {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+}
+
+.GHli:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Add icon */
+.GHli .icon {
+  font-size: 18px;
+  margin-left: 15px;
+  color: #4CAF50;
+  transition: color 0.3s ease;
+}
+
+.GHli:hover .icon {
+  color: #45a049;
+}
+
+/* Buttons */
+.GHbutton {
+  margin: 5px;
+  padding: 12px 20px;
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.GHbutton:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.GHbutton.rechazar {
+  background-color: #f44336;
+}
+
+.GHbutton.rechazar:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* Messages */
+.GHmessage {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  animation: slideInAlert 0.5s ease-in-out;
+}
+
+.GHmessage.error {
+  background-color: #f44336;
+}
+
+/* Modal */
+.GHmodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.GHmodal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* h2 and p */
+.GHh2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.GHp {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Modal buttons */
+.GHmodal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInAlert {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

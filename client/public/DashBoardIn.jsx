@@ -8,14 +8,17 @@ import Feedbacks from "../src/pages/Feedback/Feedbacks";
 import Planificar from "../src/pages/Planificar/Planificar";
 import Registroludicas from "../src/pages/RegistroLudicas/Registroludicas";
 import Combinar from "../src/pages/CombinarFA/Combinar";
-
+import Actividades from "../src/pages/Actividades/Actividades";
+import Aplicacion from "../src/pages/Aplicacion/Aplicacion";
+import AprendizRun from "../src/pages/AprendizC/AprendizRun";
+import PlanificarEvento from "../src/pages/PlanificarEv/PlanificarEvento";
+import RegistroA from "../src/pages/RegistroAsistencia/RegistroA";
 
 import "../src/styles/BotHp.css";
 import "../src/styles/ColaViento.css";
 import "../src/styles/Resposive.css";
 import "../src/styles/global.css";
-import Actividades from "../src/pages/Actividades/Actividades";
-import Aplicacion from "../src/pages/Aplicacion/Aplicacion";
+
 
 export default function DashBoard() {
   const [menuAbierto, setMenuAbierto] = useState(true);
@@ -38,6 +41,12 @@ export default function DashBoard() {
         {contenidoActual === "feedback" && <Feedbacks />}
         {contenidoActual === "comprobar" && < Combinar />}
         {contenidoActual === "calendario" && <CalendarioAdmin />}
+        {contenidoActual === "aprendiz" && <AprendizRun />}
+        {contenidoActual === "planevento" && <PlanificarEvento />}
+        {contenidoActual === "registro" && <RegistroA />}
+
+
+
 
 
 

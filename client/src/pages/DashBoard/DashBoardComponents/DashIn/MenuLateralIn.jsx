@@ -84,6 +84,31 @@ export default function MenuLateral({
           Calendario
         </button>
 
+        <button
+          onClick={() => setContenidoActual("aprendiz")}
+          className="opciondash"
+        >
+          <FaCalendarAlt className="iconodash" />
+          Aprendiz
+        </button>
+
+        <button
+          onClick={() => setContenidoActual("planevento")}
+          className="opciondash"
+        >
+          <FaCalendarAlt className="iconodash" />
+          Planificar Evento
+        </button>
+
+        <button
+          onClick={() => setContenidoActual("registro")}
+          className="opciondash"
+        >
+          <FaCalendarAlt className="iconodash" />
+          Registro QR
+        </button>
+
+
         <img src={logo} alt="" />
       </nav>
     </aside>
