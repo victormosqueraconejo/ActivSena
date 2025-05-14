@@ -1,12 +1,11 @@
+// src/components/ActivBot.jsx
 import { FaRobot } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import React from "react";
 
-
-export default function ActivBot() {
+export default function ActivBot({ irAChatai }) {
   return (
-    <Link to="/activbot" className="activbot">
+    <button onClick={irAChatai} className="activbot">
       <FaRobot className="activbot-icon" />
-    </Link>
+    </button>
   );
 }

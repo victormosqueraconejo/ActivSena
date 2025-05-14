@@ -1,0 +1,164 @@
+
+
+
+
+.body-alquiler-ap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../img/fondo.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Crea una capa de superposición sobre el fondo */
+.body-alquiler-ap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro con opacidad */
+    z-index: -1; /* Asegura que el overlay esté debajo del contenido */
+}
+
+.header-alquiler-ap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1; /* Asegura que el header esté por encima del fondo */
+}
+
+.titulo-header-alquiler-ap {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    filter: drop-shadow(10px 10px 1px rgba(0, 248, 12, 0.26));
+
+}
+
+.img-header-alquiler-ap {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(3px 3px 1px rgb(79, 248, 0));
+}
+
+.main-alquiler-ap {
+    position: absolute;
+    bottom: 20px; /* Coloca el main al final */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+    z-index: 1; /* Asegura que el main esté por encima del fondo */
+}
+
+.titulo-main-alquiler-ap {
+    text-align: center;
+    color: rgb(250, 242, 242);
+    font-size: 26px;
+    justify-content: center;
+    width: 90%;
+    padding: 10px ;
+    max-width: 800px;
+    align-items: center;
+  
+    margin-left: 300px;
+    
+}
+
+/* Imágenes de la galería */
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+    margin-top: 50px;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Efectos de sombras */
+.img-baloncesto-alquiler-ap {
+    box-shadow: 0px 0px 30px rgb(235, 126, 1);
+    filter: drop-shadow(10px 10px 1px rgb(255, 0, 0));
+}
+
+.img-futbol-alquiler-ap {
+    box-shadow: 0px 0px 30px rgb(5, 1, 235);
+    filter: drop-shadow(10px 10px 1px rgb(74, 0, 248));
+}
+
+.img-danza-alquiler-ap {
+    box-shadow: 0px 0px 30px rgb(153, 2, 184);
+    filter: drop-shadow(10px 10px 1px rgb(198, 0, 248));
+}
+
+.img-juegos-alquiler-ap {
+    box-shadow: 0px 0px 30px rgb(27, 226, 0);
+    filter: drop-shadow(10px 10px 1px rgb(0, 248, 12));
+}
+
+.img-parques-alquiler-ap {
+    box-shadow: 0px 0px 30px rgb(44, 160, 236);
+    filter: drop-shadow(10px 10px 1px rgb(0, 238, 255));
+   
+}
+
+.img-domino-alquiler-ap {
+    box-shadow: 0px 0px 30px rgba(15, 15, 15, 0.658);
+    filter: drop-shadow(10px 10px 1px rgba(15, 15, 15, 0.89));
+}
+
+.img-sapo-alquiler-ap {
+    box-shadow: 0px 0px 30px rgb(238, 3, 3);
+    filter: drop-shadow(10px 10px 1px rgb(248, 0, 0));
+}
+
+.img-sena-alquiler-ap {
+    box-shadow: 0px 0px 70px rgb(42, 238, 3);
+    filter: drop-shadow(10px 10px 1px rgb(0, 248, 54));
+}
+

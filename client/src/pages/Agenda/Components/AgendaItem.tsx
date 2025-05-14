@@ -1,4 +1,5 @@
-import React from "react"
+import React from 'react'
+
 import { Data } from "../../../interfaces/AgendaModel"
 import "../styles/index.css"
 
@@ -10,19 +11,20 @@ interface Props {
 export const CardItem = ({ data, handleDragging }: Props) => {
 
   const handleDragStart = (e: React.DragEvent<HTMLDivElement>) => {
-      e.dataTransfer.setData('text', `${data.id}`)
-      handleDragging(true)
+    e.dataTransfer.setData('text', `${data.id}`)
+    handleDragging(true)
   }
+
   const handleDragEnd = () => handleDragging(false)
 
   return (
-      <div
-          className='card-container'
-          draggable
-          onDragStart={handleDragStart}
-          onDragEnd={handleDragEnd}
-      >
-          <p>{data.content}</p>
-      </div>
+    <div
+      className='card-container'
+      draggable
+      onDragStart={handleDragStart}
+      onDragEnd={handleDragEnd}
+    >
+      <p>{data.content}</p>
+    </div>
   )
 }

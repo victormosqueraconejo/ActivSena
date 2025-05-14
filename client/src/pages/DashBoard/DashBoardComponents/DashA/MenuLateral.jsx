@@ -46,7 +46,7 @@ export default function MenuLateral({
           className="opciondash"
         >
           <FaHome className="iconodash" />
-          Aplicacion
+          Eventos
         </button>
         <button
           onClick={() => setContenidoActual("calendario")}
@@ -70,19 +70,13 @@ export default function MenuLateral({
           Detalle Alquiler
         </button>
         <button
-          onClick={() => setContenidoActual("feedback")}
+          onClick={() => setContenidoActual("combinar")}
           className="opciondash"
         >
           <FaDiscourse className="iconodash" />
           FeedBack
         </button>
-        <button
-          onClick={() => setContenidoActual("constancia")}
-          className="opciondash"
-        >
-          <FaUserGraduate className="iconodash" />
-          Constancia
-        </button>
+       
 
         <button
           onClick={() => setContenidoActual("constancia2")}
@@ -91,6 +85,13 @@ export default function MenuLateral({
           <FaUserGraduate className="iconodash" />
           ConstanciaAD
         </button>
+         <button
+          onClick={() => setContenidoActual("cartacontacto")}
+            className="opciondash"
+           >
+            <FaCalendarAlt className="iconodash" />
+           Contactos
+                </button>
 
         <img src={logo} alt="" />
       </nav>

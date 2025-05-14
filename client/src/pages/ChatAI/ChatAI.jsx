@@ -1,9 +1,11 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import "./styles/ChatStyle.css";
-
+import chatai from '../ChatAI/img/chat-icon.svg'
 export default function ChatAI() {
+ 
+
   const [messages, setMessages] = useState([
-    { text: "Hola! ¿En qué puedo ayudarte?", sender: "bot" }
+    { text: "Hola! Soy Activbot 'como estas ?¿En qué puedo ayudarte El dia de hoy , sere tu acompañante en esta aplicacion innovadora?", sender: "bot" }
   ]);
   const [input, setInput] = useState("");
 
@@ -12,9 +14,9 @@ export default function ChatAI() {
     const userMessage = { text: input, sender: "user" };
     setMessages(prev => [...prev, userMessage]);
     setInput("");
-    
+
     setTimeout(() => {
-      const botReply = { text: "Lo siento, soy un chat de prueba...Goku por siempre!", sender: "bot" };
+      const botReply = { text: "Hola soy una prueba , un gusto conocerte!", sender: "bot" };
       setMessages(prev => [...prev, { text: "", sender: "spacer" }, botReply]);
     }, 1000);
   };
@@ -29,7 +31,7 @@ export default function ChatAI() {
     <div className="chat-container">
       <div className="chat-box">
         <div className="chat-header">
-          <img src ="/logo.png" alt="Chat Logo" className="chat-logo" />
+          <img src={chatai} alt="Chat Logo" className="chat-logo" />
           <h2 className="chat-title">ACTIV BOT</h2>
         </div>
         <div className="messages-container">
@@ -44,14 +46,14 @@ export default function ChatAI() {
           ))}
         </div>
         <div className="input-container">
-          <input 
+          <input
             className="chat-input"
-            value={input} 
-            onChange={(e) => setInput(e.target.value)} 
-            onKeyPress={handleKeyPress} 
-            placeholder="Escribe un mensaje..." 
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyPress={handleKeyPress}
+            placeholder="Escribe un mensaje..."
           />
-          <button 
+          <button
             className="send-button"
             onClick={sendMessage}>
             ➤

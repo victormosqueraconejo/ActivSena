@@ -6,17 +6,20 @@ import Navbar from "../src/pages/DashBoard/DashBoardComponents/DashA/Navbar";
 import Alquiler from "../src/pages/Alquiler/Alquiler";
 import CalendarioAdmin from "../src/pages/CalendarioAdmin/Calendario";
 import DetallesAlquiler from "../src/pages/DetallesAlquiler/DetallerAlquiler";
-import Feedbacks from "../src/pages/Feedback/Feedbacks";
-import ConstanciaCertificado from "../src/pages/ConstanciaCertificado/Constancia";
+import ConstanciaCertificado from "../src/pages/ConstanciaCertificado/ConstanciaCR";
 import Actividades from "../src/pages/Actividades/Actividades";
 import Aplicacion from "../src/pages/Aplicacion/Aplicacion";
 import ConstanciasList from "../src/pages/Constancia/components/ConstanciasList";
+import Combinar from "../src/pages/CombinarFA/Combinar";
+import CartaContacto from "../src/pages/CartasContacto/CartaContacto"
+import ChatAI from '../src/pages/ChatAI/ChatAI'
 
 import "../src/styles/BotHp.css";
 import "../src/styles/ColaViento.css";
 import "../src/styles/Resposive.css";
 import "../src/styles/global.css";
 import "../src/styles/Fondo.css";
+
 
 export default function DashBoard() {
   const [menuAbierto, setMenuAbierto] = useState(true);
@@ -37,11 +40,11 @@ export default function DashBoard() {
         {contenidoActual === "calendario" && <CalendarioAdmin />}
         {contenidoActual === "registroa" && <Alquiler />}
         {contenidoActual === "detallea" && <DetallesAlquiler />}
-        {contenidoActual === "feedback" && <Feedbacks />}
+        {contenidoActual === "combinar" && <Combinar/>}
         {contenidoActual === "constancia" && <ConstanciaCertificado />}
         {contenidoActual === "constancia2" && <ConstanciasList />}
-
-
+        {contenidoActual === "cartacontacto" && <CartaContacto />}
+        {contenidoActual === "chatai" && <ChatAI />}
 
 
 
@@ -49,7 +52,7 @@ export default function DashBoard() {
 
 
       </main>
-      <ActivBot />
+          <ActivBot irAChatai={() => setContenidoActual("chatai")} />
     </section>
   );
 }
