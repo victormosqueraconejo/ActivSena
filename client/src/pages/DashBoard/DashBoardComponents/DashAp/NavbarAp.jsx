@@ -5,7 +5,7 @@ import avatar from "../img/avtar.png";
 export default function Navbar({ toggleMenu }) {
   return (
     <header className="encabezadodash">
-      <button className="iconodash" onClick={toggleMenu}>
+      <button className="iconodashm" onClick={toggleMenu}>
         <FaBars />
       </button>
 

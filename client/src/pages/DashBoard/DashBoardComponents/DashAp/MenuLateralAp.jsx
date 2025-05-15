@@ -6,7 +6,14 @@ import {
   FaRegCheckCircle,
   FaRunning,
   FaUserGraduate,
+  FaListAlt ,
+   FaAddressBook,
   FaStopwatch,
+
+FaGamepad,
+ 
+
+  FaRegCalendarCheck 
 } from "react-icons/fa";
 import React from "react";
 import logo from "../img/logo.png";
@@ -39,14 +46,14 @@ export default function MenuLateral({
           onClick={() => setContenidoActual("actividades")}
           className="opciondash"
         >
-          <FaHome className="iconodash" />
+          <FaListAlt  className="iconodash" />
           Actividades
         </button>
         <button
           onClick={() => setContenidoActual("aplicacion")}
           className="opciondash"
         >
-          <FaHome className="iconodash" />
+          <FaRegCalendarCheck  className="iconodash" />
           Eventos
         </button>
         <button
@@ -81,8 +88,8 @@ export default function MenuLateral({
           onClick={() => setContenidoActual("alquilerap")}
           className="opciondash"
         >
-          <FaRegCheckCircle className="iconodash" />
-          Alquiler
+          <FaGamepad   className="iconodash" />
+          Juegos y Alquiler
         </button>
         <button
           onClick={() => setContenidoActual("calendario")}
@@ -94,10 +101,13 @@ export default function MenuLateral({
         <button
           onClick={() => setContenidoActual("cartacontacto")}
           className="opciondash"
+          
           >
-          <FaRegCheckCircle className="iconodash" />
+            
+          < FaAddressBook className="iconodash" />
           Contactos
         </button>
+        
        
         
         

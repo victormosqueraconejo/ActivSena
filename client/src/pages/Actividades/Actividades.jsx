@@ -15,7 +15,7 @@ export default function Actividades() {
   return (
     <div className="contenedor-sena">
       <header className='cabecera'>
-        <h1>Actividades - SENA</h1>
+        <h1 className='actividad-parrafo'>Actividades - SENA</h1>
       </header>
       
       <h1 className='parrafo'>¿Qué hay de Nuevo?</h1>

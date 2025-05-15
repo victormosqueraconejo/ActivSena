@@ -7,10 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-image: url('../img/fondo.webp');
-    background-size: cover;
-    background-position: center;
+    min-height: 100%;
+   
 }
 
 /* Crea una capa de superposición sobre el fondo */
@@ -21,7 +19,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro con opacidad */
+   
     z-index: -1; /* Asegura que el overlay esté debajo del contenido */
 }
 
@@ -58,6 +56,8 @@
     bottom: 20px; /* Coloca el main al final */
     left: 0;
     width: 100%;
+    
+   
     text-align: center;
     padding-top: 0;
     z-index: 1; /* Asegura que el main esté por encima del fondo */
@@ -65,15 +65,17 @@
 
 .titulo-main-alquiler-ap {
     text-align: center;
-    color: rgb(250, 242, 242);
-    font-size: 26px;
+    color: rgb(16, 19, 15);
+    font-size: 24px;
     justify-content: center;
     width: 90%;
-    padding: 10px ;
+   margin-block-end: auto;
+  
     max-width: 800px;
     align-items: center;
   
-    margin-left: 300px;
+    margin-left: 150px;
+   
     
 }
 
@@ -122,43 +124,43 @@
 
 /* Efectos de sombras */
 .img-baloncesto-alquiler-ap {
-    box-shadow: 0px 0px 30px rgb(235, 126, 1);
-    filter: drop-shadow(10px 10px 1px rgb(255, 0, 0));
+    box-shadow: 0px 0px 20px rgb(248, 13, 5);
+    filter: drop-shadow(9px 9px 1px rgb(240, 3, 3));
 }
 
 .img-futbol-alquiler-ap {
-    box-shadow: 0px 0px 30px rgb(5, 1, 235);
-    filter: drop-shadow(10px 10px 1px rgb(74, 0, 248));
+    box-shadow: 0px 0px 30px rgb(18, 19, 18);
+    filter: drop-shadow(10px 10px 1px rgb(254, 254, 255));
 }
 
 .img-danza-alquiler-ap {
-    box-shadow: 0px 0px 30px rgb(153, 2, 184);
-    filter: drop-shadow(10px 10px 1px rgb(198, 0, 248));
+    box-shadow: 0px 0px 30px rgb(83, 45, 223);
+    filter: drop-shadow(10px 10px 1px rgb(143, 7, 177));
 }
 
 .img-juegos-alquiler-ap {
-    box-shadow: 0px 0px 30px rgb(27, 226, 0);
-    filter: drop-shadow(10px 10px 1px rgb(0, 248, 12));
+    box-shadow: 0px 0px 30px rgb(0, 181, 226);
+    filter: drop-shadow(10px 10px 1px rgb(11, 186, 230));
 }
 
 .img-parques-alquiler-ap {
-    box-shadow: 0px 0px 30px rgb(44, 160, 236);
-    filter: drop-shadow(10px 10px 1px rgb(0, 238, 255));
+    box-shadow: 0px 0px 30px rgb(239, 243, 4);
+    filter: drop-shadow(10px 10px 1px rgb(238, 234, 4));
    
 }
 
 .img-domino-alquiler-ap {
-    box-shadow: 0px 0px 30px rgba(15, 15, 15, 0.658);
-    filter: drop-shadow(10px 10px 1px rgba(15, 15, 15, 0.89));
+    box-shadow: 0px 0px 30px rgba(5, 29, 238, 0.658);
+    filter: drop-shadow(10px 10px 1px rgba(28, 4, 248, 0.89));
 }
 
 .img-sapo-alquiler-ap {
-    box-shadow: 0px 0px 30px rgb(238, 3, 3);
-    filter: drop-shadow(10px 10px 1px rgb(248, 0, 0));
+    box-shadow: 0px 0px 30px rgb(255, 153, 0);
+    filter: drop-shadow(10px 10px 1px rgba(212, 158, 7, 0.774));
 }
 
 .img-sena-alquiler-ap {
-    box-shadow: 0px 0px 70px rgb(42, 238, 3);
-    filter: drop-shadow(10px 10px 1px rgb(0, 248, 54));
+   
+    filter: drop-shadow(10px 10px 1px rgb(15, 224, 43));
 }
 

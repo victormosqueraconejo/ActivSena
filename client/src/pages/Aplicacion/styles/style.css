@@ -18,7 +18,7 @@ body.evento-app-body {
 .evento-app-contenido-principal {
     flex: 1;
     padding: 20px;
-    background-color: #fff;
+    
 }
 
 .evento-app-cabecera {
@@ -35,7 +35,7 @@ body.evento-app-body {
     border-radius: 40px;
     margin: 0;
     font-size: 28px;
-    color: #2c3e50;
+    color: #f9fbfd;
 }
 
 .evento-app-boton-notificaciones {
@@ -56,12 +56,14 @@ body.evento-app-body {
 /* Carrusel de historias */
 .evento-app-seccion-historias {
     margin-bottom: 30px;
+   
 }
 
 .evento-app-titulo-seccion {
     font-size: 24px;
-    color: #2c3e50;
+    color: #f9fafc;
     margin-bottom: 20px;
+   
 }
 
 .evento-app-carrusel-historias {
@@ -69,25 +71,29 @@ body.evento-app-body {
     gap: 15px;
     overflow-x: auto;
     padding-bottom: 10px;
+    
 }
 
 .evento-app-historia {
     text-align: center;
     flex: 0 0 auto;
+
 }
 
 .evento-app-historia img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px solid #3498db;
+    border: 2px solid #0de91f;
     padding: 3px;
+    filter: drop-shadow(4px 5px 4px rgb(58, 241, 2));
+   
 }
 
 .evento-app-historia p {
     margin-top: 5px;
     font-size: 14px;
-    color: #555;
+    color: #fff9f9;
 }
 
 /* Botones de acción */
@@ -95,6 +101,7 @@ body.evento-app-body {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
+  
 }
 
 .evento-app-boton-accion {
@@ -124,8 +131,8 @@ body.evento-app-body {
 }
 
 .evento-app-tarjeta-evento {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #24d860;
+    border: 5px solid #1e96c5;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -151,13 +158,13 @@ body.evento-app-body {
 .evento-app-nombre-usuario {
     margin: 0;
     font-size: 18px;
-    color: #2c3e50;
+    color: #fafcfd;
 }
 
 .evento-app-fecha-evento {
     margin: 0;
     font-size: 14px;
-    color: #888;
+    color: #f0eded;
 }
 
 .evento-app-contenido-evento img {
@@ -169,7 +176,7 @@ body.evento-app-body {
 .evento-app-descripcion-evento {
     margin: 0;
     font-size: 16px;
-    color: #555;
+    color: #faf5f5;
 }
 
 .evento-app-acciones-evento {
@@ -193,7 +200,7 @@ body.evento-app-body {
 }
 
 .evento-app-boton-comentar {
-    background-color: #27ae60;
+    background-color: #e04f23;
     color: #fff;
 }
 
@@ -202,7 +209,7 @@ body.evento-app-body {
 }
 
 .evento-app-boton-comentar:hover {
-    background-color: #219653;
+    background-color: #0df170;
 }
 
 .evento-app-feedback-evento {

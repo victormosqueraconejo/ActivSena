@@ -50,7 +50,7 @@ const Aplicacion = () => {
 
           <section className="evento-app-seccion-botones-accion">
             <button className="evento-app-boton-accion">¿Qué piensas hacer hoy?</button>
-            <button className="evento-app-boton-accion">Asistir a eventos</button>
+            <button className="evento-app-boton-accion">Apoyos</button>
             <button className="evento-app-boton-accion">Lúdicas</button>
             <button className="evento-app-boton-accion">Alquiler de elementos</button>
           </section>

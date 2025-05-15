@@ -5,7 +5,7 @@ import LogoImg from "../AlquierAP/img/logo.png";
 import futbolImg from "../AlquierAP/img/futbol.jpg";
 import baloncestoImg from "../AlquierAP/img/baloncesto.jpg";
 import DanzaImg from "../AlquierAP/img/danza.jpg";
-import parquesImg from "../AlquierAP/img/parques.png";
+import parquesImg from "../AlquierAP/img/parques.jpg";
 import dominoImg from "../AlquierAP/img/domino.png";
 import juegosImg from "../AlquierAP/img/juegos_mesa.jpg";
 import senaImg from "../AlquierAP/img/logo-sena.png";
@@ -46,7 +46,7 @@ const App = () => {
           <img
             src={baloncestoImg}
             alt="Baloncesto"
-            className="img-baloncesto"
+            className="img-baloncesto-alquiler-ap"
           />
         </span>
         <span style={{ "--i": 7 }}>

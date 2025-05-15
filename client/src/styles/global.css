@@ -10,9 +10,10 @@
 }
 
 .barradash {
+   
   /*SideBar*/
   width: 250px;
-  background: #dbdada;
+  background: #dadbda;
   color: rgb(0, 0, 0);
   padding: 20px;
   height: 100vh;
@@ -25,12 +26,14 @@
 }
 .menudash {
   /*SideBar*/
+ 
   display: flex;
   flex-direction: column;
 }
 
 .opciondash {
   /*SideBar*/
+   background-color: #ffffff;
   padding: 10px;
   margin: 10px 0;
   text-decoration: none;
@@ -50,6 +53,7 @@
 
 .contenidodash {
   /*App*/
+  
   flex: 1;
   padding: 20px;
 }
@@ -63,93 +67,138 @@
   width: 84vw;
   padding: 10px 20px;
   background-color: #dbdada;
+   background-color: #4add3c;
+    filter: drop-shadow(1px 10px 10px rgb(4, 241, 241));
   position: relative;
   top: -6mm;
-  right: 20px;
+  right: 65px;
 }
 
 .busquedadash {
   /*Navbar*/
+  
   padding: 8px;
   width: 290px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: white;
+  
   position: absolute;
   left: 33%;
   transform: translateX(-50%);
+  
 }
+
 
 .accionesdash {
   /*Navbar*/
+   background-color: #eeeff7;
   display: flex;
   align-items: center;
   gap: 15px;
+  width: 250px;
+ margin-right: 30px;
+ border-radius: 30px;
+  
 }
 
 .iconodash {
+
   font-size: 20px;
   border: none;
   cursor: pointer;
+  width: 30px;
   display: flex;
   align-items: center;
   border-radius: 4px;
-  background-color: dbdada;
+  background-color: #f7f7f7;
   box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.2);
   color: rgb(87, 86, 86);
+   filter: drop-shadow(1px 5px 5px rgb(64, 236, 12));
+   
+   
+
+}
+.iconodashm{
+  margin-left: 30px;
+ 
+
 }
 
 .accionesdash {
+  
   display: flex;
   align-items: center;
   gap: 15px;
+  
+
 }
 
 .opciondash:hover {
-  background: #b7c1cf;
+  
+  background: #0aee56;
+  
+  
 }
 
 .activa {
+  
   background: #4caf50;
   color: white;
+  
 }
 
 .iconodash {
-  font-size: 20px;
+  font-size: 24px;
+
   transition: color 0.3s;
 }
 
 .activa .iconodash {
-  color: white;
+  
+  color: rgb(255, 255, 255);
 }
 
 .usuariodash {
+  
   /*Navbar*/
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-right: 200px;
 }
 
 .avatardash {
-  width: 35px;
-  height: 35px;
+  
+  width: 50px;
+  height: 45px;
   border-radius: 50%;
   object-fit: cover;
+  filter: drop-shadow(4px 4px 4px rgb(5, 198, 223));
+ 
 }
 
 .nombredash {
+  
+  
   /*Navbar*/
   font-size: 14px;
   font-weight: bold;
   color: #333;
+  margin-left: 30px;
+  
 }
 
 .Clogodash {
-  /*Navbar*/
+border-radius: 30px;
+   background-color: #3ddf3d;
   display: flex;
   align-items: center;
   padding: 10px;
   gap: 4px;
+  width: 200px;
+margin-right: 2px;
+  
 }
 
 .logodash {
@@ -158,6 +207,8 @@
   height: auto;
   position: relative;
   top: -16px;
+     filter: drop-shadow(1px 10px 10px rgb(4, 241, 241));
+     
 }
 
 .flexdash {
@@ -165,6 +216,7 @@
 }
 
 .menudash-lateral.oculto {
+  
   display: none;
 }
 
@@ -173,6 +225,7 @@
   background-color: #e2e8f0;
   color: #4a5568;
   border-radius: 9999px;
+  
   padding: 5px 12px;
   font-size: 0.875rem;
   font-weight: 600;
@@ -182,6 +235,7 @@
 
 .moverdash {
   margin-top: 10px;
+  
   width: 82vw;
 }
 
@@ -197,10 +251,14 @@
   align-items: center;
   text-align: center;
   padding: 10px;
+  
+  
 }
 
 .padddash {
   padding: 10px;
+  
+  
 }
 
 .img1dash {
@@ -209,8 +267,10 @@
 }
 
 .subirdash {
+   background-color: #30ee0a;
   position: relative;
   top: -3mm;
+     filter: drop-shadow(1px 10px 10px rgb(4, 241, 241));
 }
 
 
@@ -225,11 +285,15 @@
   background-color: #dbdada;
   color: white;
   overflow-y: auto; 
+ background-color: #f2f7f5;
+  filter: drop-shadow(10px 10px 10px rgb(4, 205, 241));
+  
 }
 
 .contenedordash {
   display: flex;
   height: 100vh; 
+     
 }
 
 .contenidodash {
@@ -239,4 +303,22 @@
   height: 100vh;
   padding: 20px;
   background-color: #f4f4f4;
+   background-image: url("../pages/AlquierAP/img/fondo.webp");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+
+.footer-dash {
+  /* Para bajarlo */
+  margin-top: 200px;  /* sube o baja este valor a tu gusto */
+  width: 1079px;
+  height: 100px;
+  /* Si quieres que esté centrado en texto, */
+  text-align: center;
+margin-right: 00px;
+  /* Otras propiedades que tengas */
+ 
+ 
 }
