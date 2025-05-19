@@ -48,6 +48,11 @@
   .carousel-button.right {
     right: 10px;
   }
+
+  .carousel-button.left:hover,
+  .carousel-button.right:hover {
+    background: #2980b9;
+  }
   
   
   .carousel-indicators {

@@ -24,7 +24,7 @@ export default function Rectificar() {
             <ul className='p2 bordado'>
               <p>EL EVENTO SE APROBO CORRECTAMENTE FUE UN EXITO</p>
             </ul>
-            <button className='botonar'>EDITAR</button>
+            <button className='botonar'>Publicar</button>
           </div>
           <div className='card-dark card text'>
             <h3 className='h3'>Baloncesto</h3>
@@ -33,7 +33,7 @@ export default function Rectificar() {
             <ul className='p2 bordado'>
               <p>EL EVENTO SE APROBO CORRECTAMENTE FUE UN EXITO</p>
             </ul>
-            <button className="botonar">EDITAR</button>
+            <button className="botonar">Publicar</button>
           </div>
           <div className='card-dark card text'>
             <h3 className='h3'>Tenis</h3>
@@ -42,7 +42,7 @@ export default function Rectificar() {
             <div className='p2 bordado'>
               <p>EL EVENTO SE APROBO CORRECTAMENTE FUE UN EXITO</p>
             </div>
-            <button className='botonar'>EDITAR</button>
+            <button className='botonar'>Publicar</button>
           </div>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function Rectificar() {
             <div className='p2 bordado'>
               <p>Evento aplazado, dia y fecha por confirmar</p>
             </div>
-            <button className='botonar'>EDITAR</button>
+            <button className='botonar'>Pendiente</button>
           </div>
           <div className='card-dark card text'>
             <h3 className='h3'>Cacao Fest</h3>
@@ -66,7 +66,7 @@ export default function Rectificar() {
             <div className='p2 bordado'>
               <p>El evento se aplazo, no se inscribieron suficientes Aprendices</p>
             </div>
-            <button className='botonar'>EDITAR</button>
+            <button className='botonar'>Pendiente</button>
           </div>
           <div className='card-dark card text'>
             <h3 className='h3'>Indo Academia</h3>
@@ -75,7 +75,7 @@ export default function Rectificar() {
             <div className='p2 bordado'>
             <p>Se encuentra pendiente, a la espera de confirmar!!</p>
             </div>
-            <button className='botonar'>EDITAR</button>
+            <button className='botonar'>Pendiente</button>
           </div>
         </div>
       </section>
