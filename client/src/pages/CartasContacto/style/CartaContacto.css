@@ -1,0 +1,135 @@
+/* Contenedor general */
+.pagina-contacto-unica {
+  background-image: url("../img//fondo.webp");
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+.header-contacto-unico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.logo-nosotros-contacto {
+  width: 100px;
+  height: 100px;
+}
+
+.texto-instructor-contacto {
+  color: white;
+  font-size: 28px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Contenedor de tarjetas */
+.card-container-contacto {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+/* Tarjeta base */
+.flip-card-contacto {
+  background-color: transparent;
+  width: 250px;
+  height: 350px;
+  perspective: 1000px;
+  margin-top: 60px;
+}
+
+/* Parte interna para rotación */
+.flip-card-inner-contacto {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-contacto:hover .flip-card-inner-contacto {
+  transform: rotateY(180deg);
+}
+
+/* Parte frontal y trasera */
+.flip-card-front-contacto,
+.flip-card-back-contacto {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Frontal */
+.flip-card-front-contacto {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image-contacto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Parte trasera */
+.flip-card-back-contacto {
+  background-color: #1e2a38;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-card-back-contacto h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.flip-card-back-contacto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.flip-card-back-contacto li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Logo dentro de la tarjeta */
+.logo-portada-contacto {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+/* Sombras personalizadas por persona */
+.carta-contacto-ana {
+  filter: drop-shadow(10px 10px 1px rgb(5, 252, 26));
+}
+
+.carta-contacto-luis {
+  filter: drop-shadow(10px 10px 1px rgb(255, 255, 255));
+}
+
+.carta-contacto-carla {
+  filter: drop-shadow(10px 10px 1px rgb(253, 136, 3));
+}
+
+.carta-contacto-alex {
+  filter: drop-shadow(10px 10px 1px rgb(3, 182, 253));
+}

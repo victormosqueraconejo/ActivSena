@@ -6,17 +6,20 @@ import NavbarAp from "../src/pages/DashBoard/DashBoardComponents/DashAp/NavbarAp
 import Alquiler from "../src/pages/Alquiler/Alquiler";
 import CalendarioAdmin from "../src/pages/CalendarioAdmin/Calendario";
 import Feedbacks from "../src/pages/Feedback/Feedbacks";
-import ConstanciaCertificado from "../src/pages/ConstanciaCertificado/Constancia";
 import Ludicas from "../src/pages/Ludicas/Ludicas";
 import HorasLudicas from "../src/pages/HorasLudicas/HorasLudicas";
-
-
+import Combinar  from "../src/pages/CombinarFA/Combinar";
+import ChatAI from '../src/pages/ChatAI/ChatAI'
+import AlquilerAP from "../src/pages/AlquierAP/AlquilerAP";
+import CartaContacto from "../src/pages/CartasContacto/CartaContacto"
+import Constanciacr from "../src/pages/ConstanciaCertificado/ConstanciaCR"
 import "../src/styles/BotHp.css";
 import "../src/styles/ColaViento.css";
 import "../src/styles/Resposive.css";
 import "../src/styles/global.css";
 import Actividades from "../src/pages/Actividades/Actividades";
 import Aplicacion from "../src/pages/Aplicacion/Aplicacion";
+
 
 export default function DashBoard() {
   const [menuAbierto, setMenuAbierto] = useState(true);
@@ -37,18 +40,21 @@ export default function DashBoard() {
         {contenidoActual === "ludicas" && <Ludicas />}
         {contenidoActual === "horasl" && <HorasLudicas />}
         {contenidoActual === "feedback" && <Feedbacks />}
-        {contenidoActual === "constancia" && < ConstanciaCertificado />}
+        {contenidoActual === "constancia" && < Constancia />}
         {contenidoActual === "alquiler" && <Alquiler />}
         {contenidoActual === "calendario" && <CalendarioAdmin />}
-
-
-
+        {contenidoActual === "combinar" && <Combinar />}
+       {contenidoActual === "chatai" && <ChatAI />}
+      {contenidoActual === "alquilerap" && < AlquilerAP />}
+       {contenidoActual === "cartacontacto" && < CartaContacto />}
+    {contenidoActual === "constanciacr" && < Constanciacr />}
 
 
 
 
       </main>
-      <ActivBot />
+     <ActivBot irAChatai={() => setContenidoActual("chatai")} />
+
     </section>
   );
 }

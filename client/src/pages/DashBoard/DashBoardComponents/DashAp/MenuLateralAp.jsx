@@ -47,7 +47,7 @@ export default function MenuLateral({
           className="opciondash"
         >
           <FaHome className="iconodash" />
-          Aplicacion
+          Eventos
         </button>
         <button
           onClick={() => setContenidoActual("ludicas")}
@@ -64,21 +64,21 @@ export default function MenuLateral({
           Horas Ludicas
         </button>
         <button
-          onClick={() => setContenidoActual("feedback")}
+          onClick={() => setContenidoActual("combinar")}
           className="opciondash"
         >
           <FaDiscourse className="iconodash" />
-          FeedBack
+          Feedback
         </button>
         <button
-          onClick={() => setContenidoActual("constancia")}
+          onClick={() => setContenidoActual("constanciacr")}
           className="opciondash"
         >
           <FaUserGraduate className="iconodash" />
           Constancia
         </button>
         <button
-          onClick={() => setContenidoActual("alquiler")}
+          onClick={() => setContenidoActual("alquilerap")}
           className="opciondash"
         >
           <FaRegCheckCircle className="iconodash" />
@@ -91,8 +91,17 @@ export default function MenuLateral({
           <FaCalendarAlt className="iconodash" />
           Calendario
         </button>
-
-        <img src={logo} alt="" />
+        <button
+          onClick={() => setContenidoActual("cartacontacto")}
+          className="opciondash"
+          >
+          <FaRegCheckCircle className="iconodash" />
+          Contactos
+        </button>
+       
+        
+        
+        <img src={logo} alt=""  />
       </nav>
     </aside>
   );

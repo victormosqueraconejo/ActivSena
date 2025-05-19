@@ -1,8 +1,8 @@
 /* Estilos base */
 #body-registro {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    height: 660px;
+
+   
     font-family: sans-serif;
     background: linear-gradient(#141e30, #243b55);
     display: flex;
@@ -12,8 +12,9 @@
 
 .contenedor-horizontalUnico {
     display: flex;
-    width: 95%;
-    max-width: 1200px;
+    
+    width: 100%;
+    max-width: 1500px;
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
@@ -22,6 +23,7 @@
 
 .columna-formularioUnico {
     flex: 1;
+
     padding: 20px;
     border-right: 1px solid #03e9f4;
 }
@@ -40,6 +42,7 @@ h2 {
 .grupo-campoUnico {
     position: relative;
     margin-bottom: 25px;
+    
 }
 
 .grupo-campoUnico input, 
@@ -96,6 +99,7 @@ select option {
     border: none;
     cursor: pointer;
     width: 80%;
+    
 }
 
 .boton-registroUnico:hover {
@@ -112,6 +116,7 @@ select option {
     text-align: center;
     color: #aaa;
     font-size: 13px;
+    
 }
 
 .enlace-loginUnico a {

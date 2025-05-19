@@ -1,47 +1,52 @@
 import React from 'react';
 import './style/Ludicas.css';
-
+import baloncestoimg from "./img/baloncesto.jpg"
+import futbolimg from "./img/futbol.jpg"
+import tenisimg from "./img/tenis.jpg"
+import voleibolimg from "./img/voleibol.jpg"
+import ajedrezimg from "./img/ajedrez.jpg"
+import atletismoimg from "./img/atletismo.jpg"
 const App = () => {
   const activities = [
     {
       id: 1,
       title: "Fútbol",
-      image: "imagenes/pngtree-soccer-ball-graphic-png-image_9985488.png",
+      image: futbolimg,
       location: "Cancha fútbol CTPI",
       schedule: ["10:00 - 11:00", "11:00 - 12:00", "14:00 - 15:00"]
     },
     {
       id: 2,
       title: "Baloncesto",
-      image: "imagenes/sticker-png-soccer-ball-basketball-spalding-tf-1000-classic-basketball-spalding-basketball-team-sport-sports-national-junior-college-athletic-association-game-thumbnail-removebg-preview.png",
+        image: baloncestoimg,
       location: "Polideportivo CTPI",
       schedule: ["10:00 - 11:00", "11:00 - 12:00", "15:00 - 16:00"]
     },
     {
       id: 3,
       title: "Tenis",
-      image: "imagenes/images-removebg-preview.png",
+      image: tenisimg,
       location: "Cancha de Tenis CTPI",
       schedule: ["10:00 - 11:00", "11:00 - 12:00", "16:00 - 17:00"]
     },
     {
       id: 4,
       title: "Voleibol",
-      image: "imagenes/volleyball.png",
+        image: voleibolimg,
       location: "Cancha múltiple CTPI",
       schedule: ["09:00 - 10:00", "13:00 - 14:00"]
     },
     {
       id: 5,
       title: "Ajedrez",
-      image: "imagenes/chess.png",
+          image: ajedrezimg,
       location: "Biblioteca CTPI",
       schedule: ["08:00 - 09:00", "12:00 - 13:00"]
     },
     {
       id: 6,
       title: "Atletismo",
-      image: "imagenes/athletics.png",
+           image: atletismoimg,
       location: "Pista atlética CTPI",
       schedule: ["07:00 - 08:00", "17:00 - 18:00"]
     }

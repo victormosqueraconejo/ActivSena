@@ -13,11 +13,14 @@ import Aplicacion from "../src/pages/Aplicacion/Aplicacion";
 import AprendizRun from "../src/pages/AprendizC/AprendizRun";
 import PlanificarEvento from "../src/pages/PlanificarEv/PlanificarEvento";
 import RegistroA from "../src/pages/RegistroAsistencia/RegistroA";
-
+import CartaContacto from "../src/pages/CartasContacto/CartaContacto";
+import Rectificar from "../src/pages/Rectificar/Rectificar";
+import ChatAI from '../src/pages/ChatAI/ChatAI'
 import "../src/styles/BotHp.css";
 import "../src/styles/ColaViento.css";
 import "../src/styles/Resposive.css";
 import "../src/styles/global.css";
+
 
 
 export default function DashBoard() {
@@ -44,6 +47,10 @@ export default function DashBoard() {
         {contenidoActual === "aprendiz" && <AprendizRun />}
         {contenidoActual === "planevento" && <PlanificarEvento />}
         {contenidoActual === "registro" && <RegistroA />}
+      {contenidoActual === "cartacontacto" && <CartaContacto />}
+         {contenidoActual === "rectificar" && <Rectificar />}
+         {contenidoActual === "chatai" && <ChatAI />}
+         
 
 
 
@@ -55,7 +62,7 @@ export default function DashBoard() {
 
 
       </main>
-      <ActivBot />
+        <ActivBot irAChatai={() => setContenidoActual("chatai")} />
     </section>
   );
 }

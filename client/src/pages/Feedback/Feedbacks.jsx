@@ -20,6 +20,7 @@ export default function Feedbacks() {
   };
 
   return (
+    
     <div className="carousel-container">
         <h2>FEEDBACK DE EVENTOS</h2>
       <div className="carousel">
@@ -34,9 +35,10 @@ export default function Feedbacks() {
             className={index === currentIndex ? "active" : ""} 
             onClick={() => setImagenActual(index)}
           >
-            o
+            
           </button>
         ))}
+        
       </div>
     </div>
   );

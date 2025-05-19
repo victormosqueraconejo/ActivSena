@@ -46,7 +46,7 @@ export default function MenuLateral({
           className="opciondash"
         >
           <FaHome className="iconodash" />
-          Aplicacion
+          Eventos
         </button>
         <button
           onClick={() => setContenidoActual("plan")}
@@ -63,19 +63,14 @@ export default function MenuLateral({
           Registrar Ludica
         </button>
         <button
-          onClick={() => setContenidoActual("feedback")}
+          onClick={() => setContenidoActual("comprobar")}
           className="opciondash"
         >
           <FaDiscourse className="iconodash" />
           FeedBack
         </button>
-        <button
-          onClick={() => setContenidoActual("comprobar")}
-          className="opciondash"
-        >
-          <FaFileContract className="iconodash" />
-          ComprobarFA
-        </button>
+        
+       
         <button
           onClick={() => setContenidoActual("calendario")}
           className="opciondash"
@@ -89,16 +84,10 @@ export default function MenuLateral({
           className="opciondash"
         >
           <FaCalendarAlt className="iconodash" />
-          Aprendiz
+          Constancia de Aprendiz
         </button>
 
-        <button
-          onClick={() => setContenidoActual("planevento")}
-          className="opciondash"
-        >
-          <FaCalendarAlt className="iconodash" />
-          Planificar Evento
-        </button>
+        
 
         <button
           onClick={() => setContenidoActual("registro")}
@@ -107,6 +96,22 @@ export default function MenuLateral({
           <FaCalendarAlt className="iconodash" />
           Registro QR
         </button>
+         <button
+          onClick={() => setContenidoActual("cartacontacto")}
+          className="opciondash"
+        >
+          <FaCalendarAlt className="iconodash" />
+          Contactos
+        </button>
+         <button
+          onClick={() => setContenidoActual("rectificar")}
+          className="opciondash"
+        >
+          <FaCalendarAlt className="iconodash" />
+          Mis Eventos y Actividades
+        </button>
+        
+
 
 
         <img src={logo} alt="" />
