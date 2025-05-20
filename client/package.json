@@ -13,12 +13,9 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-<<<<<<< HEAD
-    "@types/react": "^19.1.0",
-=======
+
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.4",
->>>>>>> e6a0745264684519f164eee0bbb944c3e2094395
     "tailwindcss": "^4.0.15",
     "typescript": "^5.8.3",
     "vite": "^6.2.3"

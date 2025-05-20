@@ -18,7 +18,7 @@ import "../src/styles/BotHp.css";
 import "../src/styles/ColaViento.css";
 import "../src/styles/Resposive.css";
 import "../src/styles/global.css";
-import "../src/styles/Fondo.css";
+import "../src/styles/fondo.css";
 
 
 export default function DashBoard() {
