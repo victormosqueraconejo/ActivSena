@@ -182,3 +182,66 @@
     opacity: 1;
   }
 }
+
+/* ===================================== */
+/* ✅ BLOQUE RESPONSIVE AÑADIDO AL FINAL */
+/* ===================================== */
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .GHcontainer {
+    padding: 15px;
+  }
+
+  .GHh1 {
+    font-size: 24px;
+  }
+
+  .GHli {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .GHbutton {
+    width: 100%;
+    font-size: 13px;
+    margin: 5px 0;
+  }
+
+  .GHmodal-content {
+    width: 90%;
+  }
+}
+
+/* Teléfonos pequeños (≤480px) */
+@media (max-width: 480px) {
+  .GHh1 {
+    font-size: 20px;
+  }
+
+  .GHli {
+    padding: 10px;
+  }
+
+  .GHbutton {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .GHmessage {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .GHmodal-content {
+    padding: 20px;
+  }
+
+  .GHh2 {
+    font-size: 18px;
+  }
+
+  .GHp {
+    font-size: 13px;
+  }
+}

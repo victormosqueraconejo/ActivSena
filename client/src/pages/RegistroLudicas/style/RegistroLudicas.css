@@ -1,159 +1,214 @@
 /* Fondo con gradiente elegante */
 .body-registro {
-    background: linear-gradient(135deg, #ffffff, #fdf5f3);
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  /* Contenedor principal */
+  background: linear-gradient(135deg, #ffffff, #fdf5f3);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor principal */
+.activity-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor de la imagen */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: auto;
+  padding-right: 20px;
+  border-right: 2px solid #0ee756;
+}
+
+/* Imagen de vista previa */
+.preview-image {
+  width: 400px;
+  height: auto;
+  border-radius: 9px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Espacio para la imagen cuando aún no se sube nada */
+.image-placeholder {
+  font-size: 18px;
+  color: #fffafa;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Input de archivo debajo de la imagen */
+.image-upload {
+  margin-top: 10px;
+  text-align: center;
+}
+.image-upload input[type="file"] {
+  display: block;
+}
+
+/* Contenedor del formulario */
+.activity-container {
+  flex: 1;
+  padding-left: 20px;
+}
+
+/* Título */
+.activity-container h2 {
+  font-size: 26px;
+  color: #12c731;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Inputs y áreas de texto */
+.activity-container input,
+.activity-container select,
+.activity-container textarea {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 3px solid #d2d6d2;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+/* Contenedor para hora de inicio y finalización */
+.time-container {
+  display: flex;
+  gap: 10px;
+}
+
+.time-container input {
+  flex: 1;
+}
+
+/* Botón con transición de color */
+.activity-container button {
+  background: linear-gradient(135deg, #3936df, #3c29e7);
+  color: rgb(255, 254, 254);
+  border: none;
+  padding: 14px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 97%;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: background 0.4s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.activity-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(72, 55, 228, 0.959);
+  background-color: #0ee756;
+}
+
+/* Responsivo base */
+@media (max-width: 800px) {
   .activity-wrapper {
-    display: flex;
-    flex-direction: row; /* Asegura que la imagen y el formulario estén en fila */
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    max-width: 1000px;
-    background: white;
-    padding: 20px;               
-    border-radius: 15px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    padding: 15px;
   }
-  
-  /* Contenedor de la imagen */
+
   .image-container {
-    display: flex;
-    flex-direction: column; /* Organiza imagen y input en columna */
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    height: auto;
-    padding-right: 20px;
-    border-right: 2px solid #0ee756;
+    border-right: none;
+    padding-right: 0;
+    padding-bottom: 15px;
   }
-  
-  /* Imagen de vista previa */
-  .preview-image {
-    width: 400px;
-    height: auto;
-    border-radius: 9px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Corregir altura de imagen container */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  border-right: 2px solid #0ee756;
+  padding-right: 20px;
+}
+
+.image-container input[type="file"] {
+  margin-top: 50px;
+}
+
+/* ========================================= */
+/* ✅ BLOQUE RESPONSIVE NUEVO AÑADIDO AQUÍ ⬇ */
+/* ========================================= */
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .GHcontainer {
+    padding: 15px;
   }
-  
-  /* Espacio para la imagen cuando aún no se sube nada */
-  .image-placeholder {
+
+  .GHh1 {
+    font-size: 24px;
+  }
+
+  .GHli {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .GHbutton {
+    width: 100%;
+    font-size: 13px;
+    margin: 5px 0;
+  }
+
+  .GHmodal-content {
+    width: 90%;
+  }
+}
+
+/* Teléfonos pequeños (≤480px) */
+@media (max-width: 480px) {
+  .GHh1 {
+    font-size: 20px;
+  }
+
+  .GHli {
+    padding: 10px;
+  }
+
+  .GHbutton {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .GHmessage {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .GHmodal-content {
+    padding: 20px;
+  }
+
+  .GHh2 {
     font-size: 18px;
-    color: #fffafa;
-    text-align: center;
-    font-weight: bold;
   }
-  
-  /* Input de archivo debajo de la imagen */
-  .image-upload {
-    margin-top: 10px;
-    text-align: center;
+
+  .GHp {
+    font-size: 13px;
   }
-  .image-upload input[type="file"] {
-    display: block;
-  }
-  
-  /* Contenedor del formulario */
-  .activity-container {
-    flex: 1;
-    padding-left: 20px;
-  }
-  
-  /* Título */
-  .activity-container h2 {
-    font-size: 26px;
-    color: #12c731;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  
-  /* Inputs y áreas de texto */
-  .activity-container input,
-  .activity-container select,
-  .activity-container textarea {
-    width: 90%;
-    padding: 12px;
-    margin: 8px 0;
-    border: 3px solid #d2d6d2;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-    background: rgba(255, 255, 255, 0.1);
-    transition: 0.3s ease-in-out;
-  }
-  
-  /* Contenedor para hora de inicio y finalización */
-  .time-container {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .time-container input {
-    flex: 1;
-  }
-  
-  /* Botón con transición de color */
-  .activity-container button {
-    background: linear-gradient(135deg, #3936df, #3c29e7);
-    color: rgb(255, 254, 254);
-    border: none;
-    padding: 14px;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 97%;
-    margin-top: 15px;
-    font-weight: bold;
-    transition: background 0.4s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-  
-  /* Efecto al pasar el mouse */
-  .activity-container button:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 20px rgba(17, 170, 3, 0.4);
-    background: linear-gradient(135deg, #0ee756, #04f510);
-  }
-  
-  .activity-container button:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 20px rgba(72, 55, 228, 0.959);
-    background-color: #0ee756;
-  }
-  
-  /* Responsivo */
-  @media (max-width: 800px) {
-    .activity-wrapper {
-      flex-direction: column;
-      padding: 15px;
-    }
-  
-    .image-container {
-      border-right: none;
-      padding-right: 0;
-      padding-bottom: 15px;
-    }
-  }
-  
-  
-  .image-container {
-    display: flex;
-    flex-direction: column; /* Apila los elementos en columna */
-    align-items: center;
-    justify-content: center;
-    height: 350px;
-    border-right: 2px solid #0ee756;
-    padding-right: 20px;
-  }
-  
-  .image-container input[type="file"] {
-    margin-top: 50px; /* Espacio entre la imagen y el botón */
-  }
-  
+}
