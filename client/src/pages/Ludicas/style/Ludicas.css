@@ -1,286 +1,242 @@
-/* Ludicas.css */
 :root {
-    --primary-color: #4a6bff;
-    --secondary-color: #6c757d;
-    --accent-color: #ff6b6b;
-    --light-color: #f8f9fa;
-    --dark-color: #343a40;
-    --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
-  }
-  
-  .ludicas-container {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #f5f7ff;
-  }
-  
-  .ludicas-header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .ludicas-title {
-    font-size: 2.5rem;
-    color: var(--dark-color);
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-  }
-  
-  .ludicas-subtitle {
-    font-size: 1.1rem;
-    color: var(--secondary-color);
-    margin-bottom: 2rem;
-  }
-  
-  .search-barr {
-    display: flex;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  .search-barr input {
-    flex: 1;
-    padding: 0.8rem 1.2rem;
-    border: 2px solid #e0e0e0;
-    border-radius: 30px 0 0 30px;
-    font-size: 1rem;
-    outline: none;
-    transition: var(--transition);
-  }
-  
-  .search-barr input:focus {
-    border-color: var(--primary-color);
-  }
-  
-  .search-btn {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 0 1.5rem;
-    border-radius: 0 30px 30px 0;
-    cursor: pointer;
-    transition: var(--transition);
-  }
-  
-  .search-btn:hover {
-    background-color: #3a56d4;
-  }
-  
-  .ludicas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-  
-  .ludicas-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: var(--card-shadow);
-    transition: var(--transition);
-  }
-  
-  .ludicas-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-  }
-  
-  .card-image-container {
-    position: relative;
-    height: 180px;
-    overflow: hidden;
-  }
-  
-  .ludicas-card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition);
-  }
-  
-  .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
-  }
-  
-  .ludicas-card:hover .ludicas-card-image {
-    transform: scale(1.05);
-  }
-  
-  .ludicas-card-content {
-    padding: 1.5rem;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--dark-color);
-  }
-  
-  .card-info {
-    margin-bottom: 1.5rem;
-  }
-  
-  .info-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    color: var(--secondary-color);
-  }
-  
-  .info-item i {
-    margin-right: 0.5rem;
-    color: var(--primary-color);
-  }
-  
-  .schedule-section {
-    margin-top: 1rem;
-  }
-  
-  .schedule-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: var(--dark-color);
-  }
-  
-  .schedule-title i {
-    margin-right: 0.5rem;
-    color: var(--primary-color);
-  }
-  
-  .schedule-list {
-    list-style-type: none;
-    padding-left: 1.5rem;
-  }
-  
-  .schedule-list li {
-    position: relative;
-    margin-bottom: 0.3rem;
-    color: var(--secondary-color);
-  }
-  
-  .schedule-list li:before {
-    content: "•";
-    color: var(--accent-color);
-    font-weight: bold;
-    position: absolute;
-    left: -1rem;
-  }
-  
-  .ludicas-btn {
-    width: 100%;
-    padding: 0.8rem;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .ludicas-btn i {
-    margin-right: 0.5rem;
-  }
-  
-  .ludicas-btn:hover {
-    background-color: #3a56d4;
-    transform: translateY(-2px);
-  }
-  
-  .ludicas-footer {
-    text-align: center;
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid #e0e0e0;
-    color: var(--secondary-color);
-  }
-  
-  .ludicas-footer a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-  }
-  
-  .ludicas-footer a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .ludicas-grid {
-      grid-template-columns: 1fr;
-    }
-    
-    .ludicas-title {
-      font-size: 2rem;
-    }
-  }
+  --primary-color: #4a6bff;
+  --secondary-color: #6c757d;
+  --accent-color: #ff6b6b;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
 
-  .ludicas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-
-  .ludicas-card {
-    margin-bottom: 2rem; /* Solo si no usas gap en grid */
-  }
-
-  .ludicas-card {
-    z-index: 1; /* Solo si es necesario */
-  }
-
-  /* Asegúrate que el contenedor padre tenga esto: */
 .ludicas-container {
-    width: 100%;
-    overflow-x: hidden; /* Previene scroll horizontal */
-  }
-  
-  /* Grid mejorado */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f5f7ff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.ludicas-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.ludicas-title {
+  font-size: 2.5rem;
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.ludicas-subtitle {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.search-barr {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-barr input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 30px 0 0 30px;
+  font-size: 1rem;
+  outline: none;
+  transition: var(--transition);
+}
+
+.search-barr input:focus {
+  border-color: var(--primary-color);
+}
+
+.search-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.search-btn:hover {
+  background-color: #3a56d4;
+}
+
+.ludicas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  z-index: auto;
+}
+
+.ludicas-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  flex: 1 1 300px;
+  max-width: 350px;
+  z-index: 1;
+  position: static !important;
+  transform: none;
+  margin-bottom: 2rem;
+}
+
+.ludicas-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-container {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.ludicas-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+}
+
+.ludicas-card:hover .ludicas-card-image {
+  transform: scale(1.05);
+}
+
+.ludicas-card-content {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.card-info {
+  margin-bottom: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.info-item i {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+}
+
+.schedule-section {
+  margin-top: 1rem;
+}
+
+.schedule-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.schedule-title i {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+}
+
+.schedule-list {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.schedule-list li {
+  position: relative;
+  margin-bottom: 0.3rem;
+  color: var(--secondary-color);
+}
+
+.schedule-list li:before {
+  content: "•";
+  color: var(--accent-color);
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+.ludicas-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ludicas-btn i {
+  margin-right: 0.5rem;
+}
+
+.ludicas-btn:hover {
+  background-color: #3a56d4;
+  transform: translateY(-2px);
+}
+
+.ludicas-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  color: var(--secondary-color);
+}
+
+.ludicas-footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ludicas-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
   .ludicas-grid {
+    grid-template-columns: 1fr;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    width: 100%;
-    position: relative; /* Solo si necesario */
-    z-index: auto; /* Valor por defecto */
-  }
-  
-  /* Reset de posicionamiento en tarjetas */
-  .ludicas-card {
-    position: static !important; /* Fuerza posición normal */
-    transform: none; /* Solo durante el hover */
-  }
-  
-  /* Para móviles */
-  @media (max-width: 768px) {
-    .ludicas-grid {
-      grid-template-columns: 1fr;
-    }
   }
 
-  .ludicas-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+  .ludicas-title {
+    font-size: 2rem;
   }
-  
-  .ludicas-card {
-    flex: 1 1 300px;
-    max-width: 350px;
-  }
+}
