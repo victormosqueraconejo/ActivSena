@@ -13,6 +13,9 @@ import ConstanciasList from "../src/pages/Constancia/components/ConstanciasList"
 import Combinar from "../src/pages/CombinarFA/Combinar";
 import CartaContacto from "../src/pages/CartasContacto/CartaContacto"
 import ChatAI from '../src/pages/ChatAI/ChatAI'
+import UserView from "../src/pages/UserView/UserView";
+import ConfigView from "../src/pages/ConfigView/ConfigView";
+
 
 import "../src/styles/BotHp.css";
 import "../src/styles/ColaViento.css";
@@ -32,7 +35,7 @@ export default function DashBoard() {
     <section className="contenedordash">
             <MenuLateral menuAbierto={menuAbierto} toggleMenu={toggleMenu} setContenidoActual={setContenidoActual} />
       <main className="contenidodash">
-        <Navbar toggleMenu={toggleMenu} />
+      <Navbar toggleMenu={toggleMenu} setContenidoActual={setContenidoActual} />
 
         {contenidoActual === "home" && <HomeDash />}
         {contenidoActual === "actividad" && <Actividades />}
@@ -45,6 +48,8 @@ export default function DashBoard() {
         {contenidoActual === "constancia2" && <ConstanciasList />}
         {contenidoActual === "cartacontacto" && <CartaContacto />}
         {contenidoActual === "chatai" && <ChatAI />}
+        {contenidoActual === "perfil" && <UserView />}
+        {contenidoActual === "config" && <ConfigView />}
 
 
 

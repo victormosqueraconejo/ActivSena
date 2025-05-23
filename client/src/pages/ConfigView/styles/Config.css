@@ -1,0 +1,120 @@
+.Configcontenedor {
+    padding: 25px;
+    border: 2px solid #bbf0bb;
+    border-radius: 12px;
+    width: 360px;
+    margin: 40px auto;
+    background-color: #f2f7ff;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.15);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .Confightitulo {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #0a6116;
+    margin-bottom: 25px;
+  }
+  
+  .Configopciones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .Configboton {
+    padding: 14px 16px;
+    border: none;
+    background-color: #ffffff;
+    color: #333;
+    font-weight: 600;
+    border-left: 5px solid #7dee73;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  .Configboton:hover {
+    background-color: #e8f1ff;
+    transform: scale(1.01);
+  }
+  
+  .Configmodal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .Configventana {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 0 20px rgba(73, 238, 73, 0.2);
+    text-align: center;
+    animation: aparecer 0.3s ease-out;
+  }
+  
+  .Configventana h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #6ff56f;
+    margin-bottom: 20px;
+  }
+  
+  .Configventana input,
+  .Configventana select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .Configventana p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .Configcerrar {
+    margin-top: 10px;
+    background-color: #78fa98;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .Configcerrar:hover {
+    background-color: #0056b3;
+  }
+  
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
