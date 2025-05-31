@@ -390,3 +390,31 @@ margin-right: 00px;
   z-index: -1;
   backdrop-filter: blur(1px); /* opcional para suavizar */
 }
+
+.menudesplegabledash {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  width: 150px;
+}
+
+.menudesplegabledash ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.menudesplegabledash li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.menudesplegabledash li:hover {
+  background-color: #f0f0f0;
+}
