@@ -23,7 +23,13 @@ import "../src/styles/BotHp.css";
 import "../src/styles/ColaViento.css";
 import "../src/styles/Resposive.css";
 import "../src/styles/global.css";
+
 import CalendarioAp from "../src/pages/CalendarioAdmin/CalendarioAp";
+
+import Actividades from "../src/pages/Actividades/Actividades";
+import Aplicacion from "../src/pages/Aplicacion/Aplicacion";
+import Footer from "../src/pages/Home/FooterHome"
+
 
 export default function DashBoard() {
   const [menuAbierto, setMenuAbierto] = useState(true);
@@ -53,6 +59,7 @@ export default function DashBoard() {
         {contenidoActual === "constancia" && <Constancia />}
         {contenidoActual === "alquiler" && <Alquiler />}
         {contenidoActual === "combinar" && <Combinar />}
+
         {contenidoActual === "chatai" && <ChatAI />}
         {contenidoActual === "alquilerap" && <AlquilerAP />}
         {contenidoActual === "cartacontacto" && <CartaContacto />}
@@ -65,6 +72,28 @@ export default function DashBoard() {
       </main>
 
       <ActivBot irAChatai={() => setContenidoActual("chatai")} />
+
+       {contenidoActual === "chatai" && <ChatAI />}
+      {contenidoActual === "alquilerap" && < AlquilerAP />}
+       {contenidoActual === "cartacontacto" && < CartaContacto />}
+    {contenidoActual === "constanciacr" && < Constanciacr />}
+
+
+ 
+ 
+
+
+      </main>
+     <ActivBot irAChatai={() => setContenidoActual("chatai")} />
+   
+
     </section>
+      
+    
   );
+
 }
+
+  
+}
+

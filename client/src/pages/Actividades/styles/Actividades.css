@@ -3,6 +3,7 @@
     font-family: 'Roboto', sans-serif;
     background-color: #f0f4f8;
     margin: 0;
+  
     padding: 0;
   }
   
@@ -10,7 +11,7 @@
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #ffffff;
+ 
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   }
@@ -20,9 +21,13 @@
     color: #333;
     font-size: 36px;
     font-weight: 700;
+    
     margin-bottom: 40px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+  }
+  .actividad-parrafo{
+    color: white;
   }
   
   /* Barra de Búsqueda */
@@ -49,6 +54,7 @@
     width: 220px;
     box-sizing: border-box;
     transition: all 0.3s ease;
+    
   }
   
   .search-fields input:focus {
@@ -133,9 +139,9 @@
   
   /* Estilo del Parrafo y Agenda */
   .parrafo {
-    background: radial-gradient(circle, rgb(2, 219, 20), #00ff7f, rgba(231, 232, 236, 0.733));
+    background: radial-gradient(circle, rgb(44, 241, 60), #11f583, rgba(31, 190, 79, 0.733));
     color: #faf5f5;
-    width: 1230px;
+    width: 1000px;
     height: 60px;
     text-align: center;
     padding: 20px;
@@ -150,7 +156,7 @@
     color: rgb(16, 17, 17);
     border-radius: 30px;
     background-color: #00ff7f;
-    margin: 20px auto;
+   
     text-align: center;
     line-height: 60px;
     font-size: 18px;
@@ -167,11 +173,11 @@
   /* Efectos al pasar el ratón por encima */
   .tarjeta img:last-child {
     position: absolute;
-    width: 500px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    width: 300px;
+    height: 80px;
+    margin-right: 300px;
+    
+   
     transform: translateY(25%);
     opacity: 0;
     transition: 0.3s ease;
@@ -180,6 +186,7 @@
   .tarjeta:hover img:last-child {
     opacity: 1;
     transform: translateY(10%);
+    width: 300px;
   }
   
   .tarjeta::before {
@@ -219,3 +226,61 @@
     }
   }
   
+  .contenedor-sena {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  color: #2f3640;
+}
+
+.cabecera {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.actividad-parrafo {
+  font-size: 2.5rem;
+  color: #0984e3;
+  margin-bottom: 0.5rem;
+}
+
+.descripcion {
+  font-size: 1.1rem;
+  color: #636e72;
+}
+
+.introduccion {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.parrafo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.agenda {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #0a0a0a;
+}
+
+.galeria-actividades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.tarjeta {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY
+}

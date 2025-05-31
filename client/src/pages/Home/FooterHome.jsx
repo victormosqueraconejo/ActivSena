@@ -3,7 +3,7 @@ import "./styles/FooterHome.css"
 
 export default function FooterHome() {
   return (
-    <footer className="site-footer-home" >
+    <footer className="site-footer-home " >
       <div className="container-home">
         <div className="footer-content-home">
           <div className="footer-about-home">

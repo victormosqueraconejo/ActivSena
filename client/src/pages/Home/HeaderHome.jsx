@@ -1,5 +1,8 @@
 import React, {useState} from "react";
+
 import "./styles/HeaderHome.css"
+import TrueFocus from "../../TextAnimations/TrueFocus/TrueFocus";
+
 
 export default function HeaderHome () {
 
@@ -10,15 +13,17 @@ export default function HeaderHome () {
     }
 
     return (
+        
         <header className="site-header-home">
             <div className="container-home">
                 <div className="header-wrapper-home">
                     <div className="logo-home">
+                     
                         <a href="index.html" className="a-home">
-                            <span className="logo-waso-home">Activ</span>
-                            <span className="logo-strategy-home">Sena</span>
+                            <TrueFocus />
                         </a>
                     </div>
+                    
                     
                     <nav className="main-nav-home">
                         <button className={`menu-toggle-home ${menuDesplegado ? "active": ""} ` } id="menuToggle" onClick={cambiarEstadoMenu} aria-expanded={!menuDesplegado ? "true" : "false"}>
@@ -26,6 +31,7 @@ export default function HeaderHome () {
                             <span className="bar-home"></span>
                             <span className="bar-home"></span>
                         </button>
+                        
                         <ul className={`ul-home nav-menu-home ${menuDesplegado ? "active": ""} ` } id="navMenu">
                             <li className="li-home"><a href="#home" onClick={cambiarEstadoMenu} className="active a-home">INICIO</a></li>
                             <li className="li-home"><a href="#about" onClick={cambiarEstadoMenu} className="a-home">NOSOTROS</a></li>

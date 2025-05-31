@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "./img/avtar.png";
+import victor from "./img/avatar.png"
 import caminata from "./img/caminata.jpg";
 import fulbol from "./img/fulbol.webp";
 
@@ -9,7 +9,7 @@ export default function HomeDash() {
       <header className="bienvenidadash">
         <h1>Bienvenido, Jhon Pecados</h1>
         
-        <img src={avatar} alt="Foto de usuario" className="fotodash" />
+        <img src={victor} alt="Foto de usuario" className="fotodash" />
       </header>
 
       <section className="informaciondash">

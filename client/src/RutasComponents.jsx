@@ -8,7 +8,6 @@ import InicioSesion from '../public/InicioSesion'
 import Registro from '../public/Registro'
 import Actividades from './pages/Actividades/Actividades'
 import Agenda from "./pages/Agenda/Agenda"
-
 export default function RutasComponents() {
   return (
     <>

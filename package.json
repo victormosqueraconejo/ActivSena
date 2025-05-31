@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-spring/web": "^10.0.1",
     "@tailwindcss/vite": "^4.0.17",
+    "framer-motion": "^12.12.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
