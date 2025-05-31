@@ -53,7 +53,7 @@ export default function MenuLateral({
           className="opciondash"
         >
           <FaCalendarAlt className="iconodash" />
-          Calendario
+          Solicitudes
         </button>
         <button
           onClick={() => setContenidoActual("registroa")}
@@ -67,7 +67,7 @@ export default function MenuLateral({
           className="opciondash"
         >
           <FaAlignJustify className="iconodash" />
-          Detalle Alquiler
+          Detalles Alquiler
         </button>
         <button
           onClick={() => setContenidoActual("combinar")}

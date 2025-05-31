@@ -19,7 +19,7 @@ import "../src/styles/Resposive.css";
 import "../src/styles/global.css";
 import Actividades from "../src/pages/Actividades/Actividades";
 import Aplicacion from "../src/pages/Aplicacion/Aplicacion";
-
+import Footer from "../src/pages/Home/FooterHome"
 
 export default function DashBoard() {
   const [menuAbierto, setMenuAbierto] = useState(true);
@@ -50,11 +50,16 @@ export default function DashBoard() {
     {contenidoActual === "constanciacr" && < Constanciacr />}
 
 
+ 
+ 
 
 
       </main>
      <ActivBot irAChatai={() => setContenidoActual("chatai")} />
-
+   
     </section>
+      
+    
   );
+  
 }

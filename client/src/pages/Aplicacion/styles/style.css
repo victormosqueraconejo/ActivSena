@@ -5,10 +5,14 @@ body.evento-app-body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    
 }
 
 .evento-app-contenedor-principal {
     display: flex;
+     background-color: rgb(240, 240, 243); /* Sombra oscura semitransparente */
+  z-index: -1;
+  backdrop-filter: blur(0px); /* Opcional, más blur */
     min-height: 100vh;
 }
 
@@ -18,7 +22,7 @@ body.evento-app-body {
 .evento-app-contenido-principal {
     flex: 1;
     padding: 20px;
-    background-color: #fff;
+    
 }
 
 .evento-app-cabecera {
@@ -30,22 +34,24 @@ body.evento-app-body {
 
 .evento-app-titulo-principal {
     color: white;
-    width: 700px;
-    background-color: rgb(18, 223, 45);
-    border-radius: 40px;
+    
+
+
     margin: 0;
-    font-size: 28px;
-    color: #2c3e50;
+    font-size: 38px;
+    color: #f9fbfd;
 }
 
 .evento-app-boton-notificaciones {
     background-color: #3498db;
-    color: #fff;
+    color: #161616;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    
+ 
     transition: background-color 0.3s;
 }
 
@@ -56,12 +62,16 @@ body.evento-app-body {
 /* Carrusel de historias */
 .evento-app-seccion-historias {
     margin-bottom: 30px;
+   
 }
 
 .evento-app-titulo-seccion {
-    font-size: 24px;
-    color: #2c3e50;
-    margin-bottom: 20px;
+    font-size: 34px;
+    color: #0c0c0c;
+    margin-top: 3px;
+    display: flex;
+    margin-right: 700px;
+   
 }
 
 .evento-app-carrusel-historias {
@@ -69,47 +79,54 @@ body.evento-app-body {
     gap: 15px;
     overflow-x: auto;
     padding-bottom: 10px;
+    
 }
 
 .evento-app-historia {
     text-align: center;
     flex: 0 0 auto;
+
 }
 
 .evento-app-historia img {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    border: 2px solid #3498db;
+    border: 4px solid #0de91f;
     padding: 3px;
+   
+   
 }
 
 .evento-app-historia p {
     margin-top: 5px;
-    font-size: 14px;
-    color: #555;
+    font-size: 20px;
+    color: #080808;
 }
 
 /* Botones de acción */
 .evento-app-seccion-botones-accion {
     display: flex;
     gap: 10px;
+   padding: 20px;
     margin-bottom: 20px;
+  
 }
 
 .evento-app-boton-accion {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #27ae60;
+    background-color: #040faa;
     color: #fff;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s;
+    width: 140px;
+    transition: background-color 0.3;
 }
 
 .evento-app-boton-accion:hover {
-    background-color: #219653;
+    background-color: #27b92f;
 }
 
 /* Feed de eventos */
@@ -124,8 +141,8 @@ body.evento-app-body {
 }
 
 .evento-app-tarjeta-evento {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #f8fdfa;
+    border: 5px solid #1e96c5;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -151,13 +168,13 @@ body.evento-app-body {
 .evento-app-nombre-usuario {
     margin: 0;
     font-size: 18px;
-    color: #2c3e50;
+    color: #080808;
 }
 
 .evento-app-fecha-evento {
     margin: 0;
     font-size: 14px;
-    color: #888;
+    color: #0f0f0f;
 }
 
 .evento-app-contenido-evento img {
@@ -169,7 +186,7 @@ body.evento-app-body {
 .evento-app-descripcion-evento {
     margin: 0;
     font-size: 16px;
-    color: #555;
+    color: #080808;
 }
 
 .evento-app-acciones-evento {
@@ -193,7 +210,7 @@ body.evento-app-body {
 }
 
 .evento-app-boton-comentar {
-    background-color: #27ae60;
+    background-color: #e04f23;
     color: #fff;
 }
 
@@ -202,7 +219,7 @@ body.evento-app-body {
 }
 
 .evento-app-boton-comentar:hover {
-    background-color: #219653;
+    background-color: #0df170;
 }
 
 .evento-app-feedback-evento {
@@ -240,4 +257,8 @@ body.evento-app-body {
 
 .evento-app-boton-enviar-feedback:hover {
     background-color: #c0392b;
+}
+.titulo-intro{
+    color: rgb(22, 22, 22);
+    display: flex;
 }

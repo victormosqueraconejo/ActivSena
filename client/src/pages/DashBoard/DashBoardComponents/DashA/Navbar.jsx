@@ -1,6 +1,6 @@
 import { FaBell, FaBars } from "react-icons/fa";
 import React from "react";
-import avatar from "../img/avtar.png";
+import avatar from "../img/avatar.png";
 
 export default function Navbar({ toggleMenu }) {
   return (
