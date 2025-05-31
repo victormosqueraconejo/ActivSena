@@ -6,6 +6,7 @@
 }
 .contenedordash {
   /*App*/
+  
   display: flex;
 }
 
@@ -16,6 +17,7 @@
   background: #dadbda;
   color: rgb(0, 0, 0);
   padding: 20px;
+  
   height: 100vh;
 }
 
@@ -23,12 +25,16 @@
   /*Navbar*/ /*SideBar*/
   margin-bottom: 20px;
   font-size: 22px;
+  
+  
 }
 .menudash {
   /*SideBar*/
  
   display: flex;
   flex-direction: column;
+  background-color: #eaeceb;
+  
 }
 
 .opciondash {
@@ -39,6 +45,7 @@
   text-decoration: none;
   align-items: center;
   gap: 10px;
+  
   display: flex;
   color: black;
   border-radius: 5px;
@@ -48,6 +55,7 @@
 
 .opciondash:hover,
 .activa {
+  
   background: #0aee0a;
 }
 
@@ -62,16 +70,18 @@
   /*Navbar*/
   align-items: center;
   margin-bottom: 20px;
+ 
   display: flex;
   justify-content: space-between;
   width: 84vw;
   padding: 10px 20px;
   background-color: #dbdada;
-   background-color: #4add3c;
-    filter: drop-shadow(1px 10px 10px rgb(4, 241, 241));
+   background-color:#3366cc;;
+  
   position: relative;
   top: -6mm;
-  right: 65px;
+  right: 55px;
+  
 }
 
 .busquedadash {
@@ -99,15 +109,17 @@
   width: 250px;
  margin-right: 30px;
  border-radius: 30px;
+ 
   
 }
 
 .iconodash {
 
-  font-size: 20px;
+  font-size: 30px;
   border: none;
   cursor: pointer;
   width: 30px;
+  
   display: flex;
   align-items: center;
   border-radius: 4px;
@@ -116,7 +128,7 @@
   color: rgb(87, 86, 86);
    filter: drop-shadow(1px 5px 5px rgb(64, 236, 12));
    
-   
+   margin-left: 3px;
 
 }
 .iconodashm{
@@ -146,10 +158,11 @@
   background: #4caf50;
   color: white;
   
+  
 }
 
 .iconodash {
-  font-size: 24px;
+  font-size: 25px;
 
   transition: color 0.3s;
 }
@@ -270,7 +283,7 @@ margin-right: 2px;
    background-color: #30ee0a;
   position: relative;
   top: -3mm;
-     filter: drop-shadow(1px 10px 10px rgb(4, 241, 241));
+    
 }
 
 
@@ -285,8 +298,8 @@ margin-right: 2px;
   background-color: #dbdada;
   color: white;
   overflow-y: auto; 
- background-color: #f2f7f5;
-  filter: drop-shadow(10px 10px 10px rgb(4, 205, 241));
+ background-color: #e5ebe9;
+  
   
 }
 
@@ -306,6 +319,7 @@ margin-right: 2px;
    background-image: url("../pages/AlquierAP/img/fondo.webp");
    background-position: center;
    background-repeat: no-repeat;
+   
    background-size: cover;
    
 }
@@ -321,4 +335,58 @@ margin-right: 00px;
   /* Otras propiedades que tengas */
  
  
+}
+.opciondash > span.iconodash {
+  flex-shrink: 0;       /* que no se reduzca el tamaño del icono */
+  font-size: 25px;      /* tamaño adecuado */
+  display: flex;        /* para centrar icono si es necesario */
+  align-items: center;
+  justify-content: center;
+}
+.opciondash {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px 0;
+  text-decoration: none;
+  display: flex;           /* importante para alinear icono + texto en línea */
+  align-items: center;     /* centra verticalmente icono y texto */
+  gap: 10px;               /* espacio entre icono y texto */
+  color: black;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  border: none;
+  white-space: nowrap;     /* evitar que el texto se quiebre y baje */
+}
+.menudash {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* o más, según necesites */
+  padding: 1rem 0;
+}
+.contenidodash {
+  position: relative;
+  margin-left: 250px;
+  flex-grow: 1;
+  overflow-y: auto;
+  height: 100vh;
+  padding: 20px;
+
+  background-image: url("../pages/AlquierAP/img/fondo.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-color: rgba(3, 3, 3, 0.85);
+  z-index: 1;
+}
+
+.contenidodash::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100;
+  height:2340px;
+  background-color: rgba(3, 3, 3, 0.85); /* Capa blanca semitransparente */
+  z-index: -1;
+  backdrop-filter: blur(1px); /* opcional para suavizar */
 }

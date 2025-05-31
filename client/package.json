@@ -20,9 +20,22 @@
     "vite": "^6.2.3"
   },
   "dependencies": {
+    "@react-spring/web": "^10.0.1",
+    "framer-motion": "^11.18.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.4.1"
+    "react-router-dom": "^7.4.1",
+    "three": "^0.176.0"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-unused-vars": [
+        "error",
+        {
+          "varsIgnorePattern": "motion"
+        }
+      ]
+    }
   }
 }

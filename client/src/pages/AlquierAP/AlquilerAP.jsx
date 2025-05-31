@@ -49,6 +49,7 @@ const App = () => {
             className="img-baloncesto-alquiler-ap"
           />
         </span>
+     
         <span style={{ "--i": 7 }}>
           <img src={juegosImg} alt="Juegos de Mesa" className="img-juegos-alquiler-ap" />
         </span>
@@ -56,13 +57,8 @@ const App = () => {
           <img src={senaImg} alt="Logo Sena" className="img-sena-alquiler-ap" />
         </span>
       </div>
-
-      <main className="main-alquiler-ap ">
-        <h2 className="titulo-main-alquiler-ap">
-          ¡¡Dirígete a Bienestar de Aprendiz y alquila los elementos que te
-          ofrecemos para disfrutar de una experiencia única!!
-        </h2>
-      </main>
+      
+      
     </div>
   );
 };
