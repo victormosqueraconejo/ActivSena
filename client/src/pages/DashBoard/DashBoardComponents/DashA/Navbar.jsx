@@ -1,7 +1,6 @@
 import { FaBell, FaBars } from "react-icons/fa";
 
-import React, { useState } from "react";
-import avatar from "../img/avtar.png";
+
 
 import React from "react";
 import avatar from "../img/avatar.png";

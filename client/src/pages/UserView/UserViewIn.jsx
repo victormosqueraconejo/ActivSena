@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../DashBoard/img/avtar.png";
+
 import "./styles/UserView.css";
 
 export default function UserViewIn() {
