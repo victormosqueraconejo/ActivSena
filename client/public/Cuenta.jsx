@@ -4,18 +4,9 @@ import React, { useState } from "react"
 import InicioSesion from "./InicioSesion"
 import Registro from "./Registro"
 import "./styles/estilos-generales-inicio.css"
+import HeaderHome from "../src/pages/Home/HeaderHome"
 
 // Iconos SVG
-const IconoChat = () => (
-  <svg className="icono-chat icono-chat-desktop" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-    />
-  </svg>
-)
 
 const IconoMenu = () => (
   <svg className="icono-menu" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,73 +42,14 @@ export default function Cuenta() {
   }
 
   return (
+    <>
+    <HeaderHome />
     <div className="contenedor-principal">
-      {/* Imagen de fondo */}
-      <div className="fondo-imagen">
-        <img src="/images/hero-bg.png" alt="Fondo" className="imagen-fondo" />
-        <div className="superposicion-fondo" />
-      </div>
 
-      {/* Navegación */}
-      <nav className="barra-navegacion">
-        <div className={`contenedor-navegacion ${!menuMovilAbierto ? "contenedor-navegacion-desktop" : ""}`}>
-          <div className="logo-contenedor">
-            <div className="logo-icono">
-              <span className="logo-letra">A</span>
-            </div>
-            <span className={`logo-texto ${!menuMovilAbierto ? "logo-texto-desktop" : ""}`}>
-              Activ<span className="logo-texto-verde">Sena</span>
-            </span>
-          </div>
+    {/*Aqui va el componente de header*/}
 
-          {/* Menú Desktop */}
-          <div className="menu-desktop menu-desktop-visible">
-            <a href="#" className="enlace-menu enlace-menu-activo" onClick={manejarClicEnlace}>
-              INICIO
-            </a>
-            <a href="#" className="enlace-menu" onClick={manejarClicEnlace}>
-              NOSOTROS
-            </a>
-            <a href="#" className="enlace-menu" onClick={manejarClicEnlace}>
-              ANUNCIOS
-            </a>
-            <a href="#" className="enlace-menu" onClick={manejarClicEnlace}>
-              PROYECTOS
-            </a>
-            <a href="#" className="enlace-menu" onClick={manejarClicEnlace}>
-              CONTACTO
-            </a>
-          </div>
-
-          {/* Botón menú móvil */}
-          <button className="boton-menu-movil" onClick={() => setMenuMovilAbierto(!menuMovilAbierto)}>
-            {menuMovilAbierto ? <IconoCerrar /> : <IconoMenu />}
-          </button>
-        </div>
-
-        {/* Menú móvil */}
-        {menuMovilAbierto && (
-          <div className="menu-movil">
-            <div className="contenedor-menu-movil">
-              <a href="#" className="enlace-menu enlace-menu-activo" onClick={manejarClicEnlace}>
-                INICIO
-              </a>
-              <a href="#" className="enlace-menu" onClick={manejarClicEnlace}>
-                NOSOTROS
-              </a>
-              <a href="#" className="enlace-menu" onClick={manejarClicEnlace}>
-                ANUNCIOS
-              </a>
-              <a href="#" className="enlace-menu" onClick={manejarClicEnlace}>
-                PROYECTOS
-              </a>
-              <a href="#" className="enlace-menu" onClick={manejarClicEnlace}>
-                CONTACTO
-              </a>
-            </div>
-          </div>
-        )}
-      </nav>
+    
+    
 
       {/* Contenido principal */}
       <div className="contenido-principal contenido-principal-desktop">
@@ -144,14 +76,7 @@ export default function Cuenta() {
           </div>
         </div>
       </div>
-
-      {/* Widget de chat */}
-      <div className="widget-chat widget-chat-desktop">
-        <button className="boton-chat">
-          <IconoChat />
-        </button>
-        <div className="notificacion-chat notificacion-chat-desktop">1</div>
-      </div>
     </div>
+    </>
   )
 }

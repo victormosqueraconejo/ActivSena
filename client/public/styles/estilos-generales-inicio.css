@@ -1,14 +1,13 @@
+
+
 /* Estilos generales compartidos */
 .contenedor-principal {
   min-height: 100vh;
   background-color: #111827;
   position: relative;
   overflow: hidden;
-}
-
-.fondo-imagen {
-  position: absolute;
-  inset: 0;
+  margin-top: 118px;
+    background-image: url("../img/img.jpg"); /*Aqui va la imagen del  fondo*/
 }
 
 .imagen-fondo {
@@ -16,92 +15,13 @@
   height: 100%;
   object-fit: cover;
   opacity: 0.5;
+
 }
 
 .superposicion-fondo {
   position: absolute;
   inset: 0;
   background-color: rgba(17, 24, 39, 0.7);
-}
-
-/* Navegación */
-.barra-navegacion {
-  position: relative;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-}
-
-.contenedor-navegacion {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-}
-
-.contenedor-navegacion-desktop {
-  padding: 1.5rem;
-}
-
-.logo-contenedor {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo-icono {
-  width: 2rem;
-  height: 2rem;
-  background-color: #2563eb;
-  border-radius: 0.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-letra {
-  color: white;
-  font-weight: bold;
-  font-size: 0.875rem;
-}
-
-.logo-texto {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #1f2937;
-}
-
-.logo-texto-desktop {
-  font-size: 1.5rem;
-}
-
-.logo-texto-verde {
-  color: #10b981;
-}
-
-.menu-desktop {
-  display: none;
-  gap: 2rem;
-}
-
-.menu-desktop-visible {
-  display: flex;
-}
-
-.enlace-menu {
-  color: #4b5563;
-  font-weight: 500;
-  transition: color 0.2s;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.enlace-menu:hover {
-  color: #10b981;
-}
-
-.enlace-menu-activo {
-  color: #10b981;
 }
 
 .boton-menu-movil {
@@ -112,28 +32,6 @@
   cursor: pointer;
 }
 
-.boton-menu-movil-oculto {
-  display: none;
-}
-
-.icono-menu {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: #1f2937;
-}
-
-.menu-movil {
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-  border-top: 1px solid #e5e7eb;
-}
-
-.contenedor-menu-movil {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-}
 
 /* Contenido principal */
 .contenido-principal {
@@ -144,11 +42,6 @@
   justify-content: center;
   min-height: calc(100vh - 80px);
   padding: 1rem;
-}
-
-.contenido-principal-desktop {
-  min-height: calc(100vh - 88px);
-  padding: 1.5rem;
 }
 
 .contenedor-tarjeta {
@@ -223,69 +116,6 @@
 .boton-cambio-formulario:hover {
   color: #059669;
 }
-
-/* Widget de chat */
-.widget-chat {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  z-index: 20;
-}
-
-.widget-chat-desktop {
-  bottom: 1.5rem;
-  right: 1.5rem;
-}
-
-.boton-chat {
-  background-color: #10b981;
-  border-radius: 50%;
-  padding: 0.75rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: background-color 0.2s;
-  border: none;
-  position: relative;
-}
-
-.boton-chat:hover {
-  background-color: #059669;
-}
-
-.icono-chat {
-  width: 1.25rem;
-  height: 1.25rem;
-  color: white;
-  fill: currentColor;
-}
-
-.icono-chat-desktop {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.notificacion-chat {
-  position: absolute;
-  top: -0.25rem;
-  right: -0.25rem;
-  background-color: #ef4444;
-  color: white;
-  font-size: 0.75rem;
-  border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.notificacion-chat-desktop {
-  top: -0.5rem;
-  right: -0.5rem;
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
 /* Media queries para responsive */
 @media (min-width: 768px) {
   .boton-menu-movil {
