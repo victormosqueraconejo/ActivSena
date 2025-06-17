@@ -1,329 +1,146 @@
-html {
-    height: 100%;
+/* Estilos específicos para el componente de Inicio de Sesión */
+.formulario-inicio-sesion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-#body-inicio-sesion {
-  
-   width: 600px;
-    font-family: sans-serif;
-    background: linear-gradient(#141e30, #243b55);
+.grupo-campo-inicio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.contenedorUnico {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, .5);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-    border-radius: 10px;
-    text-align: center;
+.etiqueta-inicio {
+  color: #374151;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
-.tituloUnico {
-    margin: 0 0 30px;
-    padding: 0;
-    color: #06c6f7;
-    text-align: center;
+.etiqueta-inicio-desktop {
+  font-size: 1rem;
 }
 
-.usuarioUnico {
-    position: relative;
+.contenedor-input-inicio {
+  position: relative;
 }
 
-.campoInputUnico {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
+.icono-input-inicio {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  height: 1rem;
+  width: 1rem;
+  color: #9ca3af;
+  fill: currentColor;
 }
 
-.labelInputUnico {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
+.campo-input-inicio {
+  width: 100%;
+  height: 3rem;
+  padding-left: 2.5rem;
+  padding-right: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: white;
+  box-sizing: border-box;
 }
 
-.campoInputUnico:focus ~ .labelInputUnico,
-.campoInputUnico:valid ~ .labelInputUnico {
-    top: -20px;
-    left: 0;
-    color: #03e9f4;
-    font-size: 12px;
+.campo-input-inicio:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
 }
 
-.btnLoginUnico {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+.campo-input-inicio::placeholder {
+  color: #9ca3af;
 }
 
-.btnLoginUnico:hover {
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+.contenedor-opciones-inicio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.btnLoginUnico span {
-    position: absolute;
-    display: block;
+.contenedor-opciones-inicio-desktop {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.btnLoginUnico span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
-    animation: btnAnim1 1s linear infinite;
+.etiqueta-checkbox-inicio {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
 }
 
-@keyframes btnAnim1 {
-    0% {
-        left: -100%;
-    }
-    50%, 100% {
-        left: 100%;
-    }
+.checkbox-inicio {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #d1d5db;
+  accent-color: #10b981;
+  cursor: pointer;
 }
 
-.btnLoginUnico span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
-    animation: btnAnim2 1s linear infinite;
-    animation-delay: .25s;
+.checkbox-inicio:focus {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
 }
 
-@keyframes btnAnim2 {
-    0% {
-        top: -100%;
-    }
-    50%, 100% {
-        top: 100%;
-    }
+.texto-checkbox-inicio {
+  font-size: 0.875rem;
+  color: #4b5563;
+  user-select: none;
 }
 
-.btnLoginUnico span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
-    animation: btnAnim3 1s linear infinite;
-    animation-delay: .5s;
+.enlace-recuperar-inicio {
+  font-size: 0.875rem;
+  color: #10b981;
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
 }
 
-@keyframes btnAnim3 {
-    0% {
-        right: -100%;
-    }
-    50%, 100% {
-        right: 100%;
-    }
+.enlace-recuperar-inicio:hover {
+  color: #059669;
+  text-decoration: underline;
 }
 
-.btnLoginUnico span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
-    animation: btnAnim4 1s linear infinite;
-    animation-delay: .75s;
+.boton-inicio-sesion {
+  width: 100%;
+  background-color: #10b981;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.75rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
 }
 
-@keyframes btnAnim4 {
-    0% {
-        bottom: -100%;
-    }
-    50%, 100% {
-        bottom: 100%;
-    }
+.boton-inicio-sesion:hover {
+  background-color: #059669;
 }
 
-.logoUnico {
-    width: 230px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    margin-left: 50px;
+.boton-inicio-sesion:active {
+  transform: translateY(1px);
 }
 
-.olvidoContrasenaUnico {
-    margin-top: 10px;
+.boton-inicio-sesion:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
 }
 
-.enlaceOlvidoUnico {
-    color: #03e9f4;
-    font-size: 13px;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.enlaceOlvidoUnico:hover {
-    text-decoration: underline;
-}
-
-.registroUnico {
-    text-align: center;
-    margin-top: 20px;
-    color: #aaa;
-    font-size: 14px;
-}
-
-.textoRegistroUnico {
-    color: #aaa;
-}
-
-.enlaceRegistroUnico {
-    color: #03e9f4;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.enlaceRegistroUnico:hover {
-    text-decoration: underline;
-}
-
-
-
-/*boton 2*/
-.btnLoginUnicor {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fcf7f7;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-.btnLoginUnicor:hover {
-    background: #03f403;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
-}
-
-.btnLoginUnicor span {
-    position: absolute;
-    display: block;
-}
-
-.btnLoginUnicor span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #03f40f);
-    animation: btnAnim1 1s linear infinite;
-}
-
-@keyframes btnAnim1 {
-    0% {
-        left: -100%;
-    }
-    50%, 100% {
-        left: 100%;
-    }
-}
-
-.btnLoginUnicor span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #03f453);
-    animation: btnAnim2 1s linear infinite;
-    animation-delay: .25s;
-}
-
-@keyframes btnAnim2 {
-    0% {
-        top: -100%;
-    }
-    50%, 100% {
-        top: 100%;
-    }
-}
-
-.btnLoginUnicor span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #03f423);
-    animation: btnAnim3 1s linear infinite;
-    animation-delay: .5s;
-}
-
-@keyframes btnAnim3 {
-    0% {
-        right: -100%;
-    }
-    50%, 100% {
-        right: 100%;
-    }
-}
-
-.btnLoginUnicor span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #03f43f);
-    animation: btnAnim4 1s linear infinite;
-    animation-delay: .75s;
-}
-
-@keyframes btnAnim4 {
-    0% {
-        bottom: -100%;
-    }
-    50%, 100% {
-        bottom: 100%;
-    }
+@media (min-width: 768px) {
+  .contenedor-opciones-inicio {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

@@ -26,8 +26,6 @@ import "../src/styles/global.css";
 
 import CalendarioAp from "../src/pages/CalendarioAdmin/CalendarioAp";
 
-import Actividades from "../src/pages/Actividades/Actividades";
-import Aplicacion from "../src/pages/Aplicacion/Aplicacion";
 import Footer from "../src/pages/Home/FooterHome"
 
 
@@ -69,7 +67,7 @@ export default function DashBoard() {
         {contenidoActual === "calendario" && <CalendarioAp />}
 
 
-      </main>
+      
 
       <ActivBot irAChatai={() => setContenidoActual("chatai")} />
 
@@ -95,5 +93,4 @@ export default function DashBoard() {
 }
 
   
-}
 
